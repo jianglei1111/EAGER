@@ -1,0 +1,113 @@
+{
+  "schema_version": 2,
+  "objective": "Evaluate query-time entity-guided candidate-space control and coarse-to-fine evidence refinement for multi-hop retrieval.",
+  "datasets": {
+    "hotpotqa": {
+      "question_config": "configs/main_1000_pipeline.json",
+      "processed_sentences": "data/processed/hotpotqa/sentences.jsonl",
+      "index_dir": "data/indexes/hotpotqa",
+      "formal_profile": "hotpotqa_main_1000",
+      "development_split": "hotpotqa_dev200",
+      "primary_support_unit": "paragraph",
+      "secondary_support_unit": "sentence"
+    },
+    "2wiki": {
+      "question_config": "experiments_archive/2wiki/configs/2wiki_eval_1000_linearrag.json",
+      "processed_sentences": "data/processed/2wikimultihopqa/sentences.jsonl",
+      "index_dir": "data/indexes/2wikimultihopqa",
+      "formal_profile": "2wiki_main_1000",
+      "development_split": "2wiki_dev200",
+      "primary_support_unit": "paragraph",
+      "secondary_support_unit": "sentence"
+    },
+    "musique": {
+      "question_config": "experiments_archive/musique/configs/musique_eval_1000_linearrag.json",
+      "processed_sentences": "data/processed/musique/sentences.jsonl",
+      "index_dir": "data/indexes/musique",
+      "formal_profile": "musique_main_1000",
+      "development_split": "musique_dev200",
+      "primary_support_unit": "paragraph",
+      "secondary_support_unit": null
+    }
+  },
+  "evaluation": {
+    "frozen_test_queries": 1000,
+    "development": {
+      "default_queries": 200,
+      "minimum_queries": 200,
+      "maximum_queries": 300,
+      "disjoint_from_formal": true,
+      "selection_seed": 20260713
+    },
+    "timing_queries": 200,
+    "candidate_budgets": [50, 80, 100, 200, 500, 1000],
+    "final_evidence_budgets": [5, 10, 20, 30],
+    "corpus_scales": [1, 2, 4, 8],
+    "random_seed": 20260713
+  },
+  "candidate_variants": [
+    "global_dense",
+    "question_entities",
+    "question_and_signal_entities",
+    "question_signal_and_retained_titles",
+    "full_dynamic_eager"
+  ],
+  "refinement_variants": [
+    "coarse_only",
+    "coarse_and_qwen",
+    "paragraph_pooling_only",
+    "paragraph_to_sentence_full"
+  ],
+  "policy_variants": [
+    "no_signal",
+    "always_stepwise",
+    "always_chain",
+    "frozen_rule_router",
+    "oracle_analysis_only"
+  ],
+  "required_metrics": [
+    "normalized_em",
+    "answer_f1",
+    "containment_accuracy",
+    "gpt_accuracy",
+    "candidate_any_support_recall",
+    "candidate_full_support_recall",
+    "full_support_at_5_10_20",
+    "last_gold_support_rank",
+    "candidate_count_mean_p50_p95",
+    "reranker_pair_count",
+    "retrieval_latency_p50_p95",
+    "end_to_end_latency_p50_p95",
+    "llm_calls_and_tokens",
+    "index_build_time_and_size"
+  ],
+  "execution_profiles": {
+    "legacy_reproduction": {
+      "purpose": "Read-only mechanical comparison with historical oracle-assisted artifacts.",
+      "oracle_annotations_allowed": true,
+      "publishable_main_result": false,
+      "forbidden_controller_fields": []
+    },
+    "wsdm_strict": {
+      "purpose": "Publishable unified online system with annotation-isolated inference.",
+      "oracle_annotations_allowed": false,
+      "publishable_main_result": true,
+      "forbidden_controller_fields": [
+        "answer",
+        "supporting_facts",
+        "supporting_titles",
+        "type",
+        "hop",
+        "hop_count",
+        "decomposition",
+        "question_decomposition",
+        "relation",
+        "raw_question_id"
+      ]
+    }
+  },
+  "provenance": {
+    "migrated_from_schema_version": 1,
+    "split_registry": "wsdm/config/split_registry.json"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "ablation_run_count": 20,
+  "analysis_id": "eager_v1_component_ablation_20260730",
+  "bootstrap_samples": 10000,
+  "control_run_count": 6,
+  "document": "doc/WSDM/materials/wsdm_v1_component_ablation_results_zh.md",
+  "outputs": [
+    "absolute_results.csv",
+    "paired_deltas.csv",
+    "component_macro.csv",
+    "results.json"
+  ],
+  "question_count_per_run": 1000,
+  "result_date": "2026-07-30",
+  "schema_version": 1,
+  "source_provenance_sha256": "50ead70ecc579e477dfa2ba32e35148b77e3f4db47a92567e9da70361435c27a",
+  "status": "canonical"
+}

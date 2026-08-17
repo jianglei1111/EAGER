@@ -1,0 +1,2016 @@
+{
+  "file_count": 287,
+  "files": [
+    {
+      "bytes": 471,
+      "path": ".gitattributes",
+      "result_bound_overlay": false,
+      "sha256": "33ea34b2f4439ea95aa4bffe0ddbfef10c3ca70896753c395442a5425f342034",
+      "source_path": ".gitattributes"
+    },
+    {
+      "bytes": 243,
+      "path": "results/gptacc_audit/REPORT.md",
+      "result_bound_overlay": false,
+      "sha256": "681e7e0278e674d01fadac3d18cbe8d620c279cae5212d87781616d3b2c64d23",
+      "source_path": "artifacts/paper_validation/gptacc_audit_eager_v2/REPORT.md"
+    },
+    {
+      "bytes": 484,
+      "path": "results/gptacc_audit/summary.json",
+      "result_bound_overlay": false,
+      "sha256": "154f8bb74c551a208dcb8dcb863a49a5da3cbb1218edae0fa6167f25a03832e5",
+      "source_path": "artifacts/paper_validation/gptacc_audit_eager_v2/summary.json"
+    },
+    {
+      "bytes": 6699,
+      "path": "results/gptacc_audit/verified_labels.csv",
+      "result_bound_overlay": false,
+      "sha256": "2431eaeacbef1178c636d2f91c9dd1a615f59d2851949238e3cba514b99c9391",
+      "source_path": "artifacts/paper_validation/gptacc_audit_eager_v2/verified_labels.csv"
+    },
+    {
+      "bytes": 10665,
+      "path": "provenance/state_anchor_intervention/paired_control_preflight.json",
+      "result_bound_overlay": false,
+      "sha256": "07ceea7a60edf9f37df5bd26f96a79ab1368ddcea75353454ae464b0eaaca635",
+      "source_path": "artifacts/test_runs/wsdm/eager_v1_20260805_musique_rq_openlux_control_main1000_v1/canonical_preflight.json"
+    },
+    {
+      "bytes": 6016,
+      "path": "results/scaling/figure2_scaling_cost_v1.csv",
+      "result_bound_overlay": false,
+      "sha256": "8ca9d244e8738e4071316bf015f341d383cb5d4495c281b3b1c2843f0c0dc880",
+      "source_path": "artifacts/test_runs/wsdm/paper_results/figure2_scaling_cost_v1.csv"
+    },
+    {
+      "bytes": 17723,
+      "path": "results/scaling/figure2_scaling_cost_v1.json",
+      "result_bound_overlay": false,
+      "sha256": "cd95b91f4019ac7607642488175425a2c3a149fd6c6080175f9a3876fe1ed423",
+      "source_path": "artifacts/test_runs/wsdm/paper_results/figure2_scaling_cost_v1.json"
+    },
+    {
+      "bytes": 231,
+      "path": "configs/llm_config.example.json",
+      "result_bound_overlay": false,
+      "sha256": "74b68b6df03183c9be36225fb24f7e2339c59b07f0bd2f6921b030467124db5a",
+      "source_path": "configs/llm_config.example.json"
+    },
+    {
+      "bytes": 3269,
+      "path": "configs/wsdm/base.json",
+      "result_bound_overlay": true,
+      "sha256": "20728f1fc9ce552820d3c288b040474e6553d675d0db0ca82bb659f3378b538b",
+      "source_path": "configs/wsdm/base.json"
+    },
+    {
+      "bytes": 122,
+      "path": "configs/wsdm/local.example.json",
+      "result_bound_overlay": false,
+      "sha256": "f99896f50ed349595cdde74fd4f00a287c0c95dbe77e37ecdb134b0a1bb7a9f9",
+      "source_path": "configs/wsdm/local.example.json"
+    },
+    {
+      "bytes": 5962,
+      "path": "configs/wsdm/models/registry.json",
+      "result_bound_overlay": false,
+      "sha256": "1ba9615594a393beaba764a1862076d3356e6010a2cdafc42897a28d4efa9d16",
+      "source_path": "configs/wsdm/models/registry.json"
+    },
+    {
+      "bytes": 283,
+      "path": "configs/wsdm/retrieval/auto_rule.json",
+      "result_bound_overlay": false,
+      "sha256": "9d9bbb0525449bed780734fbb27e36cb1738b14fe7b8881a48e64fed39ed1f43",
+      "source_path": "configs/wsdm/retrieval/auto_rule.json"
+    },
+    {
+      "bytes": 254,
+      "path": "configs/wsdm/retrieval/full.json",
+      "result_bound_overlay": false,
+      "sha256": "2d338e8b3571cc9ba4cfd764481bbb60b43471fc916935c5141f643bb7bcb0ea",
+      "source_path": "configs/wsdm/retrieval/full.json"
+    },
+    {
+      "bytes": 240,
+      "path": "configs/wsdm/retrieval/no_signal.json",
+      "result_bound_overlay": false,
+      "sha256": "bcd00421f4218121d06dd0fa01deb13a9a803e8c6a8f5426cba696fb04eaf1ae",
+      "source_path": "configs/wsdm/retrieval/no_signal.json"
+    },
+    {
+      "bytes": 659,
+      "path": "configs/wsdm/retrieval/subquestion_chain.json",
+      "result_bound_overlay": false,
+      "sha256": "c6522e917fc89cd107b9be7d4ffe3b5e16b345407585844f5b47f43fb9ed8fa4",
+      "source_path": "configs/wsdm/retrieval/subquestion_chain.json"
+    },
+    {
+      "bytes": 255,
+      "path": "configs/wsdm/retrieval/without_entity_expansion.json",
+      "result_bound_overlay": false,
+      "sha256": "6f134e4d05af775d1db0b3f22638c2278f427bb2724c796701a431cd0a8c3de0",
+      "source_path": "configs/wsdm/retrieval/without_entity_expansion.json"
+    },
+    {
+      "bytes": 255,
+      "path": "configs/wsdm/retrieval/without_hierarchical_refinement.json",
+      "result_bound_overlay": false,
+      "sha256": "0682b3eb400dee38b6619c88464ba3eee207817dfaa206383faffedee63befb9",
+      "source_path": "configs/wsdm/retrieval/without_hierarchical_refinement.json"
+    },
+    {
+      "bytes": 307,
+      "path": "configs/wsdm/retrieval/without_state_anchors.json",
+      "result_bound_overlay": false,
+      "sha256": "0b6fa00e08573749132811df1dd07a2e36f554e9b2703a761da8e7494a8b5ab5",
+      "source_path": "configs/wsdm/retrieval/without_state_anchors.json"
+    },
+    {
+      "bytes": 10027,
+      "path": "experiments_sandbox/20260728_027_hotpotqa_rq_v1_full1000/run.py",
+      "result_bound_overlay": true,
+      "sha256": "2fd77f03d39c4baaae5d7c90dc872d36b808dc6803a09d29f6882d8dc856b076",
+      "source_path": "experiments_sandbox/20260728_027_hotpotqa_rq_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10911,
+      "path": "experiments_sandbox/20260728_028_hotpotqa_sc_v1_full1000/run.py",
+      "result_bound_overlay": true,
+      "sha256": "9d938a0871c112d295df586e9d9dea57ba92a33be193842517e2ff5189147c6c",
+      "source_path": "experiments_sandbox/20260728_028_hotpotqa_sc_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10894,
+      "path": "experiments_sandbox/20260728_029_2wiki_rq_v1_full1000/run.py",
+      "result_bound_overlay": true,
+      "sha256": "35d51fc23961a94e350de9688522a06194f0dc8a49297d93f2a27f8cc2088abb",
+      "source_path": "experiments_sandbox/20260728_029_2wiki_rq_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10903,
+      "path": "experiments_sandbox/20260728_030_2wiki_sc_v1_full1000/run.py",
+      "result_bound_overlay": true,
+      "sha256": "ddd9c618b7b78dd35c19c3bd139e8d015469254a932f592333fe48141f932d38",
+      "source_path": "experiments_sandbox/20260728_030_2wiki_sc_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10901,
+      "path": "experiments_sandbox/20260728_031_musique_rq_v1_full1000/run.py",
+      "result_bound_overlay": true,
+      "sha256": "0e6480ea408c23bd44fb1c1135f5263e19abe2bbc801066dd748b15cf4b34c14",
+      "source_path": "experiments_sandbox/20260728_031_musique_rq_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10909,
+      "path": "experiments_sandbox/20260728_032_musique_sc_v1_full1000/run.py",
+      "result_bound_overlay": true,
+      "sha256": "891671924d0a6285cfb75a46f725978b76f0cfa88398d8296993eb7a63477e4e",
+      "source_path": "experiments_sandbox/20260728_032_musique_sc_v1_full1000/run.py"
+    },
+    {
+      "bytes": 31234,
+      "path": "experiments_sandbox/20260729_033_hotpotqa_rq_without_entity_linked_activation_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "4fbf7acc054f2ad2f65f3ce2104d7353b04911de3499540b063629e3ca36909d",
+      "source_path": "experiments_sandbox/20260729_033_hotpotqa_rq_without_entity_linked_activation_main1000/run.py"
+    },
+    {
+      "bytes": 31234,
+      "path": "experiments_sandbox/20260729_034_hotpotqa_sc_without_entity_linked_activation_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "080077b7d53ff36faf291572f0f0217e03c58e43f4daeb1961d86b96a4d4035f",
+      "source_path": "experiments_sandbox/20260729_034_hotpotqa_sc_without_entity_linked_activation_main1000/run.py"
+    },
+    {
+      "bytes": 31216,
+      "path": "experiments_sandbox/20260729_035_2wiki_rq_without_entity_linked_activation_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "679a8b5125f30bb5a414b405c3712068907270e19882070b8af892ffe8b9373b",
+      "source_path": "experiments_sandbox/20260729_035_2wiki_rq_without_entity_linked_activation_main1000/run.py"
+    },
+    {
+      "bytes": 31216,
+      "path": "experiments_sandbox/20260729_036_2wiki_sc_without_entity_linked_activation_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "3eff81ac5c99c16c8b482cbe73abd80902b16c0d2fc31faf5615f7aabbaa60e9",
+      "source_path": "experiments_sandbox/20260729_036_2wiki_sc_without_entity_linked_activation_main1000/run.py"
+    },
+    {
+      "bytes": 31228,
+      "path": "experiments_sandbox/20260729_037_musique_rq_without_entity_linked_activation_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "f0c855fb717d9cd7c9d93c9ac630a8357039d3862903bf2753c2751dc4ea99dd",
+      "source_path": "experiments_sandbox/20260729_037_musique_rq_without_entity_linked_activation_main1000/run.py"
+    },
+    {
+      "bytes": 31228,
+      "path": "experiments_sandbox/20260729_038_musique_sc_without_entity_linked_activation_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "d4efa9e5f425b71cea606718fafc05f0c9b5527107a57f760c3ae58586e74d5c",
+      "source_path": "experiments_sandbox/20260729_038_musique_sc_without_entity_linked_activation_main1000/run.py"
+    },
+    {
+      "bytes": 31267,
+      "path": "experiments_sandbox/20260729_039_hotpotqa_rq_without_concurrent_semantic_lane_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "1428c0dc8ebc1a500e1d889899a34be048f2e0835229e282298f8be82bb6b8f2",
+      "source_path": "experiments_sandbox/20260729_039_hotpotqa_rq_without_concurrent_semantic_lane_main1000/run.py"
+    },
+    {
+      "bytes": 31267,
+      "path": "experiments_sandbox/20260729_040_hotpotqa_sc_without_concurrent_semantic_lane_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "0fda02b91074994cbfb0c94c6700f533dd8d2207df24c366a54d83b9c82304f3",
+      "source_path": "experiments_sandbox/20260729_040_hotpotqa_sc_without_concurrent_semantic_lane_main1000/run.py"
+    },
+    {
+      "bytes": 31249,
+      "path": "experiments_sandbox/20260729_041_2wiki_rq_without_concurrent_semantic_lane_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "ab17078d3949b20d776a59d243dd93dac867491ebbfd2f5b5907a7d6b1358f21",
+      "source_path": "experiments_sandbox/20260729_041_2wiki_rq_without_concurrent_semantic_lane_main1000/run.py"
+    },
+    {
+      "bytes": 31249,
+      "path": "experiments_sandbox/20260729_042_2wiki_sc_without_concurrent_semantic_lane_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "bbbbb4a292713e2274d3d101382e3f50195c121cfc78e00902dfddfdccfd75fc",
+      "source_path": "experiments_sandbox/20260729_042_2wiki_sc_without_concurrent_semantic_lane_main1000/run.py"
+    },
+    {
+      "bytes": 31261,
+      "path": "experiments_sandbox/20260729_043_musique_rq_without_concurrent_semantic_lane_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "8a9377a5d32d69bc37103c4c3e6c5cfd35f36730fc4edad66834b8612d2fd44f",
+      "source_path": "experiments_sandbox/20260729_043_musique_rq_without_concurrent_semantic_lane_main1000/run.py"
+    },
+    {
+      "bytes": 31261,
+      "path": "experiments_sandbox/20260729_044_musique_sc_without_concurrent_semantic_lane_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "2acc32a8c149ebdf6061cf2be068d7400089cbb9974332c1c3d8798636f6ad57",
+      "source_path": "experiments_sandbox/20260729_044_musique_sc_without_concurrent_semantic_lane_main1000/run.py"
+    },
+    {
+      "bytes": 31299,
+      "path": "experiments_sandbox/20260729_045_hotpotqa_rq_without_hierarchical_paragraph_gate_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "1e24449901a2c0972756deb9f90642b0e736e615981b3527f12798fa3d0db104",
+      "source_path": "experiments_sandbox/20260729_045_hotpotqa_rq_without_hierarchical_paragraph_gate_main1000/run.py"
+    },
+    {
+      "bytes": 31299,
+      "path": "experiments_sandbox/20260729_046_hotpotqa_sc_without_hierarchical_paragraph_gate_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "f73c2e3cc8d6d0fb2223a382ba8170ede8232f9f6279a4775b7c370aa1b2c356",
+      "source_path": "experiments_sandbox/20260729_046_hotpotqa_sc_without_hierarchical_paragraph_gate_main1000/run.py"
+    },
+    {
+      "bytes": 31281,
+      "path": "experiments_sandbox/20260729_047_2wiki_rq_without_hierarchical_paragraph_gate_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "27b2d7692e830789470dc1cbe7e3946e0b618d2539316b2731a7127151568682",
+      "source_path": "experiments_sandbox/20260729_047_2wiki_rq_without_hierarchical_paragraph_gate_main1000/run.py"
+    },
+    {
+      "bytes": 31281,
+      "path": "experiments_sandbox/20260729_048_2wiki_sc_without_hierarchical_paragraph_gate_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "c57dc897d5472acd3143bbcf5f3fca50f1c8c962e1415d174dbf9a722ea5d9d7",
+      "source_path": "experiments_sandbox/20260729_048_2wiki_sc_without_hierarchical_paragraph_gate_main1000/run.py"
+    },
+    {
+      "bytes": 31293,
+      "path": "experiments_sandbox/20260729_049_musique_rq_without_hierarchical_paragraph_gate_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "7e7ab716d0beeae1f0effc4757f8de2df753302afddf114301b4c9d5d0c50c58",
+      "source_path": "experiments_sandbox/20260729_049_musique_rq_without_hierarchical_paragraph_gate_main1000/run.py"
+    },
+    {
+      "bytes": 31293,
+      "path": "experiments_sandbox/20260729_050_musique_sc_without_hierarchical_paragraph_gate_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "9ff9a4c6eb6457d40dbc4191b366481d52341d347fd53d1e31c59f2e19c4b1e6",
+      "source_path": "experiments_sandbox/20260729_050_musique_sc_without_hierarchical_paragraph_gate_main1000/run.py"
+    },
+    {
+      "bytes": 31314,
+      "path": "experiments_sandbox/20260729_051_hotpotqa_rq_without_direct_state_anchors_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "ec87082795acbd3302afbd7dce29992ab9b97e168fbc4071534582e17f6e5d66",
+      "source_path": "experiments_sandbox/20260729_051_hotpotqa_rq_without_direct_state_anchors_main1000/run.py"
+    },
+    {
+      "bytes": 31296,
+      "path": "experiments_sandbox/20260729_052_2wiki_rq_without_direct_state_anchors_main1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "090df9f3d02a1de96e9a5bdda11653f3406f896f37262f618effbb53c064c1d2",
+      "source_path": "experiments_sandbox/20260729_052_2wiki_rq_without_direct_state_anchors_main1000/run.py"
+    },
+    {
+      "bytes": 15721,
+      "path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "7548371f434c70a62638dff30abf0e92c6bf2813e842d605fac1b9b07b432de5",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/run.py"
+    },
+    {
+      "bytes": 152,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "49f5aa63b9f22043b715b72cdd3315168e192de84ed061d00879748ef1827de2",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/__init__.py"
+    },
+    {
+      "bytes": 603,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/answering/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "86dee82dc7c2e6aeb4003a0d51c74645f0a4fe43246c460112086b399ebfca00",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/answering/__init__.py"
+    },
+    {
+      "bytes": 3266,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/answering/base.py",
+      "result_bound_overlay": false,
+      "sha256": "8a27d62d3636251d1255d44371f08240e28cfc73fea4b45c35447612f5c19e3d",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/answering/base.py"
+    },
+    {
+      "bytes": 5623,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/answering/openai.py",
+      "result_bound_overlay": false,
+      "sha256": "2549d9b7836e697c52aa3a6b66a1ef68b4d568a55a8221ed0ecdaa1ff6ffff8d",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/answering/openai.py"
+    },
+    {
+      "bytes": 71073,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/cli.py",
+      "result_bound_overlay": false,
+      "sha256": "a593d73f15ce77105ba3c8eeff30e30b5f32df17f7ba21f11663f9ae368fc52f",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/cli.py"
+    },
+    {
+      "bytes": 23016,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/config.py",
+      "result_bound_overlay": false,
+      "sha256": "47700199c75d6dc92c4d3c646df9befca8af70f7349fc834d2cb6c3ddb1416d9",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/config.py"
+    },
+    {
+      "bytes": 2155,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/content_identity.py",
+      "result_bound_overlay": false,
+      "sha256": "fc444d553cb011faad3c627e5e31654e88f0f895cb842a9e15d24fc2904974b9",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/content_identity.py"
+    },
+    {
+      "bytes": 1529,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/data/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "5dec4efe0b22f16e9935923dc90ccbca6c8bdc4bc6dd053f4472d86f3d13a637",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/data/__init__.py"
+    },
+    {
+      "bytes": 10269,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/data/base.py",
+      "result_bound_overlay": false,
+      "sha256": "29c16c21f23a6bc4733512b0da87ab1203e713077fb1da2d534eb05a9132d9d5",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/data/base.py"
+    },
+    {
+      "bytes": 4377,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/data/context.py",
+      "result_bound_overlay": false,
+      "sha256": "6608c8b2c69ebcb5ce644e5325fd6b4d66423aab63fd1d8b74ea40d6f6811b8b",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/data/context.py"
+    },
+    {
+      "bytes": 2777,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/data/hotpotqa.py",
+      "result_bound_overlay": false,
+      "sha256": "1720505e62f41b33d99ae4d9d673bd32ffb413c6b69987f4dea3c4b69497b658",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/data/hotpotqa.py"
+    },
+    {
+      "bytes": 309,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/data/identity.py",
+      "result_bound_overlay": false,
+      "sha256": "ce635c47917b61ed3d1e0fc4a60b74a7e906855d364dfa0fc22ea41bbe6bd0b0",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/data/identity.py"
+    },
+    {
+      "bytes": 9043,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/data/musique.py",
+      "result_bound_overlay": false,
+      "sha256": "29888619dd6ebdbd395e719fd4ffa9123f8fe6b7e98d6cc411890e666af96365",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/data/musique.py"
+    },
+    {
+      "bytes": 18430,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/data/registry.py",
+      "result_bound_overlay": false,
+      "sha256": "9a7cc1d8397865a83c251db9f5aa85615a132ed5d1e22b407fd14feaa9a85741",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/data/registry.py"
+    },
+    {
+      "bytes": 11195,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/data/scaling.py",
+      "result_bound_overlay": false,
+      "sha256": "60c4aeab2f9caf6817078ed0fe3a555cd1f9477f78733a4bfcbeb796a2588d33",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/data/scaling.py"
+    },
+    {
+      "bytes": 4583,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/data/twowiki.py",
+      "result_bound_overlay": false,
+      "sha256": "369c09161b41526ddc2150ccc3ba97ffd06e8e6b51c350961198bb1d01e23bd4",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/data/twowiki.py"
+    },
+    {
+      "bytes": 35914,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/data/workflow.py",
+      "result_bound_overlay": false,
+      "sha256": "ee72bab852b54d5aa36aa9db552ff0268ec148f3c14a04291498140038c41b16",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/data/workflow.py"
+    },
+    {
+      "bytes": 644,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/evaluation/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "ac2ce5ddc9997e9dd3d4e85c11c83960bb0c91cbc2f3a49653c6c5b58fc34fc1",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/evaluation/__init__.py"
+    },
+    {
+      "bytes": 2503,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/evaluation/answer.py",
+      "result_bound_overlay": false,
+      "sha256": "c2c6f2bdd8075f328d400cdf58e32d1460003df7d17ec239964cb16124f7e92b",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/evaluation/answer.py"
+    },
+    {
+      "bytes": 3706,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/evaluation/judge.py",
+      "result_bound_overlay": false,
+      "sha256": "bf0910c10accd24e14e147577a2aca3fe5291d0cefc0456e94f511ed10528a17",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/evaluation/judge.py"
+    },
+    {
+      "bytes": 2544,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/evaluation/support.py",
+      "result_bound_overlay": false,
+      "sha256": "fe4fcdfe8ea36ebef67d90007e32ff401684bcc2cc03ca67cb6f6dee06359a65",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/evaluation/support.py"
+    },
+    {
+      "bytes": 541,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/experiments/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "8044829cc268ca0dcbe07b78dd553c3c1d43917359123fb7995e3afa537d3730",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/experiments/__init__.py"
+    },
+    {
+      "bytes": 44409,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/experiments/runner.py",
+      "result_bound_overlay": false,
+      "sha256": "297bab033f4acac3ceef845cf168ef8ca6fd9d7b7f94f0afc6bc8b28e8403ee9",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/experiments/runner.py"
+    },
+    {
+      "bytes": 2953,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/indexing/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "afb8943e9d3b2937c661d0ae83b953815c09e21c8d73e658b07aa143042cc30c",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/indexing/__init__.py"
+    },
+    {
+      "bytes": 11673,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/indexing/corpus.py",
+      "result_bound_overlay": false,
+      "sha256": "3eff94296739e58f7b626b9c95d5b99003918a40ffb7d4af7e41c0961dac1165",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/indexing/corpus.py"
+    },
+    {
+      "bytes": 22378,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/indexing/dense.py",
+      "result_bound_overlay": false,
+      "sha256": "d3ee39a71eb5792429f26b767f179709c0a9f60aa6b7b6e825c53528e7714760",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/indexing/dense.py"
+    },
+    {
+      "bytes": 604,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/indexing/errors.py",
+      "result_bound_overlay": false,
+      "sha256": "660e8e3d0cd2e18a2dc220575993442750b62b294780be0d3c7a53a22b08125d",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/indexing/errors.py"
+    },
+    {
+      "bytes": 8229,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/indexing/model_registry.py",
+      "result_bound_overlay": false,
+      "sha256": "26fffcbb5fb61f1f3b80ad346de81f02908a3b7d35cc470b855bcc652af2d886",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/indexing/model_registry.py"
+    },
+    {
+      "bytes": 18927,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/indexing/structured.py",
+      "result_bound_overlay": false,
+      "sha256": "b79bea38179ca7189f300f4c084b80b78e8383ed74a6cb4a9bd1cb4db43e26e0",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/indexing/structured.py"
+    },
+    {
+      "bytes": 14057,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/indexing/surface_store.py",
+      "result_bound_overlay": false,
+      "sha256": "8d8a2283e1eec8530b07c410958a053f6dd20d6e3c3a597f53e40d2e586b2286",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/indexing/surface_store.py"
+    },
+    {
+      "bytes": 2400,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/indexing/text_representation.py",
+      "result_bound_overlay": false,
+      "sha256": "14d49f3201bbb3c32c7ce11e45b30ef6151e4819858e86d20ae88c28445b1d16",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/indexing/text_representation.py"
+    },
+    {
+      "bytes": 12551,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/indexing/tiny.py",
+      "result_bound_overlay": false,
+      "sha256": "c546928be7b5f80b47d1d6f80aec99bbd467bd1b6c66af73be29262178678824",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/indexing/tiny.py"
+    },
+    {
+      "bytes": 726,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/pipeline/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "d2d96ac0f1f20958566dabd8c19d8260967de24127ccc46ac23583d38678f5fb",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/pipeline/__init__.py"
+    },
+    {
+      "bytes": 1653,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/pipeline/auto.py",
+      "result_bound_overlay": false,
+      "sha256": "9b80674f750792fdd829e1b8084ea908a47536cc93ecaa0d088c8ee4e2f5fe3f",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/pipeline/auto.py"
+    },
+    {
+      "bytes": 4758,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/pipeline/engine.py",
+      "result_bound_overlay": false,
+      "sha256": "e2d9dac32f1ca6599a620ab8e677297fefee1aa5657ae68dd92d47abbe9ed2e3",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/pipeline/engine.py"
+    },
+    {
+      "bytes": 477,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/pipeline/state.py",
+      "result_bound_overlay": false,
+      "sha256": "51a4e00fc73eae06cb9ea43690c035c777a2b90cc600fac46936d4653dead057",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/pipeline/state.py"
+    },
+    {
+      "bytes": 9100,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/protocol.py",
+      "result_bound_overlay": false,
+      "sha256": "00ebc268dec378bc3576cfc77ba345c0c3a34fa04813938eb59f641a5955c0dd",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/protocol.py"
+    },
+    {
+      "bytes": 1584,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/retrieval/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "746ba23fa997925546ccd84300ad5a771569a51801c1af8aa156f32bdd31c3b0",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/retrieval/__init__.py"
+    },
+    {
+      "bytes": 3681,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/retrieval/anchors.py",
+      "result_bound_overlay": false,
+      "sha256": "a4fd0bc19e7403e94e0e9fa9f8d7d5229ea55c74a26fe4c8152acbbfdaf8996d",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/retrieval/anchors.py"
+    },
+    {
+      "bytes": 5166,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/retrieval/candidates.py",
+      "result_bound_overlay": false,
+      "sha256": "3909a6687d2d73d354bed53d9dce8bef615152f31b0523c2e71bddfa038f5600",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/retrieval/candidates.py"
+    },
+    {
+      "bytes": 4677,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/retrieval/coarse_ranker.py",
+      "result_bound_overlay": false,
+      "sha256": "cecd96f4f4aa94443f6a034e31baba8b53130d59e7a5916e87e28d5b0b08d438",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/retrieval/coarse_ranker.py"
+    },
+    {
+      "bytes": 3374,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/retrieval/contracts.py",
+      "result_bound_overlay": false,
+      "sha256": "83190f09294317b3322c1f072e87db2cf589d14ab4dd20cea46f2445ef1dff43",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/retrieval/contracts.py"
+    },
+    {
+      "bytes": 12876,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/retrieval/entity_mapping.py",
+      "result_bound_overlay": false,
+      "sha256": "3a4f06c7a70e18c2e6f115e2cb4820893d43d6572b5682ab8842c5cdb2c5e730",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/retrieval/entity_mapping.py"
+    },
+    {
+      "bytes": 280,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/retrieval/errors.py",
+      "result_bound_overlay": false,
+      "sha256": "97489f3c0edb722c72565cca2027d0662a76cb37d23a1c9017dd0ac291ee4b96",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/retrieval/errors.py"
+    },
+    {
+      "bytes": 4315,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/retrieval/hierarchical_refiner.py",
+      "result_bound_overlay": false,
+      "sha256": "1558ce86c0f70cc1508f5757c2de3c369e40fff3570273aa60238caa7c6d7be0",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/retrieval/hierarchical_refiner.py"
+    },
+    {
+      "bytes": 15761,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/retrieval/kernel.py",
+      "result_bound_overlay": false,
+      "sha256": "867c86c1e34e155acf035acb6da927b360b3e315112d91a83e3f634a9271e73d",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/retrieval/kernel.py"
+    },
+    {
+      "bytes": 5036,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/retrieval/reranker.py",
+      "result_bound_overlay": false,
+      "sha256": "915e66f1dab030a49df486ba5847e26a1b543c389458ee9b9708f23c904acd60",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/retrieval/reranker.py"
+    },
+    {
+      "bytes": 8779,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/retrieval/semantic.py",
+      "result_bound_overlay": false,
+      "sha256": "efc6fb604ab10b266343821c034ee6f26a5092038c546a5ed88aa839e9d17b06",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/retrieval/semantic.py"
+    },
+    {
+      "bytes": 105,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/runtime/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "0df5935c5268641d7d80870fcc17123ad99953f1dac46e3b4e26161f66e1b403",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/runtime/__init__.py"
+    },
+    {
+      "bytes": 3664,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/runtime/checkpoint.py",
+      "result_bound_overlay": false,
+      "sha256": "3c5a35dce23a78e0348c8cf70190a589b92d586b243ac68999c4ca90daa207a7",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/runtime/checkpoint.py"
+    },
+    {
+      "bytes": 3833,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/runtime/io.py",
+      "result_bound_overlay": false,
+      "sha256": "2c0b6546212d167bbf12b07518d866bdee6b60ef639f19bd330ffbb2b21b7fda",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/runtime/io.py"
+    },
+    {
+      "bytes": 10839,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/runtime/llm_client.py",
+      "result_bound_overlay": false,
+      "sha256": "d2b515ba7c9df62c7810f3b153fa77c9a7d680a301abe0c94652fc6770587821",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/runtime/llm_client.py"
+    },
+    {
+      "bytes": 3707,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/runtime/logging.py",
+      "result_bound_overlay": false,
+      "sha256": "b04988ac381658568f8a9adb4f844f980dd3edad6565a7ae539b58e1ce9ccc2f",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/runtime/logging.py"
+    },
+    {
+      "bytes": 2161,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/runtime/manifest.py",
+      "result_bound_overlay": false,
+      "sha256": "533d38aa479bd912290c4e98a5e9853b36b4044a420ae617c3ea054e28c9631b",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/runtime/manifest.py"
+    },
+    {
+      "bytes": 1973,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/runtime/paths.py",
+      "result_bound_overlay": false,
+      "sha256": "b498c00efd373a5e5d8727b26dafca32baf9f77cbd075d3ac20e91963a73abf2",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/runtime/paths.py"
+    },
+    {
+      "bytes": 3598,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/runtime/regression.py",
+      "result_bound_overlay": false,
+      "sha256": "8a1f0359013ede4fb8d86ae15096a906eb7294fbc42d0789ba8100bdb3b82db3",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/runtime/regression.py"
+    },
+    {
+      "bytes": 39346,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/schemas.py",
+      "result_bound_overlay": false,
+      "sha256": "16a98106db3bf4761d7786c94a88667cee4247ab558728fa9819671f6ce5ab1c",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/schemas.py"
+    },
+    {
+      "bytes": 2454,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/signals/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "58e623bd4d8adbcbd6125d64bc288e66fb0ace46350c1146fc2374705dd1a557",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/signals/__init__.py"
+    },
+    {
+      "bytes": 300,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/signals/_identity.py",
+      "result_bound_overlay": false,
+      "sha256": "1f492698152c17d5ebcabf5a15852b1062ea6633fc51578919129208293b4747",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/signals/_identity.py"
+    },
+    {
+      "bytes": 7608,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/signals/base.py",
+      "result_bound_overlay": false,
+      "sha256": "ddc12f2cbacafe3a1af8b2b7d3aa5721e84cf04c9c502492208da8cbe82813da",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/signals/base.py"
+    },
+    {
+      "bytes": 6566,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/signals/dependency_router.py",
+      "result_bound_overlay": false,
+      "sha256": "b56b13d71478e2633e19dda31b1c632c037d62eb2ff822dec662bb35b9c8f433",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/signals/dependency_router.py"
+    },
+    {
+      "bytes": 2600,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/signals/no_signal.py",
+      "result_bound_overlay": false,
+      "sha256": "3a7aa429320b028ab51e3f387ba15f44488d5cfabc674341007c8676ef2250ea",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/signals/no_signal.py"
+    },
+    {
+      "bytes": 5608,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/signals/plan_router.py",
+      "result_bound_overlay": false,
+      "sha256": "3e35efd12be5fc2b6b52203faeee83a13cd59d931a6fb5009ef0d99109d35e99",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/signals/plan_router.py"
+    },
+    {
+      "bytes": 17191,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/signals/reasoning_state.py",
+      "result_bound_overlay": false,
+      "sha256": "4530a7a7ae723d6585118e9ecd0086f2ca722497ba4965640b4c0ea0deaaa2bb",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/signals/reasoning_state.py"
+    },
+    {
+      "bytes": 12325,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/signals/retrieval_question.py",
+      "result_bound_overlay": false,
+      "sha256": "4426395fc2c1da1b08d3fb942fb8e49c488a245b2711080cb0fbd63883fdbdc8",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/signals/retrieval_question.py"
+    },
+    {
+      "bytes": 7193,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/signals/router.py",
+      "result_bound_overlay": false,
+      "sha256": "565316fc0d62aaa13806ffd8ff0e6f9a4e977a73452e76783afdc66c8623d679",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/signals/router.py"
+    },
+    {
+      "bytes": 44945,
+      "path": "provenance/state_anchor_intervention/snapshot_src/eager/signals/subquestion_chain.py",
+      "result_bound_overlay": false,
+      "sha256": "81d4cbc3cb6efba1452e2e0f9a88f58c005d72ba161fb395bc2b4fc096204b7f",
+      "source_path": "experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/snapshot_src/eager/signals/subquestion_chain.py"
+    },
+    {
+      "bytes": 506,
+      "path": "prompts/eager_intermediate_answer_system_prompt.md",
+      "result_bound_overlay": false,
+      "sha256": "9b6217cee664478e8bc05737db635b9d7f1bb17ff23b638e756eb79c075102a2",
+      "source_path": "prompts/eager_intermediate_answer_system_prompt.md"
+    },
+    {
+      "bytes": 2749,
+      "path": "prompts/eager_reasoning_state_system_prompt.md",
+      "result_bound_overlay": false,
+      "sha256": "f8737070f5c4022188ff416af3db7b44ca9c34583693e2d86422e04f9e21c6af",
+      "source_path": "prompts/eager_reasoning_state_system_prompt.md"
+    },
+    {
+      "bytes": 751,
+      "path": "prompts/eager_retrieval_question_system_prompt.md",
+      "result_bound_overlay": false,
+      "sha256": "626c77965512effea424e7823bbf9f3f1bef5957a17bf47fc0339be2bc2341b2",
+      "source_path": "prompts/eager_retrieval_question_system_prompt.md"
+    },
+    {
+      "bytes": 1847,
+      "path": "prompts/eager_subquestion_chain_v6_simple_system_prompt.md",
+      "result_bound_overlay": false,
+      "sha256": "043ca83822ad7b6e37809dfd08c39b46185041f10486fe7c242cd482befa00ab",
+      "source_path": "prompts/eager_subquestion_chain_v6_simple_system_prompt.md"
+    },
+    {
+      "bytes": 30,
+      "path": "prompts/gpt_judge_prompt.txt",
+      "result_bound_overlay": false,
+      "sha256": "2ea9d62f6afb86002b7b4cafa6037a6f628f62f8f1df6bf8134e52eb1df6e1c1",
+      "source_path": "prompts/gpt_judge_prompt.txt"
+    },
+    {
+      "bytes": 1651,
+      "path": "prompts/linear_rag_answer_target_slot_system_prompt.txt",
+      "result_bound_overlay": false,
+      "sha256": "61515ef20d94bd3580b68b3f01561cd172f53754c460e6d6396dbcda727e44db",
+      "source_path": "prompts/linear_rag_answer_target_slot_system_prompt.txt"
+    },
+    {
+      "bytes": 372,
+      "path": "requirements/ci-linux-cpu.txt",
+      "result_bound_overlay": false,
+      "sha256": "79cd9d5a1196b701f0b0e3848fd91045586b38ea7e26458e9d426d3fceb9a87d",
+      "source_path": "requirements/ci-linux-cpu.txt"
+    },
+    {
+      "bytes": 2265,
+      "path": "requirements/constraints-py310.txt",
+      "result_bound_overlay": false,
+      "sha256": "232e7cc6952bcdea1807373c419ed18f551df80ffebd0a9843c9e247d38dd429",
+      "source_path": "requirements/constraints-py310.txt"
+    },
+    {
+      "bytes": 1584,
+      "path": "requirements/models.lock.json",
+      "result_bound_overlay": false,
+      "sha256": "69d569abccca71d853fb76e25099ceca4df1a0fec6068c336e508e3f90621212",
+      "source_path": "requirements/models.lock.json"
+    },
+    {
+      "bytes": 376,
+      "path": "requirements/win-cu128.txt",
+      "result_bound_overlay": false,
+      "sha256": "ab0f44a86792831e363c7ff61337a7c7ad3ea4e6c937029ff3d7769fd59e15bc",
+      "source_path": "requirements/win-cu128.txt"
+    },
+    {
+      "bytes": 121,
+      "path": "scripts/eager.py",
+      "result_bound_overlay": false,
+      "sha256": "bea9905cfdc171cdc913a8cb86e319c7a47ad1fc87c9b6fe53e0dad56396437a",
+      "source_path": "scripts/eager.py"
+    },
+    {
+      "bytes": 152,
+      "path": "src/eager/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "49f5aa63b9f22043b715b72cdd3315168e192de84ed061d00879748ef1827de2",
+      "source_path": "src/eager/__init__.py"
+    },
+    {
+      "bytes": 603,
+      "path": "src/eager/answering/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "86dee82dc7c2e6aeb4003a0d51c74645f0a4fe43246c460112086b399ebfca00",
+      "source_path": "src/eager/answering/__init__.py"
+    },
+    {
+      "bytes": 3266,
+      "path": "src/eager/answering/base.py",
+      "result_bound_overlay": false,
+      "sha256": "8a27d62d3636251d1255d44371f08240e28cfc73fea4b45c35447612f5c19e3d",
+      "source_path": "src/eager/answering/base.py"
+    },
+    {
+      "bytes": 5623,
+      "path": "src/eager/answering/openai.py",
+      "result_bound_overlay": false,
+      "sha256": "2549d9b7836e697c52aa3a6b66a1ef68b4d568a55a8221ed0ecdaa1ff6ffff8d",
+      "source_path": "src/eager/answering/openai.py"
+    },
+    {
+      "bytes": 71073,
+      "path": "src/eager/cli.py",
+      "result_bound_overlay": true,
+      "sha256": "a593d73f15ce77105ba3c8eeff30e30b5f32df17f7ba21f11663f9ae368fc52f",
+      "source_path": "src/eager/cli.py"
+    },
+    {
+      "bytes": 23016,
+      "path": "src/eager/config.py",
+      "result_bound_overlay": false,
+      "sha256": "47700199c75d6dc92c4d3c646df9befca8af70f7349fc834d2cb6c3ddb1416d9",
+      "source_path": "src/eager/config.py"
+    },
+    {
+      "bytes": 2155,
+      "path": "src/eager/content_identity.py",
+      "result_bound_overlay": false,
+      "sha256": "fc444d553cb011faad3c627e5e31654e88f0f895cb842a9e15d24fc2904974b9",
+      "source_path": "src/eager/content_identity.py"
+    },
+    {
+      "bytes": 1529,
+      "path": "src/eager/data/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "5dec4efe0b22f16e9935923dc90ccbca6c8bdc4bc6dd053f4472d86f3d13a637",
+      "source_path": "src/eager/data/__init__.py"
+    },
+    {
+      "bytes": 10269,
+      "path": "src/eager/data/base.py",
+      "result_bound_overlay": false,
+      "sha256": "29c16c21f23a6bc4733512b0da87ab1203e713077fb1da2d534eb05a9132d9d5",
+      "source_path": "src/eager/data/base.py"
+    },
+    {
+      "bytes": 4377,
+      "path": "src/eager/data/context.py",
+      "result_bound_overlay": false,
+      "sha256": "6608c8b2c69ebcb5ce644e5325fd6b4d66423aab63fd1d8b74ea40d6f6811b8b",
+      "source_path": "src/eager/data/context.py"
+    },
+    {
+      "bytes": 2777,
+      "path": "src/eager/data/hotpotqa.py",
+      "result_bound_overlay": false,
+      "sha256": "1720505e62f41b33d99ae4d9d673bd32ffb413c6b69987f4dea3c4b69497b658",
+      "source_path": "src/eager/data/hotpotqa.py"
+    },
+    {
+      "bytes": 309,
+      "path": "src/eager/data/identity.py",
+      "result_bound_overlay": false,
+      "sha256": "ce635c47917b61ed3d1e0fc4a60b74a7e906855d364dfa0fc22ea41bbe6bd0b0",
+      "source_path": "src/eager/data/identity.py"
+    },
+    {
+      "bytes": 9043,
+      "path": "src/eager/data/musique.py",
+      "result_bound_overlay": false,
+      "sha256": "29888619dd6ebdbd395e719fd4ffa9123f8fe6b7e98d6cc411890e666af96365",
+      "source_path": "src/eager/data/musique.py"
+    },
+    {
+      "bytes": 18430,
+      "path": "src/eager/data/registry.py",
+      "result_bound_overlay": false,
+      "sha256": "9a7cc1d8397865a83c251db9f5aa85615a132ed5d1e22b407fd14feaa9a85741",
+      "source_path": "src/eager/data/registry.py"
+    },
+    {
+      "bytes": 11195,
+      "path": "src/eager/data/scaling.py",
+      "result_bound_overlay": false,
+      "sha256": "60c4aeab2f9caf6817078ed0fe3a555cd1f9477f78733a4bfcbeb796a2588d33",
+      "source_path": "src/eager/data/scaling.py"
+    },
+    {
+      "bytes": 4583,
+      "path": "src/eager/data/twowiki.py",
+      "result_bound_overlay": false,
+      "sha256": "369c09161b41526ddc2150ccc3ba97ffd06e8e6b51c350961198bb1d01e23bd4",
+      "source_path": "src/eager/data/twowiki.py"
+    },
+    {
+      "bytes": 35914,
+      "path": "src/eager/data/workflow.py",
+      "result_bound_overlay": false,
+      "sha256": "ee72bab852b54d5aa36aa9db552ff0268ec148f3c14a04291498140038c41b16",
+      "source_path": "src/eager/data/workflow.py"
+    },
+    {
+      "bytes": 644,
+      "path": "src/eager/evaluation/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "ac2ce5ddc9997e9dd3d4e85c11c83960bb0c91cbc2f3a49653c6c5b58fc34fc1",
+      "source_path": "src/eager/evaluation/__init__.py"
+    },
+    {
+      "bytes": 2503,
+      "path": "src/eager/evaluation/answer.py",
+      "result_bound_overlay": false,
+      "sha256": "c2c6f2bdd8075f328d400cdf58e32d1460003df7d17ec239964cb16124f7e92b",
+      "source_path": "src/eager/evaluation/answer.py"
+    },
+    {
+      "bytes": 3706,
+      "path": "src/eager/evaluation/judge.py",
+      "result_bound_overlay": false,
+      "sha256": "bf0910c10accd24e14e147577a2aca3fe5291d0cefc0456e94f511ed10528a17",
+      "source_path": "src/eager/evaluation/judge.py"
+    },
+    {
+      "bytes": 2544,
+      "path": "src/eager/evaluation/support.py",
+      "result_bound_overlay": false,
+      "sha256": "fe4fcdfe8ea36ebef67d90007e32ff401684bcc2cc03ca67cb6f6dee06359a65",
+      "source_path": "src/eager/evaluation/support.py"
+    },
+    {
+      "bytes": 541,
+      "path": "src/eager/experiments/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "8044829cc268ca0dcbe07b78dd553c3c1d43917359123fb7995e3afa537d3730",
+      "source_path": "src/eager/experiments/__init__.py"
+    },
+    {
+      "bytes": 44409,
+      "path": "src/eager/experiments/runner.py",
+      "result_bound_overlay": false,
+      "sha256": "297bab033f4acac3ceef845cf168ef8ca6fd9d7b7f94f0afc6bc8b28e8403ee9",
+      "source_path": "src/eager/experiments/runner.py"
+    },
+    {
+      "bytes": 2953,
+      "path": "src/eager/indexing/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "afb8943e9d3b2937c661d0ae83b953815c09e21c8d73e658b07aa143042cc30c",
+      "source_path": "src/eager/indexing/__init__.py"
+    },
+    {
+      "bytes": 11673,
+      "path": "src/eager/indexing/corpus.py",
+      "result_bound_overlay": false,
+      "sha256": "3eff94296739e58f7b626b9c95d5b99003918a40ffb7d4af7e41c0961dac1165",
+      "source_path": "src/eager/indexing/corpus.py"
+    },
+    {
+      "bytes": 22378,
+      "path": "src/eager/indexing/dense.py",
+      "result_bound_overlay": false,
+      "sha256": "d3ee39a71eb5792429f26b767f179709c0a9f60aa6b7b6e825c53528e7714760",
+      "source_path": "src/eager/indexing/dense.py"
+    },
+    {
+      "bytes": 604,
+      "path": "src/eager/indexing/errors.py",
+      "result_bound_overlay": false,
+      "sha256": "660e8e3d0cd2e18a2dc220575993442750b62b294780be0d3c7a53a22b08125d",
+      "source_path": "src/eager/indexing/errors.py"
+    },
+    {
+      "bytes": 8229,
+      "path": "src/eager/indexing/model_registry.py",
+      "result_bound_overlay": false,
+      "sha256": "26fffcbb5fb61f1f3b80ad346de81f02908a3b7d35cc470b855bcc652af2d886",
+      "source_path": "src/eager/indexing/model_registry.py"
+    },
+    {
+      "bytes": 18927,
+      "path": "src/eager/indexing/structured.py",
+      "result_bound_overlay": false,
+      "sha256": "b79bea38179ca7189f300f4c084b80b78e8383ed74a6cb4a9bd1cb4db43e26e0",
+      "source_path": "src/eager/indexing/structured.py"
+    },
+    {
+      "bytes": 14057,
+      "path": "src/eager/indexing/surface_store.py",
+      "result_bound_overlay": false,
+      "sha256": "8d8a2283e1eec8530b07c410958a053f6dd20d6e3c3a597f53e40d2e586b2286",
+      "source_path": "src/eager/indexing/surface_store.py"
+    },
+    {
+      "bytes": 2400,
+      "path": "src/eager/indexing/text_representation.py",
+      "result_bound_overlay": false,
+      "sha256": "14d49f3201bbb3c32c7ce11e45b30ef6151e4819858e86d20ae88c28445b1d16",
+      "source_path": "src/eager/indexing/text_representation.py"
+    },
+    {
+      "bytes": 12551,
+      "path": "src/eager/indexing/tiny.py",
+      "result_bound_overlay": false,
+      "sha256": "c546928be7b5f80b47d1d6f80aec99bbd467bd1b6c66af73be29262178678824",
+      "source_path": "src/eager/indexing/tiny.py"
+    },
+    {
+      "bytes": 726,
+      "path": "src/eager/pipeline/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "d2d96ac0f1f20958566dabd8c19d8260967de24127ccc46ac23583d38678f5fb",
+      "source_path": "src/eager/pipeline/__init__.py"
+    },
+    {
+      "bytes": 1653,
+      "path": "src/eager/pipeline/auto.py",
+      "result_bound_overlay": false,
+      "sha256": "9b80674f750792fdd829e1b8084ea908a47536cc93ecaa0d088c8ee4e2f5fe3f",
+      "source_path": "src/eager/pipeline/auto.py"
+    },
+    {
+      "bytes": 4758,
+      "path": "src/eager/pipeline/engine.py",
+      "result_bound_overlay": false,
+      "sha256": "e2d9dac32f1ca6599a620ab8e677297fefee1aa5657ae68dd92d47abbe9ed2e3",
+      "source_path": "src/eager/pipeline/engine.py"
+    },
+    {
+      "bytes": 477,
+      "path": "src/eager/pipeline/state.py",
+      "result_bound_overlay": false,
+      "sha256": "51a4e00fc73eae06cb9ea43690c035c777a2b90cc600fac46936d4653dead057",
+      "source_path": "src/eager/pipeline/state.py"
+    },
+    {
+      "bytes": 9100,
+      "path": "src/eager/protocol.py",
+      "result_bound_overlay": false,
+      "sha256": "00ebc268dec378bc3576cfc77ba345c0c3a34fa04813938eb59f641a5955c0dd",
+      "source_path": "src/eager/protocol.py"
+    },
+    {
+      "bytes": 1584,
+      "path": "src/eager/retrieval/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "746ba23fa997925546ccd84300ad5a771569a51801c1af8aa156f32bdd31c3b0",
+      "source_path": "src/eager/retrieval/__init__.py"
+    },
+    {
+      "bytes": 3681,
+      "path": "src/eager/retrieval/anchors.py",
+      "result_bound_overlay": false,
+      "sha256": "a4fd0bc19e7403e94e0e9fa9f8d7d5229ea55c74a26fe4c8152acbbfdaf8996d",
+      "source_path": "src/eager/retrieval/anchors.py"
+    },
+    {
+      "bytes": 5166,
+      "path": "src/eager/retrieval/candidates.py",
+      "result_bound_overlay": false,
+      "sha256": "3909a6687d2d73d354bed53d9dce8bef615152f31b0523c2e71bddfa038f5600",
+      "source_path": "src/eager/retrieval/candidates.py"
+    },
+    {
+      "bytes": 4677,
+      "path": "src/eager/retrieval/coarse_ranker.py",
+      "result_bound_overlay": false,
+      "sha256": "cecd96f4f4aa94443f6a034e31baba8b53130d59e7a5916e87e28d5b0b08d438",
+      "source_path": "src/eager/retrieval/coarse_ranker.py"
+    },
+    {
+      "bytes": 3374,
+      "path": "src/eager/retrieval/contracts.py",
+      "result_bound_overlay": false,
+      "sha256": "83190f09294317b3322c1f072e87db2cf589d14ab4dd20cea46f2445ef1dff43",
+      "source_path": "src/eager/retrieval/contracts.py"
+    },
+    {
+      "bytes": 12876,
+      "path": "src/eager/retrieval/entity_mapping.py",
+      "result_bound_overlay": false,
+      "sha256": "3a4f06c7a70e18c2e6f115e2cb4820893d43d6572b5682ab8842c5cdb2c5e730",
+      "source_path": "src/eager/retrieval/entity_mapping.py"
+    },
+    {
+      "bytes": 280,
+      "path": "src/eager/retrieval/errors.py",
+      "result_bound_overlay": false,
+      "sha256": "97489f3c0edb722c72565cca2027d0662a76cb37d23a1c9017dd0ac291ee4b96",
+      "source_path": "src/eager/retrieval/errors.py"
+    },
+    {
+      "bytes": 4315,
+      "path": "src/eager/retrieval/hierarchical_refiner.py",
+      "result_bound_overlay": false,
+      "sha256": "1558ce86c0f70cc1508f5757c2de3c369e40fff3570273aa60238caa7c6d7be0",
+      "source_path": "src/eager/retrieval/hierarchical_refiner.py"
+    },
+    {
+      "bytes": 15761,
+      "path": "src/eager/retrieval/kernel.py",
+      "result_bound_overlay": true,
+      "sha256": "867c86c1e34e155acf035acb6da927b360b3e315112d91a83e3f634a9271e73d",
+      "source_path": "src/eager/retrieval/kernel.py"
+    },
+    {
+      "bytes": 5036,
+      "path": "src/eager/retrieval/reranker.py",
+      "result_bound_overlay": false,
+      "sha256": "915e66f1dab030a49df486ba5847e26a1b543c389458ee9b9708f23c904acd60",
+      "source_path": "src/eager/retrieval/reranker.py"
+    },
+    {
+      "bytes": 8779,
+      "path": "src/eager/retrieval/semantic.py",
+      "result_bound_overlay": false,
+      "sha256": "efc6fb604ab10b266343821c034ee6f26a5092038c546a5ed88aa839e9d17b06",
+      "source_path": "src/eager/retrieval/semantic.py"
+    },
+    {
+      "bytes": 105,
+      "path": "src/eager/runtime/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "0df5935c5268641d7d80870fcc17123ad99953f1dac46e3b4e26161f66e1b403",
+      "source_path": "src/eager/runtime/__init__.py"
+    },
+    {
+      "bytes": 3664,
+      "path": "src/eager/runtime/checkpoint.py",
+      "result_bound_overlay": false,
+      "sha256": "3c5a35dce23a78e0348c8cf70190a589b92d586b243ac68999c4ca90daa207a7",
+      "source_path": "src/eager/runtime/checkpoint.py"
+    },
+    {
+      "bytes": 3833,
+      "path": "src/eager/runtime/io.py",
+      "result_bound_overlay": false,
+      "sha256": "2c0b6546212d167bbf12b07518d866bdee6b60ef639f19bd330ffbb2b21b7fda",
+      "source_path": "src/eager/runtime/io.py"
+    },
+    {
+      "bytes": 10839,
+      "path": "src/eager/runtime/llm_client.py",
+      "result_bound_overlay": false,
+      "sha256": "d2b515ba7c9df62c7810f3b153fa77c9a7d680a301abe0c94652fc6770587821",
+      "source_path": "src/eager/runtime/llm_client.py"
+    },
+    {
+      "bytes": 3707,
+      "path": "src/eager/runtime/logging.py",
+      "result_bound_overlay": false,
+      "sha256": "b04988ac381658568f8a9adb4f844f980dd3edad6565a7ae539b58e1ce9ccc2f",
+      "source_path": "src/eager/runtime/logging.py"
+    },
+    {
+      "bytes": 2161,
+      "path": "src/eager/runtime/manifest.py",
+      "result_bound_overlay": false,
+      "sha256": "533d38aa479bd912290c4e98a5e9853b36b4044a420ae617c3ea054e28c9631b",
+      "source_path": "src/eager/runtime/manifest.py"
+    },
+    {
+      "bytes": 1973,
+      "path": "src/eager/runtime/paths.py",
+      "result_bound_overlay": false,
+      "sha256": "b498c00efd373a5e5d8727b26dafca32baf9f77cbd075d3ac20e91963a73abf2",
+      "source_path": "src/eager/runtime/paths.py"
+    },
+    {
+      "bytes": 3598,
+      "path": "src/eager/runtime/regression.py",
+      "result_bound_overlay": false,
+      "sha256": "8a1f0359013ede4fb8d86ae15096a906eb7294fbc42d0789ba8100bdb3b82db3",
+      "source_path": "src/eager/runtime/regression.py"
+    },
+    {
+      "bytes": 39346,
+      "path": "src/eager/schemas.py",
+      "result_bound_overlay": false,
+      "sha256": "16a98106db3bf4761d7786c94a88667cee4247ab558728fa9819671f6ce5ab1c",
+      "source_path": "src/eager/schemas.py"
+    },
+    {
+      "bytes": 2454,
+      "path": "src/eager/signals/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "58e623bd4d8adbcbd6125d64bc288e66fb0ace46350c1146fc2374705dd1a557",
+      "source_path": "src/eager/signals/__init__.py"
+    },
+    {
+      "bytes": 300,
+      "path": "src/eager/signals/_identity.py",
+      "result_bound_overlay": false,
+      "sha256": "1f492698152c17d5ebcabf5a15852b1062ea6633fc51578919129208293b4747",
+      "source_path": "src/eager/signals/_identity.py"
+    },
+    {
+      "bytes": 7608,
+      "path": "src/eager/signals/base.py",
+      "result_bound_overlay": false,
+      "sha256": "ddc12f2cbacafe3a1af8b2b7d3aa5721e84cf04c9c502492208da8cbe82813da",
+      "source_path": "src/eager/signals/base.py"
+    },
+    {
+      "bytes": 6566,
+      "path": "src/eager/signals/dependency_router.py",
+      "result_bound_overlay": false,
+      "sha256": "b56b13d71478e2633e19dda31b1c632c037d62eb2ff822dec662bb35b9c8f433",
+      "source_path": "src/eager/signals/dependency_router.py"
+    },
+    {
+      "bytes": 2600,
+      "path": "src/eager/signals/no_signal.py",
+      "result_bound_overlay": false,
+      "sha256": "3a7aa429320b028ab51e3f387ba15f44488d5cfabc674341007c8676ef2250ea",
+      "source_path": "src/eager/signals/no_signal.py"
+    },
+    {
+      "bytes": 5608,
+      "path": "src/eager/signals/plan_router.py",
+      "result_bound_overlay": false,
+      "sha256": "3e35efd12be5fc2b6b52203faeee83a13cd59d931a6fb5009ef0d99109d35e99",
+      "source_path": "src/eager/signals/plan_router.py"
+    },
+    {
+      "bytes": 17191,
+      "path": "src/eager/signals/reasoning_state.py",
+      "result_bound_overlay": false,
+      "sha256": "4530a7a7ae723d6585118e9ecd0086f2ca722497ba4965640b4c0ea0deaaa2bb",
+      "source_path": "src/eager/signals/reasoning_state.py"
+    },
+    {
+      "bytes": 12325,
+      "path": "src/eager/signals/retrieval_question.py",
+      "result_bound_overlay": false,
+      "sha256": "4426395fc2c1da1b08d3fb942fb8e49c488a245b2711080cb0fbd63883fdbdc8",
+      "source_path": "src/eager/signals/retrieval_question.py"
+    },
+    {
+      "bytes": 7193,
+      "path": "src/eager/signals/router.py",
+      "result_bound_overlay": false,
+      "sha256": "565316fc0d62aaa13806ffd8ff0e6f9a4e977a73452e76783afdc66c8623d679",
+      "source_path": "src/eager/signals/router.py"
+    },
+    {
+      "bytes": 44945,
+      "path": "src/eager/signals/subquestion_chain.py",
+      "result_bound_overlay": false,
+      "sha256": "81d4cbc3cb6efba1452e2e0f9a88f58c005d72ba161fb395bc2b4fc096204b7f",
+      "source_path": "src/eager/signals/subquestion_chain.py"
+    },
+    {
+      "bytes": 5507,
+      "path": "tests/contract/test_controller_contract.py",
+      "result_bound_overlay": false,
+      "sha256": "c41ae6f3fd9c9c34aeaa225ae9659ce9769571545690112e9b6bda7df7199ba8",
+      "source_path": "tests/contract/test_controller_contract.py"
+    },
+    {
+      "bytes": 8789,
+      "path": "tests/contract/test_data_adapter_edges.py",
+      "result_bound_overlay": false,
+      "sha256": "cce8b92d1646b9664deff16809a91e4efb94d8a9a9c89c741cbd8faa0e5d9909",
+      "source_path": "tests/contract/test_data_adapter_edges.py"
+    },
+    {
+      "bytes": 11674,
+      "path": "tests/contract/test_data_adapters.py",
+      "result_bound_overlay": false,
+      "sha256": "f315959ced72fc6abf7cb8b122236a62a4ffc8ccd639006188318366602c84ee",
+      "source_path": "tests/contract/test_data_adapters.py"
+    },
+    {
+      "bytes": 25275,
+      "path": "tests/contract/test_experiment_runner.py",
+      "result_bound_overlay": false,
+      "sha256": "0135edc4484281e84b823ddb23b9a963c8670de238cbc674c73f5884a491bf52",
+      "source_path": "tests/contract/test_experiment_runner.py"
+    },
+    {
+      "bytes": 8497,
+      "path": "tests/contract/test_indexing_pipeline.py",
+      "result_bound_overlay": false,
+      "sha256": "3c9f28bd3c0dcd2c3bd5d65435ea3976be4553be9f15b3f3bb512563535d753a",
+      "source_path": "tests/contract/test_indexing_pipeline.py"
+    },
+    {
+      "bytes": 6224,
+      "path": "tests/contract/test_llm_client.py",
+      "result_bound_overlay": false,
+      "sha256": "29c86a1788f05163fb7bbdb3a51a9c41b0082b06701511a28ff79ea3e6ac60a4",
+      "source_path": "tests/contract/test_llm_client.py"
+    },
+    {
+      "bytes": 34073,
+      "path": "tests/contract/test_phase4_routing.py",
+      "result_bound_overlay": false,
+      "sha256": "b68287b4bfdd1618e0a7e9affbf132e6e8a19b2e8f571a460dacb720cf52ab31",
+      "source_path": "tests/contract/test_phase4_routing.py"
+    },
+    {
+      "bytes": 16081,
+      "path": "tests/contract/test_retrieval_engine.py",
+      "result_bound_overlay": false,
+      "sha256": "71a7c3bdab9ebefdc36fc99405e21d170209abd88c3aa437f5a1db1d980fcc9a",
+      "source_path": "tests/contract/test_retrieval_engine.py"
+    },
+    {
+      "bytes": 17464,
+      "path": "tests/contract/test_v1_ablation_wrappers.py",
+      "result_bound_overlay": false,
+      "sha256": "944687fb362b98b31633004123f511e9a8a1f8e11788337f749c1a8912801b32",
+      "source_path": "tests/contract/test_v1_ablation_wrappers.py"
+    },
+    {
+      "bytes": 8410,
+      "path": "tests/contract/test_wsdm_data_construction.py",
+      "result_bound_overlay": false,
+      "sha256": "904369d9fe3bd56dbe73ba63c2c6e84acd8ba69e85ccfac15d067619c2c1fbe3",
+      "source_path": "tests/contract/test_wsdm_data_construction.py"
+    },
+    {
+      "bytes": 1951,
+      "path": "tests/fixtures/data/adapter_rows.json",
+      "result_bound_overlay": false,
+      "sha256": "8c9c24a9d39e16449cd86364ef4e9be66aa1b169629baeebf3fee69499b778ab",
+      "source_path": "tests/fixtures/data/adapter_rows.json"
+    },
+    {
+      "bytes": 584,
+      "path": "tests/fixtures/indexing/corpus.jsonl",
+      "result_bound_overlay": false,
+      "sha256": "f1cfa3b52192d4f2c95983e9b685cbe30505abf16ab00e4e5eabd300329e5d87",
+      "source_path": "tests/fixtures/indexing/corpus.jsonl"
+    },
+    {
+      "bytes": 9470,
+      "path": "tests/unit/test_answer_evaluation.py",
+      "result_bound_overlay": false,
+      "sha256": "bcd5af1c15b103b7b893b0ee25880b5a6f9424b3af212aedc4dcea31fbf4a42f",
+      "source_path": "tests/unit/test_answer_evaluation.py"
+    },
+    {
+      "bytes": 10665,
+      "path": "tests/unit/test_config.py",
+      "result_bound_overlay": false,
+      "sha256": "6c5a990f2ea16252498f1f38ed9618ebf8dc208c50a0585d5c09c7616791e4a1",
+      "source_path": "tests/unit/test_config.py"
+    },
+    {
+      "bytes": 4092,
+      "path": "tests/unit/test_dependency_router.py",
+      "result_bound_overlay": false,
+      "sha256": "04718907dc253d222c4ff903c033685656108ac88328bd2861e2ec3e56156f94",
+      "source_path": "tests/unit/test_dependency_router.py"
+    },
+    {
+      "bytes": 2164,
+      "path": "tests/unit/test_hierarchical_refiner.py",
+      "result_bound_overlay": false,
+      "sha256": "49bce9327cf6dbc4076f7844a4041a71550ca4f23b4d59372af79e6f7da7287c",
+      "source_path": "tests/unit/test_hierarchical_refiner.py"
+    },
+    {
+      "bytes": 10501,
+      "path": "tests/unit/test_indexing_contracts.py",
+      "result_bound_overlay": false,
+      "sha256": "59afeb21caac2254ef9c952ec6184390a2b2945aaf9a43e1173c8613516e7891",
+      "source_path": "tests/unit/test_indexing_contracts.py"
+    },
+    {
+      "bytes": 2711,
+      "path": "tests/unit/test_plan_router.py",
+      "result_bound_overlay": false,
+      "sha256": "a6e2a194d51ab1ce19fcc836841bac5433244690a938f91f0683b8e219333005",
+      "source_path": "tests/unit/test_plan_router.py"
+    },
+    {
+      "bytes": 2320,
+      "path": "tests/unit/test_protocol.py",
+      "result_bound_overlay": false,
+      "sha256": "31442d010d357d2ac24feb9943770c7201f005acce2178477d3e25a329f09c86",
+      "source_path": "tests/unit/test_protocol.py"
+    },
+    {
+      "bytes": 14193,
+      "path": "tests/unit/test_reasoning_state_signal.py",
+      "result_bound_overlay": false,
+      "sha256": "d2ebe2b970f3a9df790abd99f9f9b8d7e5030360c4973f33a4dc0b1bafcf8be2",
+      "source_path": "tests/unit/test_reasoning_state_signal.py"
+    },
+    {
+      "bytes": 2626,
+      "path": "tests/unit/test_reranker.py",
+      "result_bound_overlay": false,
+      "sha256": "c738d93ea8c1e131af048816c870b56e2490ffa9df7074316ba1c4896c357d08",
+      "source_path": "tests/unit/test_reranker.py"
+    },
+    {
+      "bytes": 3357,
+      "path": "tests/unit/test_retrieval_core.py",
+      "result_bound_overlay": false,
+      "sha256": "9fc9bd80d0bccf03a27043c4ed3d4b26b2c482fcac134e4d0ec4dc112ab6ac29",
+      "source_path": "tests/unit/test_retrieval_core.py"
+    },
+    {
+      "bytes": 3049,
+      "path": "tests/unit/test_runtime_core.py",
+      "result_bound_overlay": false,
+      "sha256": "338d32007fd15dd7bc06da87ae9eca62f3617d69622f89fd048dd2519b51828e",
+      "source_path": "tests/unit/test_runtime_core.py"
+    },
+    {
+      "bytes": 6243,
+      "path": "tests/unit/test_schemas.py",
+      "result_bound_overlay": false,
+      "sha256": "fd90be48ca355db65cd0dcbcceb09fc4d1ba53d94c88f75a9daf40e8e49031b9",
+      "source_path": "tests/unit/test_schemas.py"
+    },
+    {
+      "bytes": 2068,
+      "path": "tests/unit/test_support_evaluation.py",
+      "result_bound_overlay": false,
+      "sha256": "5b72b5844dca142295ab9736f02c69386dfac6fea8fd4d74648169a45022e0b9",
+      "source_path": "tests/unit/test_support_evaluation.py"
+    },
+    {
+      "bytes": 1373,
+      "path": "pyproject.toml",
+      "result_bound_overlay": false,
+      "sha256": "de83e72b37c8e70f5396968d97f4cee68dbb78a10d9573bf88c34f2968b1231c",
+      "source_path": "wsdm/ANONYMOUS_EAGER_PYPROJECT.toml"
+    },
+    {
+      "bytes": 347,
+      "path": ".gitignore",
+      "result_bound_overlay": false,
+      "sha256": "7a69c42ac1fdcd3ec18eb26ea2b830c2106897af9431618ad589607f0d6ce3c6",
+      "source_path": "wsdm/ANONYMOUS_GITIGNORE"
+    },
+    {
+      "bytes": 5425,
+      "path": "README.md",
+      "result_bound_overlay": false,
+      "sha256": "3c9be6d679d99333dcfbc607fb214077808745dc0111ec9a54be93aa60055495",
+      "source_path": "wsdm/ANONYMOUS_README.md"
+    },
+    {
+      "bytes": 7444,
+      "path": "analysis/verify.py",
+      "result_bound_overlay": false,
+      "sha256": "2c3e00f989e02c0b26a1d265ad23a8f717fc717cf34c96e1b817f1dd1440b914",
+      "source_path": "wsdm/artifact_analysis/verify_eager_minimal.py"
+    },
+    {
+      "bytes": 580,
+      "path": "wsdm/config/dataset_anomalies.json",
+      "result_bound_overlay": false,
+      "sha256": "8b5233d16cd6cf1ddc74936c8415c615a7858abe18db87e28bcb34673f7446b5",
+      "source_path": "wsdm/config/dataset_anomalies.json"
+    },
+    {
+      "bytes": 3600,
+      "path": "wsdm/config/experiment_protocol.json",
+      "result_bound_overlay": false,
+      "sha256": "c6b08e905188c7f6a9c9df223a76269a90ceef81cdc29a7c1663720cbd6ac6aa",
+      "source_path": "wsdm/config/experiment_protocol.json"
+    },
+    {
+      "bytes": 7747,
+      "path": "wsdm/config/release_manifest.json",
+      "result_bound_overlay": false,
+      "sha256": "55007da97443bdc7fca00fe54fad059d4a4b94330601e9a8c4c1e5adbe6b0a00",
+      "source_path": "wsdm/config/release_manifest.json"
+    },
+    {
+      "bytes": 11630,
+      "path": "wsdm/config/split_registry.json",
+      "result_bound_overlay": false,
+      "sha256": "a7aa0b94e51a831c7f6d5469db90206acbe67afb1177c3fd40c95ed7eefbe35d",
+      "source_path": "wsdm/config/split_registry.json"
+    },
+    {
+      "bytes": 612,
+      "path": "wsdm/fixtures/development/annotations.json",
+      "result_bound_overlay": false,
+      "sha256": "4ca6c8966df7d777d67289bf47d1439dc0942aa1dc0d31fe67937d8432472fe4",
+      "source_path": "wsdm/fixtures/development/annotations.json"
+    },
+    {
+      "bytes": 1350,
+      "path": "wsdm/fixtures/development/corpus.jsonl",
+      "result_bound_overlay": false,
+      "sha256": "be6b11e17225fe8059a879f4871243519568105de8eac1c3e64e9f257fd869ab",
+      "source_path": "wsdm/fixtures/development/corpus.jsonl"
+    },
+    {
+      "bytes": 780,
+      "path": "wsdm/fixtures/development/inference.json",
+      "result_bound_overlay": false,
+      "sha256": "409e1e89e89dde9ae7adafb75ba6c863befe013c83571bdc086d026bcd1ffc02",
+      "source_path": "wsdm/fixtures/development/inference.json"
+    },
+    {
+      "bytes": 764,
+      "path": "src/eager_baselines/__init__.py",
+      "result_bound_overlay": false,
+      "sha256": "b296ac021696585d7ed4e0cd7967b313bb48efeeb5645604e102a4c17f529761",
+      "source_path": "wsdm/reproduction/eager_only_compat/src/eager_baselines/__init__.py"
+    },
+    {
+      "bytes": 2049,
+      "path": "provenance/eager_v1_execution_snapshot/README.md",
+      "result_bound_overlay": false,
+      "sha256": "02011236d4e27870a408216f11647d839094b02739903adb1dd366c1664ea72f",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/README.md"
+    },
+    {
+      "bytes": 10027,
+      "path": "provenance/eager_v1_execution_snapshot/ablation_base_wrappers/experiments_sandbox/20260728_027_hotpotqa_rq_v1_full1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "2fd77f03d39c4baaae5d7c90dc872d36b808dc6803a09d29f6882d8dc856b076",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/ablation_base_wrappers/experiments_sandbox/20260728_027_hotpotqa_rq_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10910,
+      "path": "provenance/eager_v1_execution_snapshot/ablation_base_wrappers/experiments_sandbox/20260728_028_hotpotqa_sc_v1_full1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "6c692f4d6797bd095fd000836bbac7748fcdcc459ea12429249c114c38ad9326",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/ablation_base_wrappers/experiments_sandbox/20260728_028_hotpotqa_sc_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10893,
+      "path": "provenance/eager_v1_execution_snapshot/ablation_base_wrappers/experiments_sandbox/20260728_029_2wiki_rq_v1_full1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "fd7fcf5645a6d4f8244b6e74f7cac5b7a096197aeb9cf0df893cd04a4e0f4794",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/ablation_base_wrappers/experiments_sandbox/20260728_029_2wiki_rq_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10902,
+      "path": "provenance/eager_v1_execution_snapshot/ablation_base_wrappers/experiments_sandbox/20260728_030_2wiki_sc_v1_full1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "41cf05c77879981d43a13f75ee5eb7c2d3b12cfb448dd805b06569c1bb4fd61a",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/ablation_base_wrappers/experiments_sandbox/20260728_030_2wiki_sc_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10900,
+      "path": "provenance/eager_v1_execution_snapshot/ablation_base_wrappers/experiments_sandbox/20260728_031_musique_rq_v1_full1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "bd588703815b27f0818a9b7584a705923d27d413a08319bcf57174bc7babcbcf",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/ablation_base_wrappers/experiments_sandbox/20260728_031_musique_rq_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10908,
+      "path": "provenance/eager_v1_execution_snapshot/ablation_base_wrappers/experiments_sandbox/20260728_032_musique_sc_v1_full1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "f6d1b87d8f1c5d4a41ff72e31af041ba3d68293c6d96da51d5fcd7f3372d4767",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/ablation_base_wrappers/experiments_sandbox/20260728_032_musique_sc_v1_full1000/run.py"
+    },
+    {
+      "bytes": 34977,
+      "path": "provenance/eager_v1_execution_snapshot/checkpoint_export_manifest.json",
+      "result_bound_overlay": false,
+      "sha256": "71ee36fa8e6729574c59284f6d38372a4956b18e076fb9a7eea1ca8e2e01a5ab",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/checkpoint_export_manifest.json"
+    },
+    {
+      "bytes": 225,
+      "path": "configs/llm_config.v1.example.json",
+      "result_bound_overlay": false,
+      "sha256": "8de8e708ec66d00d179aa5259aebf4ae3b4e883187c15b495355e514747d8abf",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/llm_config.v1.example.json"
+    },
+    {
+      "bytes": 10027,
+      "path": "provenance/eager_v1_execution_snapshot/main_wrappers_executed/experiments_sandbox/20260728_027_hotpotqa_rq_v1_full1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "2fd77f03d39c4baaae5d7c90dc872d36b808dc6803a09d29f6882d8dc856b076",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/main_wrappers_executed/experiments_sandbox/20260728_027_hotpotqa_rq_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10911,
+      "path": "provenance/eager_v1_execution_snapshot/main_wrappers_executed/experiments_sandbox/20260728_028_hotpotqa_sc_v1_full1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "9d938a0871c112d295df586e9d9dea57ba92a33be193842517e2ff5189147c6c",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/main_wrappers_executed/experiments_sandbox/20260728_028_hotpotqa_sc_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10894,
+      "path": "provenance/eager_v1_execution_snapshot/main_wrappers_executed/experiments_sandbox/20260728_029_2wiki_rq_v1_full1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "35d51fc23961a94e350de9688522a06194f0dc8a49297d93f2a27f8cc2088abb",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/main_wrappers_executed/experiments_sandbox/20260728_029_2wiki_rq_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10903,
+      "path": "provenance/eager_v1_execution_snapshot/main_wrappers_executed/experiments_sandbox/20260728_030_2wiki_sc_v1_full1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "ddd9c618b7b78dd35c19c3bd139e8d015469254a932f592333fe48141f932d38",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/main_wrappers_executed/experiments_sandbox/20260728_030_2wiki_sc_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10901,
+      "path": "provenance/eager_v1_execution_snapshot/main_wrappers_executed/experiments_sandbox/20260728_031_musique_rq_v1_full1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "0e6480ea408c23bd44fb1c1135f5263e19abe2bbc801066dd748b15cf4b34c14",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/main_wrappers_executed/experiments_sandbox/20260728_031_musique_rq_v1_full1000/run.py"
+    },
+    {
+      "bytes": 10909,
+      "path": "provenance/eager_v1_execution_snapshot/main_wrappers_executed/experiments_sandbox/20260728_032_musique_sc_v1_full1000/run.py",
+      "result_bound_overlay": false,
+      "sha256": "891671924d0a6285cfb75a46f725978b76f0cfa88398d8296993eb7a63477e4e",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/main_wrappers_executed/experiments_sandbox/20260728_032_musique_sc_v1_full1000/run.py"
+    },
+    {
+      "bytes": 6357,
+      "path": "provenance/eager_v1_execution_snapshot/manifest.json",
+      "result_bound_overlay": false,
+      "sha256": "0140f7c5e78d9a23dbe27c5c6a9c5c859c77824b837324ffcb32a34f858cf0d6",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/manifest.json"
+    },
+    {
+      "bytes": 3269,
+      "path": "wsdm/reproduction/eager_v1_execution_snapshot/root_overlay/configs/wsdm/base.json",
+      "result_bound_overlay": false,
+      "sha256": "20728f1fc9ce552820d3c288b040474e6553d675d0db0ca82bb659f3378b538b",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/root_overlay/configs/wsdm/base.json"
+    },
+    {
+      "bytes": 71073,
+      "path": "wsdm/reproduction/eager_v1_execution_snapshot/root_overlay/src/eager/cli.py",
+      "result_bound_overlay": false,
+      "sha256": "a593d73f15ce77105ba3c8eeff30e30b5f32df17f7ba21f11663f9ae368fc52f",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/root_overlay/src/eager/cli.py"
+    },
+    {
+      "bytes": 15761,
+      "path": "wsdm/reproduction/eager_v1_execution_snapshot/root_overlay/src/eager/retrieval/kernel.py",
+      "result_bound_overlay": false,
+      "sha256": "867c86c1e34e155acf035acb6da927b360b3e315112d91a83e3f634a9271e73d",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/root_overlay/src/eager/retrieval/kernel.py"
+    },
+    {
+      "bytes": 2420,
+      "path": "scripts/select_eager_v1_protocol_snapshot.py",
+      "result_bound_overlay": false,
+      "sha256": "40ad2ea34e79fbe3d58b716cef514b89342713bef901cc5025c1d5483a75290b",
+      "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/select_protocol_snapshot.py"
+    },
+    {
+      "bytes": 1783,
+      "path": "results/eager_anchor_structure_analysis_20260817/anchor_source_first_hit.csv",
+      "result_bound_overlay": false,
+      "sha256": "a8c003605499f805c0d40580244a0033ae919089508d9a151879dc19b6f6fa0e",
+      "source_path": "wsdm/results/eager_anchor_structure_analysis_20260817/anchor_source_first_hit.csv"
+    },
+    {
+      "bytes": 7739,
+      "path": "results/eager_anchor_structure_analysis_20260817/eager_vs_standalone_by_structure.csv",
+      "result_bound_overlay": false,
+      "sha256": "540af3a363c303ccbc12a6417edb41fb3673840db0fdab07cd3818a588330320",
+      "source_path": "wsdm/results/eager_anchor_structure_analysis_20260817/eager_vs_standalone_by_structure.csv"
+    },
+    {
+      "bytes": 5313,
+      "path": "results/eager_anchor_structure_analysis_20260817/manifest.json",
+      "result_bound_overlay": false,
+      "sha256": "b1d148c5c29ce400b907731651fb81a388d92cf3ab64c7d31a5c24f2ef95f6de",
+      "source_path": "wsdm/results/eager_anchor_structure_analysis_20260817/manifest.json"
+    },
+    {
+      "bytes": 2409,
+      "path": "results/eager_anchor_structure_analysis_20260817/matched_evidence_quality_at5.csv",
+      "result_bound_overlay": false,
+      "sha256": "d7fcfa1acf5c96973b25c9b80da168d2f58294c495addf62bf83522a02f74e29",
+      "source_path": "wsdm/results/eager_anchor_structure_analysis_20260817/matched_evidence_quality_at5.csv"
+    },
+    {
+      "bytes": 1190,
+      "path": "results/eager_submission_tables_20260817/README.md",
+      "result_bound_overlay": false,
+      "sha256": "f6a2f20115405c3aa78b23e8c2681e7d8febe8067b80d081a1b4f3aa26d7002c",
+      "source_path": "wsdm/results/eager_submission_tables_20260817/README.md"
+    },
+    {
+      "bytes": 1462,
+      "path": "results/eager_submission_tables_20260817/stepwise_system_boundaries.csv",
+      "result_bound_overlay": false,
+      "sha256": "87b1c8e77dcdc037d467935e4ec7124cf8f65a206854f4bab1d04487bbad7e2f",
+      "source_path": "wsdm/results/eager_submission_tables_20260817/stepwise_system_boundaries.csv"
+    },
+    {
+      "bytes": 7675,
+      "path": "results/eager_v1_component_ablation_20260730/absolute_results.csv",
+      "result_bound_overlay": false,
+      "sha256": "73389c1bde73ed8561967c3daa020d6d85003ce14add0ed4cb98dba0148f9f4e",
+      "source_path": "wsdm/results/eager_v1_component_ablation_20260730/absolute_results.csv"
+    },
+    {
+      "bytes": 2316,
+      "path": "results/eager_v1_component_ablation_20260730/component_macro.csv",
+      "result_bound_overlay": false,
+      "sha256": "02297a89f8314c24f2d75a3e2f8fcaed2dff9f5819f0570aec1e8a3584d52d9f",
+      "source_path": "wsdm/results/eager_v1_component_ablation_20260730/component_macro.csv"
+    },
+    {
+      "bytes": 569,
+      "path": "results/eager_v1_component_ablation_20260730/manifest.json",
+      "result_bound_overlay": false,
+      "sha256": "3e71c63bc9ef60e000b8cbaee1584d23898a24ad4053eb4a887c6585a9e3acbe",
+      "source_path": "wsdm/results/eager_v1_component_ablation_20260730/manifest.json"
+    },
+    {
+      "bytes": 19766,
+      "path": "results/eager_v1_component_ablation_20260730/paired_deltas.csv",
+      "result_bound_overlay": false,
+      "sha256": "48c3437f8dbd9fc5c4273d2807c382c5589526261750e77c6ae46fd9b0238b35",
+      "source_path": "wsdm/results/eager_v1_component_ablation_20260730/paired_deltas.csv"
+    },
+    {
+      "bytes": 10450,
+      "path": "results/eager_v1_component_ablation_holm21_20260818/holm21_summary.json",
+      "result_bound_overlay": false,
+      "sha256": "db3da93264f19b4ec393d7e82889a8bb803e980b5ac71a5cef0359f8b62fc761",
+      "source_path": "wsdm/results/eager_v1_component_ablation_holm21_20260818/holm21_summary.json"
+    },
+    {
+      "bytes": 503,
+      "path": "results/eager_v1_component_ablation_holm21_20260818/holm21_summary.md",
+      "result_bound_overlay": false,
+      "sha256": "26058ca926b15c7a7dbef5146419361bf6da683c770aaf46bb20269873765010",
+      "source_path": "wsdm/results/eager_v1_component_ablation_holm21_20260818/holm21_summary.md"
+    },
+    {
+      "bytes": 2601,
+      "path": "results/eager_v1_component_ablation_holm21_20260818/state_anchor_comparison.json",
+      "result_bound_overlay": false,
+      "sha256": "2a97da06e4396648deafd47e4c836d652b8fbea9b311369f08fdc861f3a6ed36",
+      "source_path": "wsdm/results/eager_v1_component_ablation_holm21_20260818/state_anchor_comparison.json"
+    },
+    {
+      "bytes": 518,
+      "path": "results/eager_v1_component_ablation_holm21_20260818/state_anchor_comparison.md",
+      "result_bound_overlay": false,
+      "sha256": "512bc225851108c7d11115c1fd5f5dc623d3ca76cfab904898366223156538d7",
+      "source_path": "wsdm/results/eager_v1_component_ablation_holm21_20260818/state_anchor_comparison.md"
+    },
+    {
+      "bytes": 5738,
+      "path": "results/eager_v1_main1000_20260728/README.md",
+      "result_bound_overlay": false,
+      "sha256": "0b18cc2070c8fcd1b2abd42d07d78dd70f7b9d6b02c49f0df88cb0046e9113a3",
+      "source_path": "wsdm/results/eager_v1_main1000_20260728/README.md"
+    },
+    {
+      "bytes": 5058,
+      "path": "results/eager_v1_main1000_20260728/VERIFICATION.md",
+      "result_bound_overlay": false,
+      "sha256": "e1ed57c8538b7ac7a08122789b6aafecc3a635a5712a93bec5957c70ff51658a",
+      "source_path": "wsdm/results/eager_v1_main1000_20260728/VERIFICATION.md"
+    },
+    {
+      "bytes": 449,
+      "path": "results/eager_v1_main1000_20260728/evidence_quality_at5.csv",
+      "result_bound_overlay": false,
+      "sha256": "abdd146d53e3c52fe31d13486f3e4e1c1b75c3bbbc4ee102ef5a56513fbd262d",
+      "source_path": "wsdm/results/eager_v1_main1000_20260728/evidence_quality_at5.csv"
+    },
+    {
+      "bytes": 872,
+      "path": "results/eager_v1_main1000_20260728/main_results.csv",
+      "result_bound_overlay": false,
+      "sha256": "8a3bf8f47d4cd4390071539dca36cbe394499c6d1b69262ead247766d22685f7",
+      "source_path": "wsdm/results/eager_v1_main1000_20260728/main_results.csv"
+    },
+    {
+      "bytes": 5479,
+      "path": "results/eager_v1_main1000_20260728/manifest.json",
+      "result_bound_overlay": false,
+      "sha256": "3ec794b715977d4659387790038d86c5820ca85aeb99792509be930fd118584b",
+      "source_path": "wsdm/results/eager_v1_main1000_20260728/manifest.json"
+    },
+    {
+      "bytes": 689,
+      "path": "results/eager_v1_main1000_20260728/terminal_retention_audit.csv",
+      "result_bound_overlay": false,
+      "sha256": "0bf8093e7c2ffa45a73c94e54437d9e59b8d233e7461b4b0b055dc48678e21d4",
+      "source_path": "wsdm/results/eager_v1_main1000_20260728/terminal_retention_audit.csv"
+    },
+    {
+      "bytes": 2751,
+      "path": "results/eager_v1_question_only_same_stack_20260805/absolute_results.csv",
+      "result_bound_overlay": false,
+      "sha256": "555fdd8cfa1e0eac8d7d931039a535258bb1695ca9d509df72fefef0c2d0d501",
+      "source_path": "wsdm/results/eager_v1_question_only_same_stack_20260805/absolute_results.csv"
+    },
+    {
+      "bytes": 541,
+      "path": "results/eager_v1_question_only_same_stack_20260805/manifest.json",
+      "result_bound_overlay": false,
+      "sha256": "a3622e5ffea50662142a3e1ea0282b5b924346a0d0a63cc1d678a2c616404025",
+      "source_path": "wsdm/results/eager_v1_question_only_same_stack_20260805/manifest.json"
+    },
+    {
+      "bytes": 3216,
+      "path": "results/eager_v1_question_only_same_stack_20260805/paired_deltas.csv",
+      "result_bound_overlay": false,
+      "sha256": "1f374725082ca49c3f01853619cd2c0748b53029ba50b50af7f59afd8f2d8853",
+      "source_path": "wsdm/results/eager_v1_question_only_same_stack_20260805/paired_deltas.csv"
+    },
+    {
+      "bytes": 1410,
+      "path": "results/eager_v1_signal_structure_20260730/manifest.json",
+      "result_bound_overlay": false,
+      "sha256": "32dacb14a23bcb86031c434f067072affa364e765a87fce2b238d6c052ee4774",
+      "source_path": "wsdm/results/eager_v1_signal_structure_20260730/manifest.json"
+    },
+    {
+      "bytes": 111294,
+      "path": "results/eager_v1_signal_structure_20260730/table3_manual_audit_sample_v1.csv",
+      "result_bound_overlay": false,
+      "sha256": "f9c62f83d956f8005fefa23fce71eed043a6aedbc846ce6c8718093d001a0743",
+      "source_path": "wsdm/results/eager_v1_signal_structure_20260730/table3_manual_audit_sample_v1.csv"
+    },
+    {
+      "bytes": 6002,
+      "path": "results/eager_v1_signal_structure_20260730/table3_signal_structure_by_dataset_v1.csv",
+      "result_bound_overlay": false,
+      "sha256": "37135bb77f2c64f344adf594edb68a1ae36c411d823be0b057a6295b152b0ead",
+      "source_path": "wsdm/results/eager_v1_signal_structure_20260730/table3_signal_structure_by_dataset_v1.csv"
+    },
+    {
+      "bytes": 2910,
+      "path": "results/eager_v1_signal_structure_20260730/table3_signal_structure_main_v1.csv",
+      "result_bound_overlay": false,
+      "sha256": "2a72e6818869ffa42134c33ee450f99207f1397399d67f3143a5525031cb3d4b",
+      "source_path": "wsdm/results/eager_v1_signal_structure_20260730/table3_signal_structure_main_v1.csv"
+    },
+    {
+      "bytes": 847,
+      "path": "results/standalone_signal_controls_v2_20260816/absolute_results.csv",
+      "result_bound_overlay": false,
+      "sha256": "4d0d67e44c10f7d0343f679297fa0fc82bc4358d76f5bc105c25caa845d30e29",
+      "source_path": "wsdm/results/standalone_signal_controls_v2_20260816/absolute_results.csv"
+    },
+    {
+      "bytes": 5772,
+      "path": "results/standalone_signal_controls_v2_20260816/failure_decomposition.csv",
+      "result_bound_overlay": false,
+      "sha256": "edd18c7445bc0d3b0ea22279d9758346515846945185021c3ef06e863a277499",
+      "source_path": "wsdm/results/standalone_signal_controls_v2_20260816/failure_decomposition.csv"
+    },
+    {
+      "bytes": 798,
+      "path": "results/standalone_signal_controls_v2_20260816/manifest.json",
+      "result_bound_overlay": false,
+      "sha256": "a338130552c0c722665f3b5ebf4f8cc3248ca68443951f2cb652093f88a77912",
+      "source_path": "wsdm/results/standalone_signal_controls_v2_20260816/manifest.json"
+    },
+    {
+      "bytes": 3013,
+      "path": "results/standalone_signal_controls_v2_20260816/paired_eager_vs_standalone.csv",
+      "result_bound_overlay": false,
+      "sha256": "1f15de8b71ebb5693e87641327adc013cf4355e7086c1564a4532600480386f6",
+      "source_path": "wsdm/results/standalone_signal_controls_v2_20260816/paired_eager_vs_standalone.csv"
+    },
+    {
+      "bytes": 2555,
+      "path": "results/standalone_signal_controls_v2_20260816/pipeline_diagnostics.csv",
+      "result_bound_overlay": false,
+      "sha256": "355665b3b058a519516d75248178ce6f63a42e4fc48576005b44d15e63746d20",
+      "source_path": "wsdm/results/standalone_signal_controls_v2_20260816/pipeline_diagnostics.csv"
+    },
+    {
+      "bytes": 6600,
+      "path": "splits/development/2wiki_dev200.ids.txt",
+      "result_bound_overlay": false,
+      "sha256": "c5fb35fd8e5d08d891c8bd166d7305dbf7702dda5340f00a6725a143f784a098",
+      "source_path": "wsdm/splits/development/2wiki_dev200.ids.txt"
+    },
+    {
+      "bytes": 5000,
+      "path": "splits/development/hotpotqa_dev200.ids.txt",
+      "result_bound_overlay": false,
+      "sha256": "8276bbf60a2e29578514dafd3ebf18100003fce27aeeecc9d72c88c3f11dac79",
+      "source_path": "wsdm/splits/development/hotpotqa_dev200.ids.txt"
+    },
+    {
+      "bytes": 6292,
+      "path": "splits/development/musique_dev200.ids.txt",
+      "result_bound_overlay": false,
+      "sha256": "bd266a33491ad2f9a1b38bfad6e6805799e52eee541d8f17ad03b071c23fab02",
+      "source_path": "wsdm/splits/development/musique_dev200.ids.txt"
+    },
+    {
+      "bytes": 33000,
+      "path": "splits/formal/2wiki_main1000.ids.txt",
+      "result_bound_overlay": false,
+      "sha256": "13b60416c0ef90a7f3c3547ac61e61a95830ef4530c3da87d5a783740c97d79f",
+      "source_path": "wsdm/splits/formal/2wiki_main1000.ids.txt"
+    },
+    {
+      "bytes": 2500,
+      "path": "splits/formal/hotpotqa_bridge100.ids.txt",
+      "result_bound_overlay": false,
+      "sha256": "7c53e1f78358d9b1de42b6d38fa2cbaa0591cc86c526f178552d166b41f8feff",
+      "source_path": "wsdm/splits/formal/hotpotqa_bridge100.ids.txt"
+    },
+    {
+      "bytes": 2500,
+      "path": "splits/formal/hotpotqa_comparison100.ids.txt",
+      "result_bound_overlay": false,
+      "sha256": "d046166080fdda1ae487afb7a76ca46401c4760b6a6487a1b4991913bab47c06",
+      "source_path": "wsdm/splits/formal/hotpotqa_comparison100.ids.txt"
+    },
+    {
+      "bytes": 20000,
+      "path": "splits/formal/hotpotqa_remaining800.ids.txt",
+      "result_bound_overlay": false,
+      "sha256": "875b7f74390bdc1710d250b1a9a3aecb18fac4bf7cdaeaa5fd931bc64e1f7126",
+      "source_path": "wsdm/splits/formal/hotpotqa_remaining800.ids.txt"
+    },
+    {
+      "bytes": 31548,
+      "path": "splits/formal/musique_main1000.ids.txt",
+      "result_bound_overlay": false,
+      "sha256": "f906a29bd50cc2186022c99970e53cc88bfceb07d8a475900c89f1d6df58e641",
+      "source_path": "wsdm/splits/formal/musique_main1000.ids.txt"
+    }
+  ],
+  "history_included": false,
+  "schema_version": 1
+}

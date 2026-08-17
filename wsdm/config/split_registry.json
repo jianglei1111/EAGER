@@ -1,0 +1,271 @@
+{
+  "schema_version": 3,
+  "selection_seed": 20260713,
+  "id_hash_spec": {
+    "algorithm": "sha256",
+    "encoding": "utf-8",
+    "serialization": "one exact ID per line, LF separator, final LF, no BOM",
+    "ordered_hash": "preserve registry order",
+    "set_hash": "sort by Unicode code point ascending, then serialize",
+    "duplicate_policy": "reject"
+  },
+  "source_hash_spec": {
+    "algorithm": "sha256",
+    "byte_exact": "hash the on-disk bytes without transformation",
+    "newline_normalized_lf": "replace CRLF and bare CR with LF before hashing; otherwise preserve exact UTF-8 bytes"
+  },
+  "overlap_constraints": [
+    {
+      "left": "hotpotqa_dev200",
+      "right": "hotpotqa_main_1000",
+      "expected_intersection": 0
+    },
+    {
+      "left": "2wiki_dev200",
+      "right": "2wiki_main_1000",
+      "expected_intersection": 0
+    },
+    {
+      "left": "musique_dev200",
+      "right": "musique_main_1000",
+      "expected_intersection": 0
+    }
+  ],
+  "raw_sources": {
+    "hotpotqa": {
+      "path": "data/raw/hotpotqa/hotpot_dev_distractor_v1.json",
+      "format": "json_array",
+      "id_field": "_id",
+      "type_field": "type",
+      "canonical_id": "identity",
+      "expected_bytes": 46320117,
+      "hash_mode": "byte_exact",
+      "sha256": "4e9ecb5c8d3b719f624d66b60f8d56bf227f03914f5f0753d6fa1b359d7104ea",
+      "expected_count": 7405,
+      "upstream": {
+        "download_url": "http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_dev_distractor_v1.json",
+        "revision": "hotpot_dev_distractor_v1",
+        "artifact_verification": "local_sha256_only_upstream_unavailable_2026-07-14",
+        "repository_url": "https://github.com/hotpotqa/hotpot",
+        "repository_revision": "3635853403a8735609ee997664e1528f4480762a"
+      },
+      "known_anomalies_path": "wsdm/config/dataset_anomalies.json",
+      "license": {
+        "status": "verified",
+        "spdx": "CC-BY-SA-4.0",
+        "reference": "https://raw.githubusercontent.com/hotpotqa/hotpot/3635853403a8735609ee997664e1528f4480762a/README.md",
+        "redistribution": "per_license"
+      }
+    },
+    "2wiki": {
+      "path": "data/raw/2wikimultihopqa/dev.parquet",
+      "format": "parquet",
+      "id_field": "_id",
+      "type_field": "type",
+      "canonical_id": "identity",
+      "expected_bytes": 30056098,
+      "hash_mode": "byte_exact",
+      "sha256": "c0d8b60b9026b728fb07ad74c5252a0f188f6942e8ba5c02df4dfa369502ea8d",
+      "expected_count": 12576,
+      "upstream": {
+        "download_url": "https://huggingface.co/datasets/xanhho/2WikiMultihopQA/resolve/612bc5039a457880d9e7d84c3b0a4cf154b70e4f/dev.parquet",
+        "revision": "612bc5039a457880d9e7d84c3b0a4cf154b70e4f",
+        "artifact_verification": "remote_lfs_sha256_and_size_match",
+        "repository_url": "https://github.com/Alab-NII/2wikimultihop",
+        "repository_revision": "13800e5be57df1b4040b9b1588c6c811779e69e9"
+      },
+      "license": {
+        "status": "verified",
+        "spdx": "Apache-2.0",
+        "reference": "https://huggingface.co/datasets/xanhho/2WikiMultihopQA/blob/612bc5039a457880d9e7d84c3b0a4cf154b70e4f/README.md",
+        "redistribution": "per_license"
+      }
+    },
+    "musique": {
+      "path": "data/raw/musique/musique_ans_v1.0_dev.jsonl",
+      "format": "jsonl",
+      "id_field": "id",
+      "type_expression": "id.split('__', 1)[0]",
+      "canonical_id": "prefix:musique_",
+      "expected_bytes": 30439728,
+      "hash_mode": "byte_exact",
+      "sha256": "15fa63794d18a94ce12411aca6e2327e65b6e83b0b1490efab3f1962e48abf3b",
+      "expected_count": 2417,
+      "upstream": {
+        "download_url": "https://huggingface.co/datasets/bdsaglam/musique/resolve/22873a405dd809893b22ada0b499299fb612d2df/musique_ans_v1.0_dev.jsonl",
+        "revision": "22873a405dd809893b22ada0b499299fb612d2df",
+        "artifact_verification": "remote_lfs_sha256_and_size_match",
+        "repository_url": "https://github.com/StonyBrookNLP/musique",
+        "repository_revision": "922ac98f19a201998dbdae6d7f2887a5258dbdeb"
+      },
+      "license": {
+        "status": "verified",
+        "spdx": "CC-BY-4.0",
+        "reference": "https://raw.githubusercontent.com/StonyBrookNLP/musique/922ac98f19a201998dbdae6d7f2887a5258dbdeb/README.md",
+        "redistribution": "per_license"
+      }
+    }
+  },
+  "frozen_profiles": {
+    "hotpotqa_main_1000": {
+      "dataset": "hotpotqa",
+      "purpose": "legacy_migration_only",
+      "historically_observed": true,
+      "tuning_allowed": false,
+      "model_selection_allowed": false,
+      "expected_question_count": 1000,
+      "ordered_id_sha256": "630c2a7e7f0245255cd40fa8859d4a2ea4a1c257460b80b0232c4e7bd09997a1",
+      "set_id_sha256": "1e4e08ef4d455220d4afc3552f8df2eb8c208daf2c99d8dea303857b61057076",
+      "pairwise_intersections": {
+        "bridge100__comparison100": 0,
+        "bridge100__remaining800": 0,
+        "comparison100__remaining800": 0
+      },
+      "sources": [
+        {
+          "name": "bridge100",
+          "path": "configs/bridge_eval_100_seed20260421.json",
+          "ids_path": "splits/formal/hotpotqa_bridge100.ids.txt",
+          "container_field": "questions",
+          "id_field": "question_id",
+          "type_field": "type",
+          "expected_count": 100,
+          "hash_mode": "newline_normalized_lf",
+          "sha256": "ec2a4e01daa51193e523e46114a22b234620485fdd3b51810ebe890e1efda630",
+          "ordered_id_sha256": "7c53e1f78358d9b1de42b6d38fa2cbaa0591cc86c526f178552d166b41f8feff",
+          "set_id_sha256": "7c53e1f78358d9b1de42b6d38fa2cbaa0591cc86c526f178552d166b41f8feff"
+        },
+        {
+          "name": "comparison100",
+          "path": "configs/comparison_eval_100_seed20260425.json",
+          "ids_path": "splits/formal/hotpotqa_comparison100.ids.txt",
+          "container_field": "questions",
+          "id_field": "question_id",
+          "type_field": "type",
+          "expected_count": 100,
+          "hash_mode": "newline_normalized_lf",
+          "sha256": "533b8aabfac0b6f5cb0e7b32f28af0fca6750de2688835815e7f6588bf2bab2d",
+          "ordered_id_sha256": "d046166080fdda1ae487afb7a76ca46401c4760b6a6487a1b4991913bab47c06",
+          "set_id_sha256": "4f0330432bcef2d83e0cf900f9d8515035753065f5f19b2b850ddc15b0f694b3"
+        },
+        {
+          "name": "remaining800",
+          "path": "configs/remaining_800_eval_20260425.json",
+          "ids_path": "splits/formal/hotpotqa_remaining800.ids.txt",
+          "container_field": "questions",
+          "id_field": "question_id",
+          "type_field": "type",
+          "expected_count": 800,
+          "hash_mode": "newline_normalized_lf",
+          "sha256": "97783f6f1748c80e235b2093508e74c0f41323d71af6708356ae1f5f699456af",
+          "ordered_id_sha256": "875b7f74390bdc1710d250b1a9a3aecb18fac4bf7cdaeaa5fd931bc64e1f7126",
+          "set_id_sha256": "2dd03ef46631529735ddacbedf70f046cc209363acc73786870ce05b0b18fd79"
+        }
+      ]
+    },
+    "2wiki_main_1000": {
+      "dataset": "2wiki",
+      "purpose": "legacy_migration_only",
+      "historically_observed": true,
+      "tuning_allowed": false,
+      "model_selection_allowed": false,
+      "expected_question_count": 1000,
+      "ordered_id_sha256": "13b60416c0ef90a7f3c3547ac61e61a95830ef4530c3da87d5a783740c97d79f",
+      "set_id_sha256": "d00d5dfe09ce04fe6a5723b86d62c8ae8ef70aec873a7ea4a3fc5c7984840f84",
+      "sources": [
+        {
+          "name": "main1000",
+          "path": "experiments_archive/2wiki/configs/2wiki_eval_1000_linearrag.json",
+          "ids_path": "splits/formal/2wiki_main1000.ids.txt",
+          "container_field": "questions",
+          "id_field": "question_id",
+          "type_field": "type",
+          "expected_count": 1000,
+          "hash_mode": "newline_normalized_lf",
+          "sha256": "c9936cf3a693c3c6dcd2db4817e208d413f31bdb7a3720fd82197c2c23a3e882",
+          "ordered_id_sha256": "13b60416c0ef90a7f3c3547ac61e61a95830ef4530c3da87d5a783740c97d79f",
+          "set_id_sha256": "d00d5dfe09ce04fe6a5723b86d62c8ae8ef70aec873a7ea4a3fc5c7984840f84"
+        }
+      ]
+    },
+    "musique_main_1000": {
+      "dataset": "musique",
+      "purpose": "legacy_migration_only",
+      "historically_observed": true,
+      "tuning_allowed": false,
+      "model_selection_allowed": false,
+      "expected_question_count": 1000,
+      "ordered_id_sha256": "f906a29bd50cc2186022c99970e53cc88bfceb07d8a475900c89f1d6df58e641",
+      "set_id_sha256": "d6368bf38f0165efeb2d3b90dc8f88a0b1b781259aa05498f152ddb267c28035",
+      "sources": [
+        {
+          "name": "main1000",
+          "path": "experiments_archive/musique/configs/musique_eval_1000_linearrag.json",
+          "ids_path": "splits/formal/musique_main1000.ids.txt",
+          "container_field": "questions",
+          "id_field": "question_id",
+          "type_field": "type",
+          "expected_count": 1000,
+          "hash_mode": "newline_normalized_lf",
+          "sha256": "586784c73f775e8d440482139cdd4fc901831878303d291f0eb3e7547bc93c4f",
+          "ordered_id_sha256": "f906a29bd50cc2186022c99970e53cc88bfceb07d8a475900c89f1d6df58e641",
+          "set_id_sha256": "d6368bf38f0165efeb2d3b90dc8f88a0b1b781259aa05498f152ddb267c28035"
+        }
+      ]
+    }
+  },
+  "development_splits": {
+    "hotpotqa_dev200": {
+      "dataset": "hotpotqa",
+      "source_key": "hotpotqa",
+      "purpose": "development_only",
+      "tuning_allowed": true,
+      "model_selection_allowed": true,
+      "ids_path": "splits/development/hotpotqa_dev200.ids.txt",
+      "group_order": ["bridge", "comparison"],
+      "quotas": {"bridge": 162, "comparison": 38},
+      "expected_count": 200,
+      "ordered_id_sha256": "8276bbf60a2e29578514dafd3ebf18100003fce27aeeecc9d72c88c3f11dac79",
+      "set_id_sha256": "1a3da3fb8b20f45029095bb71c8a96413117e204b13bb4eccdaf9b140010fd98"
+    },
+    "2wiki_dev200": {
+      "dataset": "2wiki",
+      "source_key": "2wiki",
+      "purpose": "development_only",
+      "tuning_allowed": true,
+      "model_selection_allowed": true,
+      "ids_path": "splits/development/2wiki_dev200.ids.txt",
+      "group_order": ["bridge_comparison", "comparison", "compositional", "inference"],
+      "quotas": {"bridge_comparison": 47, "comparison": 49, "compositional": 83, "inference": 21},
+      "expected_count": 200,
+      "ordered_id_sha256": "c5fb35fd8e5d08d891c8bd166d7305dbf7702dda5340f00a6725a143f784a098",
+      "set_id_sha256": "861c3c919d18af54b9d028931d0935656731ccac83e2e9ec8fdf0ae1ac8f5773"
+    },
+    "musique_dev200": {
+      "dataset": "musique",
+      "source_key": "musique",
+      "purpose": "development_only",
+      "tuning_allowed": true,
+      "model_selection_allowed": true,
+      "ids_path": "splits/development/musique_dev200.ids.txt",
+      "group_order": ["2hop", "3hop1", "3hop2", "4hop1", "4hop2", "4hop3"],
+      "quotas": {"2hop": 104, "3hop1": 49, "3hop2": 15, "4hop1": 21, "4hop2": 5, "4hop3": 6},
+      "expected_count": 200,
+      "ordered_id_sha256": "bd266a33491ad2f9a1b38bfad6e6805799e52eee541d8f17ad03b071c23fab02",
+      "set_id_sha256": "fe3000b343382d01d3fd99a9862ec537809a27b7e93d4901f19aafe5b8bba7a1"
+    }
+  },
+  "development_fixture": {
+    "dataset": "synthetic_multihop",
+    "purpose": "development_and_ci",
+    "tuning_allowed": true,
+    "inference_path": "wsdm/fixtures/development/inference.json",
+    "annotations_path": "wsdm/fixtures/development/annotations.json",
+    "corpus_path": "wsdm/fixtures/development/corpus.jsonl"
+  },
+  "legacy_migration_fixture": {
+    "purpose": "mechanical_migration_regression_only",
+    "tuning_allowed": false,
+    "path": "wsdm/fixtures/legacy_migration/question_ids.json"
+  }
+}

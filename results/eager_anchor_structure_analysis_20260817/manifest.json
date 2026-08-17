@@ -1,0 +1,107 @@
+{
+  "analysis_id": "eager_anchor_structure_v1",
+  "analysis_mode": "offline_frozen_artifact_only",
+  "anchor_attribution_boundary": "Multi-label observational attribution at the earliest post-coarse gold-support hit; component ablations, not this trace analysis, provide causal evidence.",
+  "bootstrap_samples": 10000,
+  "model_calls": 0,
+  "outputs": {
+    "anchor_source_first_hit.csv": "a8c003605499f805c0d40580244a0033ae919089508d9a151879dc19b6f6fa0e",
+    "eager_vs_standalone_by_structure.csv": "540af3a363c303ccbc12a6417edb41fb3673840db0fdab07cd3818a588330320",
+    "matched_evidence_quality_at5.csv": "d7fcfa1acf5c96973b25c9b80da168d2f58294c495addf62bf83522a02f74e29"
+  },
+  "question_counts": {
+    "anchor_trace": 6000,
+    "evidence_at5_per_system": 6000,
+    "structure": 3000
+  },
+  "sources": [
+    {
+      "path": "artifacts/test_runs/wsdm/paper_results/table3_question_labels_v1.jsonl",
+      "sha256": "87aea97c3f518a86945b4e074b745d261af8a926e87c51ce843af2111c8f54d0"
+    },
+    {
+      "path": "data/prepared/wsdm_v1/hotpotqa_main_1000/annotations.jsonl",
+      "sha256": "48ae93e3025d1e7bbdeff97e936a3c99f1a7f0a0fdac417d720a47758eb03fa7"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/eager_v1_20260728_hotpotqa_rq_main1000_v1/metrics.json",
+      "sha256": "68b1adab0369d73d65e2e36e4c38d43354aa486d47b028fcceb0054c26b31da8"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/eager_v1_20260728_hotpotqa_rq_main1000_v1/retrieval_traces.jsonl",
+      "sha256": "8d275b6b9906be26009c68f870c93e5e135e31afd7e1855ef3ed798703e0fe1b"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/standalone_controls_v2_current_prompts/full1000_rq_hotpotqa_v2/completed_rows.jsonl",
+      "sha256": "2c20d2c488b0c674af948f56596affc4267fcbff3c2268ad664c3dc874fa30d9"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/eager_v1_20260728_hotpotqa_sc_main1000_v1/metrics.json",
+      "sha256": "3ea1cc7421337a6ee991ff8206d616da4aab6f1e1e93b5fee8a4144ebfb5a8bb"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/eager_v1_20260728_hotpotqa_sc_main1000_v1/retrieval_traces.jsonl",
+      "sha256": "5a9fa83b42427de708493a23eb4fe100896a8104f71503a80932f5768709185b"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/standalone_controls_v2_current_prompts/full1000_sc_hotpotqa_v2/completed_rows.jsonl",
+      "sha256": "0828c75a3e9ad77dea98d724ba0040e40d490fcd5b7fbe5cb76326d2211ca032"
+    },
+    {
+      "path": "data/prepared/wsdm_v1/2wiki_main_1000/annotations.jsonl",
+      "sha256": "8cb8799a18ec1052d5746ce99a633cb87a61a050c293a8195c4523eb008ce393"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/eager_v1_20260728_2wiki_rq_main1000_v1/metrics.json",
+      "sha256": "24012fa4b212c5dd931d36c1a896963c789762217e84c5c7c6b96fed27a3edf8"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/eager_v1_20260728_2wiki_rq_main1000_v1/retrieval_traces.jsonl",
+      "sha256": "4e968bcae73e8656d36d1539b970fcdafb5a1147c3f7914a730f7514006570ab"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/standalone_controls_v2_current_prompts/full1000_rq_2wiki_v2/completed_rows.jsonl",
+      "sha256": "0bdc1d0606cf9fcba1f3eaa37d7eb67c9e0d61e4e2486092a657240b6a7465da"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/eager_v1_20260728_2wiki_sc_main1000_v1/metrics.json",
+      "sha256": "1c6d3eda30eeab0fb273d1d215a0e31185a11d5b040e7685dadd82c10b908b54"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/eager_v1_20260728_2wiki_sc_main1000_v1/retrieval_traces.jsonl",
+      "sha256": "58ed999b627eb09eb05298689e8a42d9bae7807ac6798869b15106cdf3636c01"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/standalone_controls_v2_current_prompts/full1000_sc_2wiki_v2/completed_rows.jsonl",
+      "sha256": "ea22b6e074d2e9d6a01bfc28e0f5cdc9472b6d3eda561f73eb3677acc67d8ed1"
+    },
+    {
+      "path": "data/prepared/wsdm_v1/musique_main_1000/annotations.jsonl",
+      "sha256": "fae4e09c667c451b18d2d9082076bb57b93f402a9cbbbab393778283ad1d54cd"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/eager_v1_20260728_musique_rq_main1000_v1/metrics.json",
+      "sha256": "598b44b38f36c0709de47291c531f95bb0e72264a3c53f217074baa116a9d462"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/eager_v1_20260728_musique_rq_main1000_v1/retrieval_traces.jsonl",
+      "sha256": "bd24a9e40b53a59ce9dbe77208c740647b7b8e51048271457017bd749790e808"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/standalone_controls_v2_current_prompts/full1000_rq_musique_v2_streaming2/completed_rows.jsonl",
+      "sha256": "97ad8eb5a809329f71d0888c84c803dd43a52ce06c4dffc686d88801d6c25b0b"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/eager_v1_20260728_musique_sc_main1000_v1/metrics.json",
+      "sha256": "a00180251e564e613302e4a2c1d524d2e567a790007110d247d10d6703f2556a"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/eager_v1_20260728_musique_sc_main1000_v1/retrieval_traces.jsonl",
+      "sha256": "445c1019f4cf12fefd760f152db81bba8e3d546000bbe7f9f967241d702f4005"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/standalone_controls_v2_current_prompts/full1000_sc_musique_v2/completed_rows.jsonl",
+      "sha256": "a3548b6b7add1806f2b1ef5f3394f445c50f91670c19853bd45214411450f14c"
+    }
+  ]
+}

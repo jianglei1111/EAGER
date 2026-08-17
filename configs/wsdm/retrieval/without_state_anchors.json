@@ -1,0 +1,11 @@
+{
+  "retrieval": {
+    "signal_mode": "retrieval_question",
+    "router_type": "rule",
+    "entity_expansion_enabled": true,
+    "evidence_derived_state_anchors_enabled": false,
+    "hierarchical_refinement_enabled": true,
+    "candidate_union_enabled": true,
+    "candidate_union_semantic_limit": 20
+  }
+}

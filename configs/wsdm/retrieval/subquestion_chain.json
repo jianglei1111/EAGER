@@ -1,0 +1,21 @@
+{
+  "retrieval": {
+    "signal_mode": "subquestion_chain",
+    "router_type": "rule",
+    "entity_expansion_enabled": true,
+    "evidence_derived_state_anchors_enabled": false,
+    "hierarchical_refinement_enabled": true,
+    "candidate_union_enabled": true,
+    "candidate_union_semantic_limit": 20,
+    "max_chain_steps": 6,
+    "max_llm_calls_per_step": 3,
+    "max_llm_calls_per_question": 5,
+    "chain_break_retry_limit": 1,
+    "same_evidence_answer_retry_limit": 1,
+    "chain_plan_review_enabled": false,
+    "original_query_weight": 0.0,
+    "signal_query_weight": 1.0,
+    "retained_anchor_scope": "latest_step",
+    "step_context_limit": 10
+  }
+}

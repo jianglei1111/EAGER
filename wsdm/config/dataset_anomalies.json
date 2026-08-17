@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "anomalies": [
+    {
+      "anomaly_id": "hotpotqa-dev-distractor-invalid-support-5ae61bfd",
+      "dataset": "hotpotqa",
+      "source_sha256": "4e9ecb5c8d3b719f624d66b60f8d56bf227f03914f5f0753d6fa1b359d7104ea",
+      "raw_dataset_id": "5ae61bfd5542992663a4f261",
+      "kind": "support_sentence_index_out_of_range",
+      "action": "reject",
+      "note": "supporting_facts[3] points to sentence index 902 in a five-sentence paragraph; the record is outside all frozen1000 and dev200 splits and is rejected without guessing a replacement"
+    }
+  ]
+}

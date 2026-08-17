@@ -1,0 +1,67 @@
+{
+  "hotpotqa": {
+    "_id": "hp_fixture_1",
+    "answer": "Harbor City",
+    "question": "Where is the company founded by Mira Sol headquartered?",
+    "supporting_facts": [
+      ["Mira Sol", 0],
+      ["Northstar Labs", 0]
+    ],
+    "context": [
+      ["Mira Sol", ["Mira Sol founded Northstar Labs."]],
+      ["Northstar Labs", ["Northstar Labs is headquartered in Harbor City."]]
+    ],
+    "type": "bridge",
+    "level": "hard"
+  },
+  "2wiki": {
+    "_id": "tw_fixture_1",
+    "type": "compositional",
+    "question": "Who is the mother of the director of The Silent Map?",
+    "context": "[[\"The Silent Map\",[\"The Silent Map was directed by Elian Voss.\"]],[\"Elian Voss\",[\"Elian Voss is the son of Rhea Voss.\"]]]",
+    "supporting_facts": "[[\"The Silent Map\",0],[\"Elian Voss\",0]]",
+    "evidences": "[[\"The Silent Map\",\"director\",\"Elian Voss\"],[\"Elian Voss\",\"mother\",\"Rhea Voss\"]]",
+    "answer": "Rhea Voss"
+  },
+  "musique": {
+    "id": "2hop__101_202",
+    "paragraphs": [
+      {
+        "idx": 0,
+        "title": "Atlas",
+        "paragraph_text": "Atlas was written by Nia Reed.",
+        "is_supporting": true
+      },
+      {
+        "idx": 1,
+        "title": "Atlas",
+        "paragraph_text": "Nia Reed was born in Bellhaven.",
+        "is_supporting": true
+      },
+      {
+        "idx": 2,
+        "title": "Bellhaven",
+        "paragraph_text": "Bellhaven has a maritime museum.",
+        "is_supporting": false
+      }
+    ],
+    "question": "Where was the author of Atlas born?",
+    "question_decomposition": [
+      {
+        "id": 101,
+        "question": "Atlas >> author",
+        "answer": "Nia Reed",
+        "paragraph_support_idx": 0
+      },
+      {
+        "id": 202,
+        "question": "#1 >> place of birth",
+        "answer": "Bellhaven",
+        "paragraph_support_idx": 1
+      }
+    ],
+    "answer": "Bellhaven",
+    "answer_aliases": ["Bellhaven City"],
+    "answerable": true
+  }
+}

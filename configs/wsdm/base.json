@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "runtime": {
+    "profile": "development",
+    "random_seed": 20260713,
+    "log_level": "INFO"
+  },
+  "llm": {
+    "provider": "openai_compatible",
+    "base_url": "https://www.dmxapi.com/v1",
+    "model": "gpt-4o-mini",
+    "api_key_env": "OPENAI_API_KEY",
+    "temperature": 0.0,
+    "max_completion_tokens": 1600,
+    "timeout_seconds": 120.0,
+    "max_retries": 2,
+    "retry_backoff_seconds": 0.5
+  },
+  "retrieval": {
+    "signal_mode": "retrieval_question",
+    "router_type": "rule",
+    "entity_expansion_enabled": true,
+    "evidence_derived_state_anchors_enabled": true,
+    "hierarchical_refinement_enabled": true,
+    "fine_reranking_enabled": true,
+    "global_fallback_enabled": true,
+    "diversity_first": true,
+    "diversity_paragraph_limit": 10,
+    "max_iterations": 2,
+    "max_chain_steps": 6,
+    "candidate_limit": 50,
+    "candidate_budget": 100,
+    "candidate_union_enabled": true,
+    "candidate_union_semantic_limit": 20,
+    "paragraph_limit": 5,
+    "paragraph_budget": 10,
+    "rerank_limit": 20,
+    "final_rerank_limit": 40,
+    "rerank_budget": 40,
+    "evidence_limit": 30,
+    "step_context_limit": 10,
+    "max_llm_calls_per_step": 3,
+    "max_llm_calls_per_question": 4,
+    "max_input_tokens_per_question": 100000,
+    "max_output_tokens_per_question": 10000,
+    "chain_break_retry_limit": 1,
+    "chain_plan_review_enabled": false,
+    "same_evidence_answer_retry_limit": 1,
+    "original_query_weight": 0.3,
+    "signal_query_weight": 0.7,
+    "entity_match_limit": 32,
+    "dataset_profiles": {
+      "hotpotqa": {
+        "max_iterations": 2,
+        "candidate_budget": 100,
+        "paragraph_budget": 10,
+        "rerank_budget": 80,
+        "evidence_limit": 30,
+        "max_llm_calls_per_question": 6,
+        "diversity_paragraph_limit": 5
+      },
+      "2wiki": {
+        "max_iterations": 3,
+        "candidate_budget": 150,
+        "paragraph_budget": 15,
+        "rerank_budget": 100,
+        "evidence_limit": 30,
+        "max_llm_calls_per_question": 8,
+        "diversity_paragraph_limit": 10
+      },
+      "musique": {
+        "evidence_derived_state_anchors_enabled": false,
+        "max_iterations": 4,
+        "candidate_budget": 200,
+        "paragraph_budget": 20,
+        "rerank_budget": 120,
+        "evidence_limit": 30,
+        "max_llm_calls_per_question": 10,
+        "diversity_paragraph_limit": 20
+      }
+    }
+  },
+  "reranker": {
+    "type": "qwen3",
+    "model_name": "qwen3_reranker_0_6b",
+    "device": "auto",
+    "batch_size": 4,
+    "max_length": 1024
+  },
+  "paths": {
+    "artifact_root": {
+      "path": "artifacts/test_runs/wsdm",
+      "base": "repo"
+    },
+    "experiment_protocol": {
+      "path": "wsdm/config/experiment_protocol.json",
+      "base": "repo"
+    },
+    "split_registry": {
+      "path": "wsdm/config/split_registry.json",
+      "base": "repo"
+    },
+    "dataset_anomalies": {
+      "path": "wsdm/config/dataset_anomalies.json",
+      "base": "repo"
+    },
+    "model_registry": {
+      "path": "configs/wsdm/models/registry.json",
+      "base": "repo"
+    },
+    "prepared_data_root": {
+      "path": "data/prepared",
+      "base": "repo"
+    },
+    "index_root": {
+      "path": "data/indexes",
+      "base": "repo"
+    }
+  }
+}

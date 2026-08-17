@@ -1,0 +1,7 @@
+method,dataset,mode,n,conacc_pct,gptacc_pct,candidate_full_paragraph_pct,final_full_paragraph_pct,llm_calls,reranker_pairs,error_count,artifact
+EAGER,hotpotqa,rq,1000,65.8,71.5,96.3,90.0,3000,56851,11,artifacts/test_runs/wsdm/eager_v1_20260728_hotpotqa_rq_main1000_v1
+EAGER,hotpotqa,sc,1000,65.9,71.9,92.5,91.7,3862,66319,12,artifacts/test_runs/wsdm/eager_v1_20260728_hotpotqa_sc_main1000_v1
+EAGER,2wiki,rq,1000,76.9,72.6,97.0,92.8,4005,52650,26,artifacts/test_runs/wsdm/eager_v1_20260728_2wiki_rq_main1000_v1
+EAGER,2wiki,sc,1000,76.0,71.9,92.3,91.9,4104,71382,19,artifacts/test_runs/wsdm/eager_v1_20260728_2wiki_sc_main1000_v1
+EAGER,musique,rq,1000,39.2,44.8,65.9,52.8,5003,58207,42,artifacts/test_runs/wsdm/eager_v1_20260728_musique_rq_main1000_v1
+EAGER,musique,sc,1000,42.3,48.4,77.0,66.0,4671,74191,23,artifacts/test_runs/wsdm/eager_v1_20260728_musique_sc_main1000_v1

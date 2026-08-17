@@ -1,0 +1,17 @@
+{
+  "agreement_count": 205,
+  "agreement_rate": 0.8541666666666666,
+  "both_correct": 155,
+  "both_incorrect": 50,
+  "cohen_kappa": 0.6456892188290871,
+  "configurations": [
+    "EAGER-RQ",
+    "EAGER-SC"
+  ],
+  "excluded": "120 labels from a superseded July local-control baseline",
+  "judge_overaccepts_vs_author": 3,
+  "judge_underaccepts_vs_author": 32,
+  "n": 240,
+  "questions_per_dataset": 40,
+  "scope": "current EAGER-RQ/SC common-reader predictions only"
+}

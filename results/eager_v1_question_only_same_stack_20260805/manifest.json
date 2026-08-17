@@ -1,0 +1,17 @@
+{
+  "analysis_id": "eager_v1_question_only_same_stack_20260805",
+  "bootstrap_samples": 10000,
+  "dataset_pair_count": 3,
+  "document": "doc/WSDM/materials/wsdm_question_only_same_stack_results_zh.md",
+  "outputs": [
+    "absolute_results.csv",
+    "paired_deltas.csv",
+    "results.json"
+  ],
+  "question_count_per_run": 1000,
+  "result_date": "2026-08-05",
+  "run_count": 6,
+  "schema_version": 1,
+  "source_provenance_sha256": "c4ae037e781b91ad9752f32e56e6c2f4062bf6281e4c4dcfae37ad05dc329e99",
+  "status": "canonical"
+}

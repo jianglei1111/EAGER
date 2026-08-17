@@ -1,0 +1,87 @@
+{
+  "comparisons": {
+    "candidate_full": {
+      "delta_enabled_minus_disabled_points": 1.7,
+      "disabled_percent": 66.3,
+      "enabled_percent": 68.0,
+      "mcnemar_exact": {
+        "disabled_only": 48,
+        "discordant": 113,
+        "enabled_only": 65,
+        "p_value": 0.13192429082426071
+      },
+      "paired_bootstrap_95_ci_points": [
+        -0.4,
+        3.8
+      ]
+    },
+    "canonical_conacc": {
+      "delta_enabled_minus_disabled_points": -3.4,
+      "disabled_percent": 38.1,
+      "enabled_percent": 34.7,
+      "mcnemar_exact": {
+        "disabled_only": 85,
+        "discordant": 136,
+        "enabled_only": 51,
+        "p_value": 0.004481251675252524
+      },
+      "paired_bootstrap_95_ci_points": [
+        -5.7,
+        -1.0999999999999999
+      ]
+    },
+    "final_full": {
+      "delta_enabled_minus_disabled_points": -12.9,
+      "disabled_percent": 52.6,
+      "enabled_percent": 39.7,
+      "mcnemar_exact": {
+        "disabled_only": 163,
+        "discordant": 197,
+        "enabled_only": 34,
+        "p_value": 2.1192953690455992e-21
+      },
+      "paired_bootstrap_95_ci_points": [
+        -15.5,
+        -10.299999999999999
+      ]
+    },
+    "gptacc": {
+      "delta_enabled_minus_disabled_points": -4.3,
+      "disabled_percent": 44.2,
+      "enabled_percent": 39.9,
+      "mcnemar_exact": {
+        "disabled_only": 98,
+        "discordant": 153,
+        "enabled_only": 55,
+        "p_value": 0.0006366069157043575
+      },
+      "paired_bootstrap_95_ci_points": [
+        -6.7,
+        -1.9
+      ]
+    }
+  },
+  "cost": {
+    "disabled": {
+      "answer_format_errors": 42,
+      "llm_calls": 5005,
+      "reranker_pairs": 57836
+    },
+    "enabled": {
+      "answer_format_errors": 51,
+      "llm_calls": 5006,
+      "reranker_pairs": 59532
+    }
+  },
+  "experiment": "Matched OpenLux MuSiQue-RQ direct state-anchor feedback sensitivity",
+  "intervention": "enabled minus disabled; all other frozen V1 settings unchanged",
+  "question_count": 1000,
+  "schema_version": 1,
+  "source_sha256": {
+    "annotations": "fae4e09c667c451b18d2d9082076bb57b93f402a9cbbbab393778283ad1d54cd",
+    "disabled_metrics": "aa12dd5ed3c2cde94391afa0fbdebbfca28ba5b826b8bec2524fe52a50468fe5",
+    "disabled_predictions": "c31e8e5db1fe3e718a32dfde816bd29dbb7ae1c129403b827778e3a632afd277",
+    "enabled_metrics": "2a2994d6ead905c871898645009808d85530d8f7254751dc4a4433109ad902af",
+    "enabled_predictions": "e903b55991dca6facf9b9c8531776be5ee5e460c0a06aa71d26fb04cff252e88"
+  }
+}

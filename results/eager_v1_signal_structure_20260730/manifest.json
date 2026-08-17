@@ -1,0 +1,28 @@
+{
+  "analysis_id": "eager_v1_signal_structure_20260730",
+  "audit": {
+    "agreement_count": 296,
+    "agreement_rate": 0.9866666666666667,
+    "cohen_kappa": 0.9693400444569356,
+    "human_verified_count": 300,
+    "sampling": "100 per dataset, proportional by native type, stable SHA order",
+    "status": "completed_by_author",
+    "wilson_95_ci": [
+      0.9662244697474675,
+      0.9948030382606411
+    ]
+  },
+  "label_protocol": "The 3,000-question analysis uses one deterministic metadata mapping. The author audit validates that mapping; its four corrected sample labels are not selectively substituted into the full analysis.",
+  "outputs": {
+    "table3_manual_audit_sample_v1.csv": "f9c62f83d956f8005fefa23fce71eed043a6aedbc846ce6c8718093d001a0743",
+    "table3_signal_structure_by_dataset_v1.csv": "37135bb77f2c64f344adf594edb68a1ae36c411d823be0b057a6295b152b0ead",
+    "table3_signal_structure_main_v1.csv": "2a72e6818869ffa42134c33ee450f99207f1397399d67f3143a5525031cb3d4b",
+    "table3_signal_structure_v1.json": "c1914aeeb5f4159f47397eb201f64627146ab1f7093ba4da7ca64177441e3038",
+    "table3_signal_structure_v1.tex": "ca843c32e80bb5eaaffeadb51ac4301f70c00ad76c014529c517e753dfe6b7fa"
+  },
+  "question_count": 3000,
+  "result_date": "2026-07-30",
+  "schema_version": 1,
+  "source_provenance_sha256": "cc51555fc457a06189a5a98fbe3a30a6463aa3a5e79a497fad8709dd06ca91ca",
+  "status": "canonical"
+}

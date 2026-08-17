@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "dataset": "synthetic_multihop",
+  "annotations": [
+    {
+      "question_handle": "synthetic_bridge_001",
+      "answer": "Harbor City",
+      "support_evidence_ids": [
+        "syn_e1",
+        "syn_e2"
+      ]
+    },
+    {
+      "question_handle": "synthetic_comparison_001",
+      "answer": "Cedar Works",
+      "support_evidence_ids": [
+        "syn_e3",
+        "syn_e4"
+      ]
+    },
+    {
+      "question_handle": "synthetic_chain_001",
+      "answer": "Aster Republic",
+      "support_evidence_ids": [
+        "syn_e5",
+        "syn_e6",
+        "syn_e7"
+      ]
+    }
+  ]
+}

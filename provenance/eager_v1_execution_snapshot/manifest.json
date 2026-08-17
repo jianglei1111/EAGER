@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "eager_v1_execution_snapshot_20260728_30",
+  "checkpoint_export_manifest": {
+    "path": "checkpoint_export_manifest.json",
+    "sha256": "71ee36fa8e6729574c59284f6d38372a4956b18e076fb9a7eea1ca8e2e01a5ab"
+  },
+  "reported_run_count": {
+    "component_ablation": 20,
+    "main": 6
+  },
+  "root_overlays": [
+    {
+      "path": "configs/wsdm/base.json",
+      "sha256": "20728f1fc9ce552820d3c288b040474e6553d675d0db0ca82bb659f3378b538b",
+      "snapshot_path": "root_overlay/configs/wsdm/base.json"
+    },
+    {
+      "path": "src/eager/cli.py",
+      "sha256": "a593d73f15ce77105ba3c8eeff30e30b5f32df17f7ba21f11663f9ae368fc52f",
+      "snapshot_path": "root_overlay/src/eager/cli.py"
+    },
+    {
+      "path": "src/eager/retrieval/kernel.py",
+      "sha256": "867c86c1e34e155acf035acb6da927b360b3e315112d91a83e3f634a9271e73d",
+      "snapshot_path": "root_overlay/src/eager/retrieval/kernel.py"
+    }
+  ],
+  "executed_main_wrappers": {
+    "experiments_sandbox/20260728_027_hotpotqa_rq_v1_full1000/run.py": "2fd77f03d39c4baaae5d7c90dc872d36b808dc6803a09d29f6882d8dc856b076",
+    "experiments_sandbox/20260728_028_hotpotqa_sc_v1_full1000/run.py": "9d938a0871c112d295df586e9d9dea57ba92a33be193842517e2ff5189147c6c",
+    "experiments_sandbox/20260728_029_2wiki_rq_v1_full1000/run.py": "35d51fc23961a94e350de9688522a06194f0dc8a49297d93f2a27f8cc2088abb",
+    "experiments_sandbox/20260728_030_2wiki_sc_v1_full1000/run.py": "ddd9c618b7b78dd35c19c3bd139e8d015469254a932f592333fe48141f932d38",
+    "experiments_sandbox/20260728_031_musique_rq_v1_full1000/run.py": "0e6480ea408c23bd44fb1c1135f5263e19abe2bbc801066dd748b15cf4b34c14",
+    "experiments_sandbox/20260728_032_musique_sc_v1_full1000/run.py": "891671924d0a6285cfb75a46f725978b76f0cfa88398d8296993eb7a63477e4e"
+  },
+  "ablation_base_wrappers": {
+    "experiments_sandbox/20260728_027_hotpotqa_rq_v1_full1000/run.py": "2fd77f03d39c4baaae5d7c90dc872d36b808dc6803a09d29f6882d8dc856b076",
+    "experiments_sandbox/20260728_028_hotpotqa_sc_v1_full1000/run.py": "6c692f4d6797bd095fd000836bbac7748fcdcc459ea12429249c114c38ad9326",
+    "experiments_sandbox/20260728_029_2wiki_rq_v1_full1000/run.py": "fd7fcf5645a6d4f8244b6e74f7cac5b7a096197aeb9cf0df893cd04a4e0f4794",
+    "experiments_sandbox/20260728_030_2wiki_sc_v1_full1000/run.py": "41cf05c77879981d43a13f75ee5eb7c2d3b12cfb448dd805b06569c1bb4fd61a",
+    "experiments_sandbox/20260728_031_musique_rq_v1_full1000/run.py": "bd588703815b27f0818a9b7584a705923d27d413a08319bcf57174bc7babcbcf",
+    "experiments_sandbox/20260728_032_musique_sc_v1_full1000/run.py": "f6d1b87d8f1c5d4a41ff72e31af041ba3d68293c6d96da51d5fcd7f3372d4767"
+  },
+  "component_ablation_wrappers": {
+    "experiments_sandbox/20260729_033_hotpotqa_rq_without_entity_linked_activation_main1000/run.py": "4fbf7acc054f2ad2f65f3ce2104d7353b04911de3499540b063629e3ca36909d",
+    "experiments_sandbox/20260729_034_hotpotqa_sc_without_entity_linked_activation_main1000/run.py": "080077b7d53ff36faf291572f0f0217e03c58e43f4daeb1961d86b96a4d4035f",
+    "experiments_sandbox/20260729_035_2wiki_rq_without_entity_linked_activation_main1000/run.py": "679a8b5125f30bb5a414b405c3712068907270e19882070b8af892ffe8b9373b",
+    "experiments_sandbox/20260729_036_2wiki_sc_without_entity_linked_activation_main1000/run.py": "3eff81ac5c99c16c8b482cbe73abd80902b16c0d2fc31faf5615f7aabbaa60e9",
+    "experiments_sandbox/20260729_037_musique_rq_without_entity_linked_activation_main1000/run.py": "f0c855fb717d9cd7c9d93c9ac630a8357039d3862903bf2753c2751dc4ea99dd",
+    "experiments_sandbox/20260729_038_musique_sc_without_entity_linked_activation_main1000/run.py": "d4efa9e5f425b71cea606718fafc05f0c9b5527107a57f760c3ae58586e74d5c",
+    "experiments_sandbox/20260729_039_hotpotqa_rq_without_concurrent_semantic_lane_main1000/run.py": "1428c0dc8ebc1a500e1d889899a34be048f2e0835229e282298f8be82bb6b8f2",
+    "experiments_sandbox/20260729_040_hotpotqa_sc_without_concurrent_semantic_lane_main1000/run.py": "0fda02b91074994cbfb0c94c6700f533dd8d2207df24c366a54d83b9c82304f3",
+    "experiments_sandbox/20260729_041_2wiki_rq_without_concurrent_semantic_lane_main1000/run.py": "ab17078d3949b20d776a59d243dd93dac867491ebbfd2f5b5907a7d6b1358f21",
+    "experiments_sandbox/20260729_042_2wiki_sc_without_concurrent_semantic_lane_main1000/run.py": "bbbbb4a292713e2274d3d101382e3f50195c121cfc78e00902dfddfdccfd75fc",
+    "experiments_sandbox/20260729_043_musique_rq_without_concurrent_semantic_lane_main1000/run.py": "8a9377a5d32d69bc37103c4c3e6c5cfd35f36730fc4edad66834b8612d2fd44f",
+    "experiments_sandbox/20260729_044_musique_sc_without_concurrent_semantic_lane_main1000/run.py": "2acc32a8c149ebdf6061cf2be068d7400089cbb9974332c1c3d8798636f6ad57",
+    "experiments_sandbox/20260729_045_hotpotqa_rq_without_hierarchical_paragraph_gate_main1000/run.py": "1e24449901a2c0972756deb9f90642b0e736e615981b3527f12798fa3d0db104",
+    "experiments_sandbox/20260729_046_hotpotqa_sc_without_hierarchical_paragraph_gate_main1000/run.py": "f73c2e3cc8d6d0fb2223a382ba8170ede8232f9f6279a4775b7c370aa1b2c356",
+    "experiments_sandbox/20260729_047_2wiki_rq_without_hierarchical_paragraph_gate_main1000/run.py": "27b2d7692e830789470dc1cbe7e3946e0b618d2539316b2731a7127151568682",
+    "experiments_sandbox/20260729_048_2wiki_sc_without_hierarchical_paragraph_gate_main1000/run.py": "c57dc897d5472acd3143bbcf5f3fca50f1c8c962e1415d174dbf9a722ea5d9d7",
+    "experiments_sandbox/20260729_049_musique_rq_without_hierarchical_paragraph_gate_main1000/run.py": "7e7ab716d0beeae1f0effc4757f8de2df753302afddf114301b4c9d5d0c50c58",
+    "experiments_sandbox/20260729_050_musique_sc_without_hierarchical_paragraph_gate_main1000/run.py": "9ff9a4c6eb6457d40dbc4191b366481d52341d347fd53d1e31c59f2e19c4b1e6",
+    "experiments_sandbox/20260729_051_hotpotqa_rq_without_direct_state_anchors_main1000/run.py": "ec87082795acbd3302afbd7dce29992ab9b97e168fbc4071534582e17f6e5d66",
+    "experiments_sandbox/20260729_052_2wiki_rq_without_direct_state_anchors_main1000/run.py": "090df9f3d02a1de96e9a5bdda11653f3406f896f37262f618effbb53c064c1d2"
+  },
+  "excluded_runtime_file": {
+    "path": "configs/llm_config.local.json",
+    "reason": "private credential-bearing local override; endpoint and model metadata remain in canonical result provenance",
+    "sha256": "ae53c94c66c0788e251ba056c29dde726c90658bbafa02f7c8e65e1b5615a4e6"
+  }
+}

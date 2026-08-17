@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "dataset": "synthetic_multihop",
+  "records": [
+    {
+      "question_handle": "synthetic_bridge_001",
+      "inference_payload": {
+        "question": "Which city is the headquarters of the company founded by Mira Sol?",
+        "dataset": "synthetic_multihop"
+      }
+    },
+    {
+      "question_handle": "synthetic_comparison_001",
+      "inference_payload": {
+        "question": "Which organization was founded earlier, Cedar Works or Lumen Forge?",
+        "dataset": "synthetic_multihop"
+      }
+    },
+    {
+      "question_handle": "synthetic_chain_001",
+      "inference_payload": {
+        "question": "What country contains the city where the author of The Silent Map was born?",
+        "dataset": "synthetic_multihop"
+      }
+    }
+  ]
+}

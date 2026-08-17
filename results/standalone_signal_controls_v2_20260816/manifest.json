@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "builder": "wsdm/scripts/build_standalone_signal_controls_v2.py",
+  "builder_sha256": "d2371786222fef8fbfe955d89be3dec7cf9d23e5603a6592f9f2fd92bb020b6a",
+  "files": {
+    "absolute_results.csv": "4d0d67e44c10f7d0343f679297fa0fc82bc4358d76f5bc105c25caa845d30e29",
+    "paired_eager_vs_standalone.csv": "1f15de8b71ebb5693e87641327adc013cf4355e7086c1564a4532600480386f6",
+    "failure_decomposition.csv": "edd18c7445bc0d3b0ea22279d9758346515846945185021c3ef06e863a277499",
+    "pipeline_diagnostics.csv": "355665b3b058a519516d75248178ce6f63a42e4fc48576005b44d15e63746d20",
+    "protocol_audit.json": "793d5c966f409bdec5f81920681946b0c485fdab8d78ef389c6c0f2b3f39e29e",
+    "results.json": "549c9210647dc3843eab09ccafc8913435d0ac56ae2f043cf5485cefb00d8fd7"
+  }
+}

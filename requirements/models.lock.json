@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-07-14",
+  "source": "wsdm/audit/PHASE0_BASELINE.json and installed distribution metadata",
+  "python_packages": {
+    "faiss-cpu": "1.13.2",
+    "huggingface-hub": "0.36.2",
+    "safetensors": "0.7.0",
+    "sentence-transformers": "5.3.0",
+    "sentencepiece": "0.2.1",
+    "spacy": "3.8.11",
+    "tokenizers": "0.21.4",
+    "transformers": "4.51.3"
+  },
+  "spacy_models": [
+    {
+      "name": "en_core_web_sm",
+      "version": "3.8.0",
+      "url": "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
+      "sha256": "1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85",
+      "profile": "core"
+    },
+    {
+      "name": "en_core_web_trf",
+      "version": "3.8.0",
+      "url": "https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.8.0/en_core_web_trf-3.8.0-py3-none-any.whl",
+      "sha256": "272a31e9d8530d1e075351d30a462d7e80e31da23574f1b274e200f3fff35bf5",
+      "profile": "optional_legacy"
+    }
+  ],
+  "huggingface_models": [
+    {
+      "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+      "role": "semantic_embedding",
+      "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf"
+    },
+    {
+      "model_id": "Qwen/Qwen3-Embedding-0.6B",
+      "role": "index_embedding",
+      "revision": "c54f2e6e80b2d7b7de06f51cec4959f6b3e03418"
+    },
+    {
+      "model_id": "Qwen/Qwen3-Reranker-0.6B",
+      "role": "cross_encoder_reranker",
+      "revision": "6e9e69830b95c52b5fd889b7690dda3329508de3"
+    }
+  ]
+}

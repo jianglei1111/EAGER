@@ -1,0 +1,623 @@
+{
+  "figure": "WSDM Figure 2: EAGER-RQ retrieval-chain scaling microbenchmark",
+  "notes": {
+    "latency": "per-question retrieval wall-clock; multi-question execution used concurrent workers",
+    "panels_a_b": "100 fixed questions; one-step retrieval; panel b uses five warm-cache repeats after five-question warm-up",
+    "panels_c_d": "selection positions 20-99; 80 aligned questions; hard budget fixed at 200 after a separate first-20 pilot"
+  },
+  "outputs": {
+    ".pdf": "doc/P8/latex/figures/figure2_scaling_cost_v1.pdf",
+    ".png": "doc/P8/latex/figures/figure2_scaling_cost_v1.png",
+    ".svg": "doc/P8/latex/figures/figure2_scaling_cost_v1.svg"
+  },
+  "plot_rows": [
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": 40986,
+      "level": "ten_thousands",
+      "method": "local_eager",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 51.22
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": 327888,
+      "level": "hundred_thousands",
+      "method": "local_eager",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 65.39
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": 1000000,
+      "level": "million",
+      "method": "local_eager",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 67.1
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": 22268,
+      "level": "ten_thousands",
+      "method": "local_eager",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 30.4
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": 178146,
+      "level": "hundred_thousands",
+      "method": "local_eager",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 33.9
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": 1000003,
+      "level": "million",
+      "method": "local_eager",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 35.48
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": 42907,
+      "level": "ten_thousands",
+      "method": "local_eager",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 41.88
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": 343258,
+      "level": "hundred_thousands",
+      "method": "local_eager",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 58.43
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": 1000002,
+      "level": "million",
+      "method": "local_eager",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 60.96
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": 40986,
+      "level": "ten_thousands",
+      "method": "global_ann",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 50.0
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": 327888,
+      "level": "hundred_thousands",
+      "method": "global_ann",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 50.0
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": 1000000,
+      "level": "million",
+      "method": "global_ann",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 50.0
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": 22268,
+      "level": "ten_thousands",
+      "method": "global_ann",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 50.0
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": 178146,
+      "level": "hundred_thousands",
+      "method": "global_ann",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 50.0
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": 1000003,
+      "level": "million",
+      "method": "global_ann",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 50.0
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": 42907,
+      "level": "ten_thousands",
+      "method": "global_ann",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 50.0
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": 343258,
+      "level": "hundred_thousands",
+      "method": "global_ann",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 50.0
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": 1000002,
+      "level": "million",
+      "method": "global_ann",
+      "panel": "a_candidates",
+      "unit": "expanded_candidates_mean",
+      "value": 50.0
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": 40986,
+      "level": "ten_thousands",
+      "method": "local_eager",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 17.0891
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": 327888,
+      "level": "hundred_thousands",
+      "method": "local_eager",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 20.4622
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": 1000000,
+      "level": "million",
+      "method": "local_eager",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 20.8959
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": 22268,
+      "level": "ten_thousands",
+      "method": "local_eager",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 17.3614
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": 178146,
+      "level": "hundred_thousands",
+      "method": "local_eager",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 15.4617
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": 1000003,
+      "level": "million",
+      "method": "local_eager",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 14.3119
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": 42907,
+      "level": "ten_thousands",
+      "method": "local_eager",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 17.1423
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": 343258,
+      "level": "hundred_thousands",
+      "method": "local_eager",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 18.0423
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": 1000002,
+      "level": "million",
+      "method": "local_eager",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 26.3765
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": 40986,
+      "level": "ten_thousands",
+      "method": "global_ann",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 15.3482
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": 327888,
+      "level": "hundred_thousands",
+      "method": "global_ann",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 15.4223
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": 1000000,
+      "level": "million",
+      "method": "global_ann",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 18.0692
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": 22268,
+      "level": "ten_thousands",
+      "method": "global_ann",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 16.4621
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": 178146,
+      "level": "hundred_thousands",
+      "method": "global_ann",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 16.2013
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": 1000003,
+      "level": "million",
+      "method": "global_ann",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 14.8194
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": 42907,
+      "level": "ten_thousands",
+      "method": "global_ann",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 15.0739
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": 343258,
+      "level": "hundred_thousands",
+      "method": "global_ann",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 14.7049
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": 1000002,
+      "level": "million",
+      "method": "global_ann",
+      "panel": "b_one_step_latency",
+      "unit": "latency_ms_mean_5x_warm_cache",
+      "value": 17.2493
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": "",
+      "level": "low",
+      "method": "original_global",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 6.1198147
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": "",
+      "level": "million",
+      "method": "original_global",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 7.1400027
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": "",
+      "level": "low",
+      "method": "hard200_local",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 7.937639
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": "",
+      "level": "million",
+      "method": "hard200_local",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 8.0572319
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": "",
+      "level": "low",
+      "method": "original_local",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 14.7441051
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": "",
+      "level": "million",
+      "method": "original_local",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 31.6834603
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": "",
+      "level": "low",
+      "method": "original_global",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 8.9778563
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": "",
+      "level": "million",
+      "method": "original_global",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 11.7001123
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": "",
+      "level": "low",
+      "method": "hard200_local",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 20.330509999999997
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": "",
+      "level": "million",
+      "method": "hard200_local",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 16.631121
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": "",
+      "level": "low",
+      "method": "original_local",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 39.6197832
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": "",
+      "level": "million",
+      "method": "original_local",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 94.6938673
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": "",
+      "level": "low",
+      "method": "original_global",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 11.8975565
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": "",
+      "level": "million",
+      "method": "original_global",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 17.3175351
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": "",
+      "level": "low",
+      "method": "hard200_local",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 22.157251
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": "",
+      "level": "million",
+      "method": "hard200_local",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 23.6734961
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": "",
+      "level": "low",
+      "method": "original_local",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 62.764074099999995
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": "",
+      "level": "million",
+      "method": "original_local",
+      "panel": "c_full_rq_latency",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 143.5616822
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": "",
+      "final_full_support_percent": 65.0,
+      "gptacc_percent": 53.75,
+      "level": "million",
+      "method": "original_global",
+      "panel": "d_quality_cost",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 7.1400027
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": "",
+      "final_full_support_percent": 62.5,
+      "gptacc_percent": 55.0,
+      "level": "million",
+      "method": "hard200_local",
+      "panel": "d_quality_cost",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 8.0572319
+    },
+    {
+      "dataset": "hotpotqa",
+      "evidence_count": "",
+      "final_full_support_percent": 68.75,
+      "gptacc_percent": 56.25,
+      "level": "million",
+      "method": "original_local",
+      "panel": "d_quality_cost",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 31.6834603
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": "",
+      "final_full_support_percent": 72.5,
+      "gptacc_percent": 63.75,
+      "level": "million",
+      "method": "original_global",
+      "panel": "d_quality_cost",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 11.7001123
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": "",
+      "final_full_support_percent": 86.25,
+      "gptacc_percent": 65.0,
+      "level": "million",
+      "method": "hard200_local",
+      "panel": "d_quality_cost",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 16.631121
+    },
+    {
+      "dataset": "2wiki",
+      "evidence_count": "",
+      "final_full_support_percent": 76.25,
+      "gptacc_percent": 62.5,
+      "level": "million",
+      "method": "original_local",
+      "panel": "d_quality_cost",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 94.6938673
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": "",
+      "final_full_support_percent": 28.75,
+      "gptacc_percent": 43.75,
+      "level": "million",
+      "method": "original_global",
+      "panel": "d_quality_cost",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 17.3175351
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": "",
+      "final_full_support_percent": 33.75,
+      "gptacc_percent": 43.75,
+      "level": "million",
+      "method": "hard200_local",
+      "panel": "d_quality_cost",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 23.6734961
+    },
+    {
+      "dataset": "musique",
+      "evidence_count": "",
+      "final_full_support_percent": 26.25,
+      "gptacc_percent": 38.75,
+      "level": "million",
+      "method": "original_local",
+      "panel": "d_quality_cost",
+      "unit": "retrieval_latency_seconds_mean",
+      "value": 143.5616822
+    }
+  ],
+  "schema_version": 1,
+  "sources": [
+    {
+      "path": "artifacts/test_runs/wsdm/scaling_formal_v1/hotpotqa.json",
+      "sha256": "6f6ef12fc0adb1f7d6e381649fa46eea1b6b2154a258e7d34f370a9239d9546c"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/scaling_formal_v1/2wiki.json",
+      "sha256": "1d203c940a5277ecb77eed3e6432013d02a221bf03c9450445fe8fd98e9e3a7a"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/scaling_formal_v1/musique.json",
+      "sha256": "1806c6c1925948d4cb21307186f49087827a19895f5110a8deafa928bc2de64a"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/scaling_formal_v1/repeated_timing_v1.json",
+      "sha256": "79432764de1cecc0eab6fb71283281b8f1b3221c681fa5cc9d977f2e0cc24130"
+    },
+    {
+      "path": "artifacts/test_runs/wsdm/scaling_hard_budget_v1/summary_hard200_o20_n80.json",
+      "sha256": "68f1d942115432a1f9af7735b8e20d7c4a7e0a61b38ab75ddfe2221c57f8fa8d"
+    }
+  ]
+}

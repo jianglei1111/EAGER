@@ -1,0 +1,7 @@
+dataset,controller,support_unit,question_count,precision_at5,recall_at5,f1_at5,mean_units_at5
+HotpotQA,RQ,sentence,1000,0.263200,0.565362,0.354380,5.000
+HotpotQA,SC,sentence,1000,0.222000,0.472186,0.297811,4.995
+2Wiki,RQ,sentence,1000,0.252600,0.522150,0.333067,5.000
+2Wiki,SC,sentence,1000,0.243800,0.502650,0.321130,5.000
+MuSiQue,RQ,paragraph,1000,0.260167,0.518833,0.341244,4.995
+MuSiQue,SC,paragraph,1000,0.226433,0.450833,0.296638,4.997

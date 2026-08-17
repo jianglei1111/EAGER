@@ -1,0 +1,10 @@
+/configs/bridge_eval_100_seed20260421.json text eol=lf
+/configs/comparison_eval_100_seed20260425.json text eol=lf
+/configs/remaining_800_eval_20260425.json text eol=lf
+/experiments_archive/2wiki/configs/2wiki_eval_1000_linearrag.json text eol=lf
+/experiments_archive/musique/configs/musique_eval_1000_linearrag.json text eol=lf
+/wsdm/**/*.json text eol=lf
+/wsdm/**/*.jsonl text eol=lf
+/wsdm/**/*.md text eol=lf
+/wsdm/**/*.py text eol=lf
+/wsdm/splits/**/*.txt text eol=lf
