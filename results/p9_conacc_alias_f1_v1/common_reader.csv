@@ -1,0 +1,13 @@
+﻿dataset,dataset_label,method,method_label,n,conacc_pct,alias_f1_pct
+2wiki,2Wiki,eager_rq,EAGER-RQ,1000,77.3,74.84410894660894
+2wiki,2Wiki,eager_sc,EAGER-SC,1000,77.0,74.31545815295814
+2wiki,2Wiki,ircot_official_adapted,IRCoT official-code adaptation,1000,75.3,73.44140942390943
+2wiki,2Wiki,linearrag_minilm,LinearRAG MiniLM (released Top-5),1000,69.5,69.20930236430236
+hotpotqa,HotpotQA,eager_rq,EAGER-RQ,1000,65.3,72.37411489954833
+hotpotqa,HotpotQA,eager_sc,EAGER-SC,1000,67.0,73.58468072261417
+hotpotqa,HotpotQA,ircot_official_adapted,IRCoT official-code adaptation,1000,65.10000000000001,72.43990466533809
+hotpotqa,HotpotQA,linearrag_minilm,LinearRAG MiniLM (released Top-5),1000,64.0,71.57928156295029
+musique,MuSiQue,eager_rq,EAGER-RQ,1000,38.5,49.375942047737034
+musique,MuSiQue,eager_sc,EAGER-SC,1000,41.6,52.852744059346236
+musique,MuSiQue,ircot_official_adapted,IRCoT official-code adaptation,1000,40.400000000000006,50.80192754613807
+musique,MuSiQue,linearrag_minilm,LinearRAG MiniLM (released Top-5),1000,32.0,42.319960961638984

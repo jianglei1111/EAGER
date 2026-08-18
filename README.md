@@ -11,11 +11,11 @@ under `results/` so the reported analyses can be inspected directly.
 | Path | Purpose |
 | --- | --- |
 | `src/eager/` | Evidence activation, hierarchical selection, state transition, controllers, data, evaluation, and runtime code |
-| `prompts/` | RQ, SC, intermediate-answer, reader, and judge prompts |
+| `prompts/` | RQ, SC, intermediate-answer, reader, and optional evaluator prompts |
 | `configs/` | Result-bound EAGER configuration and model registry |
 | `experiments_sandbox/` | Six main wrappers, 20 historical one-switch wrappers, and one matched MuSiQue-RQ state-anchor intervention wrapper |
 | `provenance/` | Byte hashes and the executed main/ablation wrapper snapshots |
-| `results/` | Compact main, causal, ablation, structure, scaling, and audit tables |
+| `results/` | Current ConAcc/F1 tables plus compact run-bound diagnostics |
 | `tests/` | EAGER unit and contract tests with small offline fixtures |
 | `analysis/verify.py` | Offline inventory and result-table verifier |
 
@@ -121,12 +121,13 @@ runs through another compatible endpoint receive a new manifest.
 
 ## Result Tables
 
-Start with `results/eager_submission_tables_20260817/README.md`. It links the
-six matched EAGER-versus-Standalone comparisons, the original 20 component
-interventions and the matched MuSiQue-RQ state-anchor extension, anchor and
-dependency-structure analyses, bounded-scaling inputs, and GPTAcc audit. These
-are compact analysis products rather than hosted-model response caches or
-multi-gigabyte retrieval checkpoints.
+Start with `results/p9_conacc_alias_f1_v1/README.md`. It maps the current paper
+tables to compact CSV files for complete-system results, the six matched
+EAGER-versus-Standalone comparisons, 21 component interventions, dependency
+structure, the Hard-200 comparison, and bounded-scaling inputs. ConAcc uses the
+primary canonical answer; token F1 takes the maximum over the canonical answer
+and benchmark-provided aliases. These are compact analysis products rather
+than hosted-model response caches or multi-gigabyte retrieval checkpoints.
 
 ## Release Boundary
 

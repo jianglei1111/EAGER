@@ -1,0 +1,22 @@
+﻿method,method_label,dataset,dataset_label,n,conacc_pct,alias_f1_pct
+question_only_ann,Question-only ANN Top-30,hotpotqa,HotpotQA,1000,59.099999999999994,65.3574726529061
+linearrag_minilm,LinearRAG MiniLM (released Top-5),hotpotqa,HotpotQA,1000,65.3,61.990569077603375
+ircot_official_adapted,IRCoT official-code adaptation,hotpotqa,HotpotQA,1000,67.10000000000001,70.70252237937426
+standalone_rq,Standalone-RQ,hotpotqa,HotpotQA,1000,63.4,70.31669343212687
+standalone_sc,Standalone-SC,hotpotqa,HotpotQA,1000,64.9,71.22399196692541
+eager_rq,EAGER-RQ,hotpotqa,HotpotQA,1000,65.8,72.95141648684992
+eager_sc,EAGER-SC,hotpotqa,HotpotQA,1000,65.9,72.845559565993
+question_only_ann,Question-only ANN Top-30,2wiki,2Wiki,1000,48.699999999999996,49.61679792429792
+linearrag_minilm,LinearRAG MiniLM (released Top-5),2wiki,2Wiki,1000,70.19999999999999,61.54186285506719
+ircot_official_adapted,IRCoT official-code adaptation,2wiki,2Wiki,1000,69.3,70.15437423176778
+standalone_rq,Standalone-RQ,2wiki,2Wiki,1000,72.89999999999999,70.47467976467976
+standalone_sc,Standalone-SC,2wiki,2Wiki,1000,74.8,72.46145215895216
+eager_rq,EAGER-RQ,2wiki,2Wiki,1000,76.9,74.45823593073591
+eager_sc,EAGER-SC,2wiki,2Wiki,1000,76.0,73.74138888888888
+question_only_ann,Question-only ANN Top-30,musique,MuSiQue,1000,28.299999999999997,38.418222414840066
+linearrag_minilm,LinearRAG MiniLM (released Top-5),musique,MuSiQue,1000,32.300000000000004,38.2031771601479
+ircot_official_adapted,IRCoT official-code adaptation,musique,MuSiQue,1000,40.300000000000004,47.616612536844066
+standalone_rq,Standalone-RQ,musique,MuSiQue,1000,40.1,50.65027345633383
+standalone_sc,Standalone-SC,musique,MuSiQue,1000,41.099999999999994,51.53858966626769
+eager_rq,EAGER-RQ,musique,MuSiQue,1000,39.2,49.35800365097578
+eager_sc,EAGER-SC,musique,MuSiQue,1000,42.3,53.2572107072494

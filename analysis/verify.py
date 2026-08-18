@@ -112,11 +112,18 @@ def verify_splits(checks: list[str]) -> None:
 
 def verify_result_tables(checks: list[str]) -> None:
     expected_rows = {
+        "results/p9_conacc_alias_f1_v1/system_metrics.csv": 21,
+        "results/p9_conacc_alias_f1_v1/main_matched.csv": 6,
+        "results/p9_conacc_alias_f1_v1/common_reader.csv": 12,
+        "results/p9_conacc_alias_f1_v1/component_interventions.csv": 21,
+        "results/p9_conacc_alias_f1_v1/repeated_question.csv": 3,
+        "results/p9_conacc_alias_f1_v1/last_step_only.csv": 6,
+        "results/p9_conacc_alias_f1_v1/structure.csv": 14,
+        "results/p9_conacc_alias_f1_v1/hard200.csv": 3,
         "results/eager_v1_main1000_20260728/main_results.csv": 6,
         "results/standalone_signal_controls_v2_20260816/paired_eager_vs_standalone.csv": 6,
         "results/eager_v1_component_ablation_20260730/paired_deltas.csv": 20,
         "results/eager_anchor_structure_analysis_20260817/anchor_source_first_hit.csv": 6,
-        "results/eager_submission_tables_20260817/stepwise_system_boundaries.csv": 12,
     }
     for relative, count in expected_rows.items():
         rows = _csv(relative)
@@ -132,9 +139,10 @@ def verify_result_tables(checks: list[str]) -> None:
     ):
         raise ValueError("Figure 2 panel counts differ")
 
-    audit = _json("results/gptacc_audit/summary.json")
-    if int(audit.get("n", -1)) != 240:
-        raise ValueError("GPTAcc audit sample size differs")
+    current_metrics = _csv("results/p9_conacc_alias_f1_v1/system_metrics.csv")
+    required_columns = {"conacc_pct", "alias_f1_pct"}
+    if not required_columns.issubset(current_metrics[0]):
+        raise ValueError("current paper metrics must contain ConAcc and alias-aware F1")
     extension = _json("results/eager_v1_component_ablation_holm21_20260818/holm21_summary.json")
     if int(extension.get("family_size", -1)) != 21:
         raise ValueError("component intervention family must contain 21 comparisons")
@@ -149,7 +157,7 @@ def verify_result_tables(checks: list[str]) -> None:
     if compact.get("intervention") != "enabled minus disabled; all other frozen V1 settings unchanged":
         raise ValueError("state-anchor comparison is not a matched intervention")
     checks.append("component interventions: 20 historical wrappers plus one matched MuSiQue-RQ state-anchor comparison")
-    checks.append("results: main, causal, ablation, structure, scaling, and audit tables")
+    checks.append("results: current ConAcc/F1, matched, ablation, structure, and scaling tables")
 
 
 def main() -> int:
