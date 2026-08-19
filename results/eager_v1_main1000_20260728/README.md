@@ -72,13 +72,19 @@ Table 1 的 canonical-only 公平性统计、论文 Table 2 的 V1 component abl
 structure interaction 均已重新对齐本目录登记的六组 V1 逐题输出。旧 ablation
 结果与最终 V1 执行契约不一致，已经退出活跃论文稿并移入历史区，不得与本目录数值混用。
 
-## Terminal retention audit
+## Terminal state audit
 
 `terminal_retention_audit.csv` 由
 `wsdm/scripts/audit_v1_terminal_retention.py` 从六组原始
 `retrieval_traces.jsonl` 重建。CSV 逐组绑定 manifest 中的 trace SHA-256，覆盖全部
-6,000 道题。审计结果为 retained evidence 丢失 0 题、丢失证据 0 条、retained-prefix
-顺序破坏 0 题。该结果验证的是实际 V1 轨迹，不会修改或重新生成任何预测。
+6,000 道题。审计以每条运行的 `retrieval_state.retained_evidence` 为累计状态，并区分
+直接使用累计状态的运行与带有 terminal-completion 记录的运行。六组中没有 retained
+evidence 丢失、顺序破坏或 terminal-completion 状态替换；在存在空槽时，terminal
+completion 只允许在累计状态前缀之后追加新单元。该结果验证的是实际 V1 轨迹，不会
+修改或重新生成任何预测。
+
+The audit reports 1,773 runs that directly use the accumulated state and 4,227 runs with
+an explicit terminal-completion record; no completion record changed the retained state.
 
 ## Hard-200 complete-cohort follow-up
 

@@ -1507,10 +1507,10 @@
       "source_path": "wsdm/ANONYMOUS_README.md"
     },
     {
-      "bytes": 8730,
+      "bytes": 10268,
       "path": "analysis/verify.py",
       "result_bound_overlay": false,
-      "sha256": "f25e28813dcee4e08e11b950f511f8ab5b7db5ab4478f4cfc2a2a7b4ecbabe66",
+      "sha256": "7ebc753203c851962790ab3f038f75f95a1d61348b8a4483625c4d5e0b533fd7",
       "source_path": "wsdm/artifact_analysis/verify_eager_minimal.py"
     },
     {
@@ -1794,10 +1794,10 @@
       "source_path": "wsdm/results/eager_v1_component_ablation_holm21_20260818/state_anchor_comparison.md"
     },
     {
-      "bytes": 5738,
+      "bytes": 6166,
       "path": "results/eager_v1_main1000_20260728/README.md",
       "result_bound_overlay": false,
-      "sha256": "0b18cc2070c8fcd1b2abd42d07d78dd70f7b9d6b02c49f0df88cb0046e9113a3",
+      "sha256": "87bd1a1ee4ddd2a91903159f1635b982ff11f5f3b75daf5645b9089a85ff51a3",
       "source_path": "wsdm/results/eager_v1_main1000_20260728/README.md"
     },
     {
@@ -1829,10 +1829,10 @@
       "source_path": "wsdm/results/eager_v1_main1000_20260728/manifest.json"
     },
     {
-      "bytes": 689,
+      "bytes": 840,
       "path": "results/eager_v1_main1000_20260728/terminal_retention_audit.csv",
       "result_bound_overlay": false,
-      "sha256": "0bf8093e7c2ffa45a73c94e54437d9e59b8d233e7461b4b0b055dc48678e21d4",
+      "sha256": "2de963ee008f16c8c913e70deb812b34387ad144c363a4cc60cb79da8910e38a",
       "source_path": "wsdm/results/eager_v1_main1000_20260728/terminal_retention_audit.csv"
     },
     {

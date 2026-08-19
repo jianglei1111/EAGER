@@ -1,7 +1,7 @@
-dataset,signal,question_count,retained_drop_rows,dropped_retained_evidence,prefix_order_violation_rows,final_rerank_pairs_below_30_rows,trace_sha256
-hotpotqa,rq,1000,0,0,0,254,8d275b6b9906be26009c68f870c93e5e135e31afd7e1855ef3ed798703e0fe1b
-hotpotqa,sc,1000,0,0,0,37,5a9fa83b42427de708493a23eb4fe100896a8104f71503a80932f5768709185b
-2wiki,rq,1000,0,0,0,819,4e968bcae73e8656d36d1539b970fcdafb5a1147c3f7914a730f7514006570ab
-2wiki,sc,1000,0,0,0,15,58ed999b627eb09eb05298689e8a42d9bae7807ac6798869b15106cdf3636c01
-musique,rq,1000,0,0,0,708,bd24a9e40b53a59ce9dbe77208c740647b7b8e51048271457017bd749790e808
-musique,sc,1000,0,0,0,7,445c1019f4cf12fefd760f152db81bba8e3d546000bbe7f9f967241d702f4005
+dataset,signal,question_count,retained_drop_rows,dropped_retained_evidence,prefix_order_violation_rows,final_rerank_pairs_below_30_rows,finalization_rows,finalization_state_change_rows,finalization_added_rows,state_only_rows,trace_sha256
+hotpotqa,rq,1000,0,0,0,0,746,0,0,254,8d275b6b9906be26009c68f870c93e5e135e31afd7e1855ef3ed798703e0fe1b
+hotpotqa,sc,1000,0,0,0,36,999,0,0,1,5a9fa83b42427de708493a23eb4fe100896a8104f71503a80932f5768709185b
+2wiki,rq,1000,0,0,0,0,181,0,0,819,4e968bcae73e8656d36d1539b970fcdafb5a1147c3f7914a730f7514006570ab
+2wiki,sc,1000,0,0,0,15,1000,0,0,0,58ed999b627eb09eb05298689e8a42d9bae7807ac6798869b15106cdf3636c01
+musique,rq,1000,0,0,0,9,301,0,0,699,bd24a9e40b53a59ce9dbe77208c740647b7b8e51048271457017bd749790e808
+musique,sc,1000,0,0,0,7,1000,0,0,0,445c1019f4cf12fefd760f152db81bba8e3d546000bbe7f9f967241d702f4005

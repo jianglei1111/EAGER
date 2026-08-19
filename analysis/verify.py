@@ -172,6 +172,38 @@ def verify_result_tables(checks: list[str]) -> None:
     checks.append("results: current ConAcc/F1, matched, ablation, structure, and full-cohort scaling tables")
 
 
+def verify_terminal_retention(checks: list[str]) -> None:
+    base = "results/eager_v1_main1000_20260728"
+    manifest = _json(f"{base}/manifest.json")
+    trace_hashes = {
+        (str(item["dataset"]), str(item["signal"])): str(item["retrieval_traces_sha256"])
+        for item in manifest["eager_runs"]
+    }
+    rows = _csv(f"{base}/terminal_retention_audit.csv")
+    if len(rows) != 6 or sum(int(row["question_count"]) for row in rows) != 6000:
+        raise ValueError("invalid terminal-retention audit cohort")
+    if sum(int(row["state_only_rows"]) for row in rows) != 1773:
+        raise ValueError("unexpected direct-state terminal count")
+    if sum(int(row["finalization_rows"]) for row in rows) != 4227:
+        raise ValueError("unexpected explicit-finalization count")
+    for row in rows:
+        key = (str(row["dataset"]), str(row["signal"]))
+        if str(row["trace_sha256"]) != trace_hashes.get(key):
+            raise ValueError(f"terminal-retention trace binding mismatch: {key}")
+        for field in (
+            "retained_drop_rows",
+            "dropped_retained_evidence",
+            "prefix_order_violation_rows",
+            "finalization_state_change_rows",
+            "finalization_added_rows",
+        ):
+            if int(row[field]) != 0:
+                raise ValueError(f"terminal-retention violation in {key}: {field}")
+    checks.append(
+        "terminal state: 6,000 traces, 0 retained drops, prefix violations, or finalization replacements"
+    )
+
+
 def main() -> int:
     checks: list[str] = []
     try:
@@ -179,6 +211,7 @@ def main() -> int:
         verify_execution_snapshot(checks)
         verify_splits(checks)
         verify_result_tables(checks)
+        verify_terminal_retention(checks)
     except Exception as exc:
         print(json.dumps({"ok": False, "checks": checks, "error": str(exc)}, indent=2))
         return 1
