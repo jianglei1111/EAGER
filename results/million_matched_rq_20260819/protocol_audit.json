@@ -1,0 +1,200 @@
+[
+  {
+    "all_checks_pass": true,
+    "dataset": "hotpotqa",
+    "scales": [
+      {
+        "all_checks_pass": true,
+        "checks": {
+          "candidate_budget": true,
+          "corpus_sha256": true,
+          "final_evidence_budget": true,
+          "question_ids": true,
+          "rerank_budget": true,
+          "retrieval_calls": true,
+          "rq_prompt": true
+        },
+        "dataset": "hotpotqa",
+        "eager_budget": {
+          "candidate_budget": 100,
+          "final_evidence_budget": 30,
+          "rerank_budget": 80,
+          "retrieval_calls": 2
+        },
+        "eager_pre_score_candidate_limit": 200,
+        "scale": "low",
+        "standalone_budget": {
+          "max_ann_candidates": 100,
+          "max_ann_search_k_requested": 100,
+          "max_final_evidence": 30,
+          "max_final_rerank_pairs": 40,
+          "max_rerank_pairs": 80,
+          "max_retrieval_calls": 2,
+          "max_step_rerank_pairs": 40
+        }
+      },
+      {
+        "all_checks_pass": true,
+        "checks": {
+          "candidate_budget": true,
+          "corpus_sha256": true,
+          "final_evidence_budget": true,
+          "question_ids": true,
+          "rerank_budget": true,
+          "retrieval_calls": true,
+          "rq_prompt": true
+        },
+        "dataset": "hotpotqa",
+        "eager_budget": {
+          "candidate_budget": 100,
+          "final_evidence_budget": 30,
+          "rerank_budget": 80,
+          "retrieval_calls": 2
+        },
+        "eager_pre_score_candidate_limit": 200,
+        "scale": "million",
+        "standalone_budget": {
+          "max_ann_candidates": 100,
+          "max_ann_search_k_requested": 100,
+          "max_final_evidence": 30,
+          "max_final_rerank_pairs": 40,
+          "max_rerank_pairs": 80,
+          "max_retrieval_calls": 2,
+          "max_step_rerank_pairs": 40
+        }
+      }
+    ]
+  },
+  {
+    "all_checks_pass": true,
+    "dataset": "2wiki",
+    "scales": [
+      {
+        "all_checks_pass": true,
+        "checks": {
+          "candidate_budget": true,
+          "corpus_sha256": true,
+          "final_evidence_budget": true,
+          "question_ids": true,
+          "rerank_budget": true,
+          "retrieval_calls": true,
+          "rq_prompt": true
+        },
+        "dataset": "2wiki",
+        "eager_budget": {
+          "candidate_budget": 150,
+          "final_evidence_budget": 30,
+          "rerank_budget": 100,
+          "retrieval_calls": 3
+        },
+        "eager_pre_score_candidate_limit": 200,
+        "scale": "low",
+        "standalone_budget": {
+          "max_ann_candidates": 150,
+          "max_ann_search_k_requested": 150,
+          "max_final_evidence": 30,
+          "max_final_rerank_pairs": 40,
+          "max_rerank_pairs": 100,
+          "max_retrieval_calls": 3,
+          "max_step_rerank_pairs": 60
+        }
+      },
+      {
+        "all_checks_pass": true,
+        "checks": {
+          "candidate_budget": true,
+          "corpus_sha256": true,
+          "final_evidence_budget": true,
+          "question_ids": true,
+          "rerank_budget": true,
+          "retrieval_calls": true,
+          "rq_prompt": true
+        },
+        "dataset": "2wiki",
+        "eager_budget": {
+          "candidate_budget": 150,
+          "final_evidence_budget": 30,
+          "rerank_budget": 100,
+          "retrieval_calls": 3
+        },
+        "eager_pre_score_candidate_limit": 200,
+        "scale": "million",
+        "standalone_budget": {
+          "max_ann_candidates": 150,
+          "max_ann_search_k_requested": 150,
+          "max_final_evidence": 30,
+          "max_final_rerank_pairs": 40,
+          "max_rerank_pairs": 100,
+          "max_retrieval_calls": 3,
+          "max_step_rerank_pairs": 60
+        }
+      }
+    ]
+  },
+  {
+    "all_checks_pass": true,
+    "dataset": "musique",
+    "scales": [
+      {
+        "all_checks_pass": true,
+        "checks": {
+          "candidate_budget": true,
+          "corpus_sha256": true,
+          "final_evidence_budget": true,
+          "question_ids": true,
+          "rerank_budget": true,
+          "retrieval_calls": true,
+          "rq_prompt": true
+        },
+        "dataset": "musique",
+        "eager_budget": {
+          "candidate_budget": 200,
+          "final_evidence_budget": 30,
+          "rerank_budget": 120,
+          "retrieval_calls": 4
+        },
+        "eager_pre_score_candidate_limit": 200,
+        "scale": "low",
+        "standalone_budget": {
+          "max_ann_candidates": 200,
+          "max_ann_search_k_requested": 200,
+          "max_final_evidence": 30,
+          "max_final_rerank_pairs": 40,
+          "max_rerank_pairs": 120,
+          "max_retrieval_calls": 4,
+          "max_step_rerank_pairs": 80
+        }
+      },
+      {
+        "all_checks_pass": true,
+        "checks": {
+          "candidate_budget": true,
+          "corpus_sha256": true,
+          "final_evidence_budget": true,
+          "question_ids": true,
+          "rerank_budget": true,
+          "retrieval_calls": true,
+          "rq_prompt": true
+        },
+        "dataset": "musique",
+        "eager_budget": {
+          "candidate_budget": 200,
+          "final_evidence_budget": 30,
+          "rerank_budget": 120,
+          "retrieval_calls": 4
+        },
+        "eager_pre_score_candidate_limit": 200,
+        "scale": "million",
+        "standalone_budget": {
+          "max_ann_candidates": 200,
+          "max_ann_search_k_requested": 200,
+          "max_final_evidence": 30,
+          "max_final_rerank_pairs": 40,
+          "max_rerank_pairs": 120,
+          "max_retrieval_calls": 4,
+          "max_step_rerank_pairs": 80
+        }
+      }
+    ]
+  }
+]

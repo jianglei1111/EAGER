@@ -124,6 +124,8 @@ def verify_result_tables(checks: list[str]) -> None:
         "results/standalone_signal_controls_v2_20260816/paired_eager_vs_standalone.csv": 6,
         "results/eager_v1_component_ablation_20260730/paired_deltas.csv": 20,
         "results/eager_anchor_structure_analysis_20260817/anchor_source_first_hit.csv": 6,
+        "results/million_matched_rq_20260819/system_metrics.csv": 12,
+        "results/million_matched_rq_20260819/paired_comparisons.csv": 60,
     }
     for relative, count in expected_rows.items():
         rows = _csv(relative)
@@ -156,8 +158,18 @@ def verify_result_tables(checks: list[str]) -> None:
         raise ValueError("state-anchor comparison must contain 1,000 aligned questions")
     if compact.get("intervention") != "enabled minus disabled; all other frozen V1 settings unchanged":
         raise ValueError("state-anchor comparison is not a matched intervention")
+    million_audit = _json("results/million_matched_rq_20260819/protocol_audit.json")
+    if len(million_audit) != 3 or not all(row.get("all_checks_pass") for row in million_audit):
+        raise ValueError("million-scale matched-RQ protocol audit failed")
+    million_metrics = _csv("results/million_matched_rq_20260819/system_metrics.csv")
+    million_2wiki = [
+        row for row in million_metrics
+        if row["dataset"] == "2wiki" and row["scale"] == "million"
+    ]
+    if len(million_2wiki) != 2:
+        raise ValueError("million-scale 2Wiki matched rows are missing")
     checks.append("component interventions: 20 historical wrappers plus one matched MuSiQue-RQ state-anchor comparison")
-    checks.append("results: current ConAcc/F1, matched, ablation, structure, and scaling tables")
+    checks.append("results: current ConAcc/F1, matched, ablation, structure, and full-cohort scaling tables")
 
 
 def main() -> int:

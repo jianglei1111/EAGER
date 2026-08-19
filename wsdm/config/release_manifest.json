@@ -110,6 +110,7 @@
     "wsdm/results/eager_v1_question_only_same_stack_20260805/absolute_results.csv",
     "wsdm/results/eager_v1_question_only_same_stack_20260805/paired_deltas.csv",
     "wsdm/results/eager_v1_question_only_same_stack_20260805/manifest.json",
+    "wsdm/results/million_matched_rq_20260819",
     "artifacts/test_runs/wsdm/paper_results/figure2_scaling_cost_v1.csv",
     "artifacts/test_runs/wsdm/paper_results/figure2_scaling_cost_v1.json"
   ],

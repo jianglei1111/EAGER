@@ -129,6 +129,11 @@ primary canonical answer; token F1 takes the maximum over the canonical answer
 and benchmark-provided aliases. These are compact analysis products rather
 than hosted-model response caches or multi-gigabyte retrieval checkpoints.
 
+The complete 1,000-question scale comparison in Table 4 is under
+`results/million_matched_rq_20260819/`. It reports low- and million-scale
+Hard-200 EAGER-RQ and Standalone-RQ metrics, paired direct and scale-interaction
+tests, and an audit of the shared corpora, questions, prompts, and budgets.
+
 ## Release Boundary
 
 The archive has no Git history, credentials, machine-local absolute paths,

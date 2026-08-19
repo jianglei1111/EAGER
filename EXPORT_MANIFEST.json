@@ -1,5 +1,5 @@
 {
-  "file_count": 293,
+  "file_count": 298,
   "files": [
     {
       "bytes": 471,
@@ -1500,17 +1500,17 @@
       "source_path": "wsdm/ANONYMOUS_GITIGNORE"
     },
     {
-      "bytes": 5547,
+      "bytes": 5844,
       "path": "README.md",
       "result_bound_overlay": false,
-      "sha256": "d5cf3b8593609352a815214394dbec66060eb6d328905aee64f9306e79311a41",
+      "sha256": "37ad23c1f973c0964cdbcd7f1e6191714b9fe3ffa0482f36c38883da92ace29a",
       "source_path": "wsdm/ANONYMOUS_README.md"
     },
     {
-      "bytes": 7994,
+      "bytes": 8730,
       "path": "analysis/verify.py",
       "result_bound_overlay": false,
-      "sha256": "a56b92d5c86df919a5f6bee0746138b40f8bbdb44ce8aaf322938ee760f9691a",
+      "sha256": "f25e28813dcee4e08e11b950f511f8ab5b7db5ab4478f4cfc2a2a7b4ecbabe66",
       "source_path": "wsdm/artifact_analysis/verify_eager_minimal.py"
     },
     {
@@ -1528,10 +1528,10 @@
       "source_path": "wsdm/config/experiment_protocol.json"
     },
     {
-      "bytes": 7575,
+      "bytes": 7623,
       "path": "wsdm/config/release_manifest.json",
       "result_bound_overlay": false,
-      "sha256": "1b3997914cad8185b847c2ecd8c3d1cc09331cf36b46487771cb7f5e92a77e9e",
+      "sha256": "fbb537b282796f59c6ddc75f6b79555a55c22f23929184f85d321aaa6b3ffd54",
       "source_path": "wsdm/config/release_manifest.json"
     },
     {
@@ -1883,6 +1883,41 @@
       "result_bound_overlay": false,
       "sha256": "2a72e6818869ffa42134c33ee450f99207f1397399d67f3143a5525031cb3d4b",
       "source_path": "wsdm/results/eager_v1_signal_structure_20260730/table3_signal_structure_main_v1.csv"
+    },
+    {
+      "bytes": 1288,
+      "path": "results/million_matched_rq_20260819/README.md",
+      "result_bound_overlay": false,
+      "sha256": "764ec4c93277c740b614c611a929cdbf42809719bd19b79146e239231454d5c2",
+      "source_path": "wsdm/results/million_matched_rq_20260819/README.md"
+    },
+    {
+      "bytes": 14534,
+      "path": "results/million_matched_rq_20260819/paired_comparisons.csv",
+      "result_bound_overlay": false,
+      "sha256": "970e9638d0b9d25d87a54b7391021a47ea96af3ca487e719a794df2efd17a0e6",
+      "source_path": "wsdm/results/million_matched_rq_20260819/paired_comparisons.csv"
+    },
+    {
+      "bytes": 5881,
+      "path": "results/million_matched_rq_20260819/protocol_audit.json",
+      "result_bound_overlay": false,
+      "sha256": "59302dae5fb03ec643054940012f2b97b8f90ef4ccc25148b59f8508fb87d103",
+      "source_path": "wsdm/results/million_matched_rq_20260819/protocol_audit.json"
+    },
+    {
+      "bytes": 1632,
+      "path": "results/million_matched_rq_20260819/report.md",
+      "result_bound_overlay": false,
+      "sha256": "c7007aff0a3f1481a2c8a44d2ed0459c11ba3222b67d31e7dac54ea9346b8c16",
+      "source_path": "wsdm/results/million_matched_rq_20260819/report.md"
+    },
+    {
+      "bytes": 1659,
+      "path": "results/million_matched_rq_20260819/system_metrics.csv",
+      "result_bound_overlay": false,
+      "sha256": "a2acffc7caa2ce1982e19247e96234414ddcb40a6b430e4f0ff20532bb454d59",
+      "source_path": "wsdm/results/million_matched_rq_20260819/system_metrics.csv"
     },
     {
       "bytes": 1613,
