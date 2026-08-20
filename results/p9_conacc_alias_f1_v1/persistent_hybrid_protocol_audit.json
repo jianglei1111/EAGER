@@ -1,0 +1,44 @@
+[
+  {
+    "dataset": "hotpotqa",
+    "signal": "rq",
+    "question_count": 1000,
+    "identity_match": true,
+    "handle_set_sha256": "4bb712f7169992ce73a8bafedcce36034cf3ca4a155d0cf45c6d7df772836133"
+  },
+  {
+    "dataset": "hotpotqa",
+    "signal": "sc",
+    "question_count": 1000,
+    "identity_match": true,
+    "handle_set_sha256": "4bb712f7169992ce73a8bafedcce36034cf3ca4a155d0cf45c6d7df772836133"
+  },
+  {
+    "dataset": "2wiki",
+    "signal": "rq",
+    "question_count": 1000,
+    "identity_match": true,
+    "handle_set_sha256": "ee50face8f1401b6417a382faac825617bd228d2674d7175c2c0f19c2abeb442"
+  },
+  {
+    "dataset": "2wiki",
+    "signal": "sc",
+    "question_count": 1000,
+    "identity_match": true,
+    "handle_set_sha256": "ee50face8f1401b6417a382faac825617bd228d2674d7175c2c0f19c2abeb442"
+  },
+  {
+    "dataset": "musique",
+    "signal": "rq",
+    "question_count": 1000,
+    "identity_match": true,
+    "handle_set_sha256": "e9c08fa79e3176ec6911c06f9c67b68849dc8078396e6d17724bad174ac9e7cb"
+  },
+  {
+    "dataset": "musique",
+    "signal": "sc",
+    "question_count": 1000,
+    "identity_match": true,
+    "handle_set_sha256": "e9c08fa79e3176ec6911c06f9c67b68849dc8078396e6d17724bad174ac9e7cb"
+  }
+]

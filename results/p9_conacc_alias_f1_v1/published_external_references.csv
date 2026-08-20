@@ -1,0 +1,10 @@
+method,source_scope,dataset,dataset_label,conacc_pct
+HippoRAG,published original protocol,hotpotqa,HotpotQA,57.0
+HippoRAG,published original protocol,2wiki,2Wiki,66.1
+HippoRAG,published original protocol,musique,MuSiQue,29.3
+HippoRAG2,published original protocol,hotpotqa,HotpotQA,62.9
+HippoRAG2,published original protocol,2wiki,2Wiki,62.7
+HippoRAG2,published original protocol,musique,MuSiQue,31.0
+LAG,published original protocol,hotpotqa,HotpotQA,68.5
+LAG,published original protocol,2wiki,2Wiki,71.9
+LAG,published original protocol,musique,MuSiQue,42.8

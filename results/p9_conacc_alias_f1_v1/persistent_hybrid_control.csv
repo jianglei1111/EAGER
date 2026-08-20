@@ -1,0 +1,7 @@
+dataset,dataset_label,signal,method,n,conacc_pct,alias_f1_pct,candidate_full_pct,final_full_pct
+hotpotqa,HotpotQA,RQ,Persistent Hybrid-RQ,1000,65.9,72.81872778666123,94.0,90.8
+hotpotqa,HotpotQA,SC,Persistent Hybrid-SC,1000,65.5,72.11365552800201,93.0,90.60000000000001
+2wiki,2Wiki,RQ,Persistent Hybrid-RQ,1000,73.0,70.90556887556887,91.0,89.1
+2wiki,2Wiki,SC,Persistent Hybrid-SC,1000,73.4,71.31806998556998,97.0,96.6
+musique,MuSiQue,RQ,Persistent Hybrid-RQ,1000,39.4,49.932073653900275,72.39999999999999,53.400000000000006
+musique,MuSiQue,SC,Persistent Hybrid-SC,1000,42.0,52.61946115161218,77.3,65.60000000000001

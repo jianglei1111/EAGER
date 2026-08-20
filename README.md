@@ -129,6 +129,11 @@ primary canonical answer; token F1 takes the maximum over the canonical answer
 and benchmark-provided aliases. These are compact analysis products rather
 than hosted-model response caches or multi-gigabyte retrieval checkpoints.
 
+Table 1 is represented as two explicitly separate result scopes: published
+external ConAcc references, and locally reproduced or matched ConAcc/F1 rows.
+The latter includes the six Persistent Hybrid controls and excludes the
+zero-shot and single-pass Dense rows removed from the current manuscript.
+
 The complete 1,000-question scale comparison in Table 4 is under
 `results/million_matched_rq_20260819/`. It reports low- and million-scale
 Hard-200 EAGER-RQ and Standalone-RQ metrics, paired direct and scale-interaction

@@ -112,7 +112,9 @@ def verify_splits(checks: list[str]) -> None:
 
 def verify_result_tables(checks: list[str]) -> None:
     expected_rows = {
-        "results/p9_conacc_alias_f1_v1/system_metrics.csv": 21,
+        "results/p9_conacc_alias_f1_v1/published_external_references.csv": 9,
+        "results/p9_conacc_alias_f1_v1/system_metrics.csv": 27,
+        "results/p9_conacc_alias_f1_v1/persistent_hybrid_control.csv": 6,
         "results/p9_conacc_alias_f1_v1/main_matched.csv": 6,
         "results/p9_conacc_alias_f1_v1/common_reader.csv": 12,
         "results/p9_conacc_alias_f1_v1/component_interventions.csv": 21,
@@ -145,6 +147,22 @@ def verify_result_tables(checks: list[str]) -> None:
     required_columns = {"conacc_pct", "alias_f1_pct"}
     if not required_columns.issubset(current_metrics[0]):
         raise ValueError("current paper metrics must contain ConAcc and alias-aware F1")
+    persistent_rows = [
+        row for row in current_metrics if row["method"].startswith("persistent_hybrid_")
+    ]
+    if len(persistent_rows) != 6:
+        raise ValueError("current paper metrics must contain six Persistent Hybrid rows")
+    external_rows = _csv("results/p9_conacc_alias_f1_v1/published_external_references.csv")
+    if {row["method"] for row in external_rows} != {"HippoRAG", "HippoRAG2", "LAG"}:
+        raise ValueError("published external reference panel is incomplete")
+    persistent_audit = _json(
+        "results/p9_conacc_alias_f1_v1/persistent_hybrid_protocol_audit.json"
+    )
+    if len(persistent_audit) != 6 or not all(
+        int(row.get("question_count", -1)) == 1000 and row.get("identity_match")
+        for row in persistent_audit
+    ):
+        raise ValueError("Persistent Hybrid cohort audit failed")
     extension = _json("results/eager_v1_component_ablation_holm21_20260818/holm21_summary.json")
     if int(extension.get("family_size", -1)) != 21:
         raise ValueError("component intervention family must contain 21 comparisons")
@@ -169,7 +187,7 @@ def verify_result_tables(checks: list[str]) -> None:
     if len(million_2wiki) != 2:
         raise ValueError("million-scale 2Wiki matched rows are missing")
     checks.append("component interventions: 20 historical wrappers plus one matched MuSiQue-RQ state-anchor comparison")
-    checks.append("results: current ConAcc/F1, matched, ablation, structure, and full-cohort scaling tables")
+    checks.append("results: current external, reproduced, matched, ablation, structure, and full-cohort scaling tables")
 
 
 def verify_terminal_retention(checks: list[str]) -> None:

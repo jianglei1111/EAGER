@@ -1,3 +1,4 @@
+* text=auto eol=lf
 /configs/bridge_eval_100_seed20260421.json text eol=lf
 /configs/comparison_eval_100_seed20260425.json text eol=lf
 /configs/remaining_800_eval_20260425.json text eol=lf
