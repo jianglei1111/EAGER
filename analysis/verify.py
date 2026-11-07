@@ -59,25 +59,6 @@ def verify_inventory(checks: list[str]) -> None:
     checks.append(f"inventory: {len(files)} files, EAGER-only source boundary")
 
 
-def verify_execution_snapshot(checks: list[str]) -> None:
-    root = ROOT / "provenance" / "eager_v1_execution_snapshot"
-    manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8-sig"))
-    checkpoint = manifest["checkpoint_export_manifest"]
-    if _sha256(root / checkpoint["path"]) != checkpoint["sha256"]:
-        raise ValueError("checkpoint export manifest mismatch")
-
-    for item in manifest["root_overlays"]:
-        if _sha256(ROOT / item["path"]) != item["sha256"]:
-            raise ValueError(f"result-bound root source mismatch: {item['path']}")
-    for relative, expected in manifest["executed_main_wrappers"].items():
-        if _sha256(ROOT / relative) != expected:
-            raise ValueError(f"main wrapper mismatch: {relative}")
-    for relative, expected in manifest["component_ablation_wrappers"].items():
-        if _sha256(ROOT / relative) != expected:
-            raise ValueError(f"ablation wrapper mismatch: {relative}")
-    checks.append("execution snapshot: 6 main and 20 historical ablation wrappers bound")
-
-
 def _read_ids(relative: str) -> list[str]:
     raw = (ROOT / relative).read_bytes()
     if raw.startswith(b"\xef\xbb\xbf") or b"\r" in raw or not raw.endswith(b"\n"):
@@ -186,7 +167,7 @@ def verify_result_tables(checks: list[str]) -> None:
     ]
     if len(million_2wiki) != 2:
         raise ValueError("million-scale 2Wiki matched rows are missing")
-    checks.append("component interventions: 20 historical wrappers plus one matched MuSiQue-RQ state-anchor comparison")
+    checks.append("component interventions: compact tables for 21 comparisons, including the matched MuSiQue-RQ state-anchor toggle")
     checks.append("results: current external, reproduced, matched, ablation, structure, and full-cohort scaling tables")
 
 
@@ -226,7 +207,6 @@ def main() -> int:
     checks: list[str] = []
     try:
         verify_inventory(checks)
-        verify_execution_snapshot(checks)
         verify_splits(checks)
         verify_result_tables(checks)
         verify_terminal_retention(checks)

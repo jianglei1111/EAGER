@@ -1,39 +1,21 @@
 # EAGER: Anchor-Driven Evidence Construction for Multi-Hop RAG
 
-EAGER has been accepted as a **Findings paper at WSDM 2027** (Paper ID
-1877). The conference will be held in Hong Kong on February 15--19, 2027;
-Findings papers are presented as posters. The camera-ready deadline is
-December 1, 2026, and the author-registration deadline is December 17, 2026
-(AoE).
+[![WSDM 2027 Findings](https://img.shields.io/badge/WSDM%202027-Findings%20Accepted-2ea44f)](https://wsdm-conference.org/2027/)
 
-This repository is the public implementation and reproducibility package for
-the paper, *EAGER: Anchor-Driven Evidence Construction for Multi-Hop RAG*.
-It contains the EAGER retrieval kernel, controller prompts, frozen experiment
-wrappers, compact result tables, provenance checks, and offline tests. It does
-not contain model weights, benchmark downloads, hosted-model response caches,
-private checkpoints, or API credentials.
+![EAGER overview](assets/eager_overview.png)
 
-## Repository layout
+EAGER is an anchor-driven evidence-construction framework for multi-hop
+retrieval-augmented generation. It separates step-level control from evidence
+construction and combines surface-linked activation, semantic retrieval,
+hierarchical selection, and persistent evidence state for retrieval-question
+(RQ) and subquestion-chain (SC) controllers.
 
-| Path | Purpose |
-| --- | --- |
-| `src/eager/` | Evidence activation, hierarchical selection, state transitions, controllers, data, evaluation, and runtime code |
-| `prompts/` | Retrieval-question, subquestion-chain, intermediate-answer, reader, and evaluator prompts |
-| `configs/` | Reproducible model and retrieval settings; local credentials stay outside version control |
-| `experiments_sandbox/` | The six main wrappers, component ablations, and the matched MuSiQue-RQ state-anchor intervention |
-| `results/` | Compact ConAcc/F1 tables, provenance-bound diagnostics, and million-unit scaling results |
-| `provenance/` | Hashes and executed-source snapshots that bind reported results to code |
-| `splits/` | Development and formal question-ID lists |
-| `tests/` | Offline unit and contract tests with small fixtures |
-| `analysis/verify.py` | Offline inventory, split, provenance, and result-table verifier |
+The paper, **“EAGER: Anchor-Driven Evidence Construction for Multi-Hop RAG,”**
+was accepted as a **Findings paper at WSDM 2027** (Paper ID 1877). The
+conference will be held in Hong Kong on February 15--19, 2027, with poster
+presentations for Findings papers.
 
-The current paper reports six fixed controller--benchmark configurations with
-no question-level routing at test time. The main quality metrics are ConAcc
-and alias-aware token F1. Some provenance-bound CSV files retain GPTAcc fields
-from earlier audit runs; those fields are kept to preserve the executed
-artifact history and are not the headline metrics for the accepted paper.
-
-## Installation
+## Quick start
 
 Python 3.10--3.12 is supported.
 
@@ -44,33 +26,14 @@ python -m pip install -e ".[core,dev]"
 python -m spacy download en_core_web_sm
 ```
 
-Model revisions and platform-specific dependency locks are recorded under
-`requirements/`. Model weights and official benchmark files must be obtained
-from their original providers.
-
-## Verification and tests
-
-The release verifier is fully offline:
+Run the offline verifier and fixture-backed tests:
 
 ```bash
 python analysis/verify.py
-```
-
-It checks the export inventory, six main wrappers, component interventions,
-formal split counts, current result tables, and terminal-state audits.
-
-Run the fixture-backed test suite with:
-
-```bash
 python -m pytest -q
 ```
 
-Tests that require external benchmark files or local model snapshots skip when
-those dependencies are unavailable.
-
-## Smoke run
-
-The fixture workflow does not call a hosted model:
+A small retrieval smoke run is also available without a hosted model:
 
 ```bash
 python -m eager.cli data index \
@@ -86,45 +49,47 @@ python -m eager.cli retrieve \
   --mode retrieval-question
 ```
 
-## Full runs
+## Reproduce the main runs
 
-After downloading the registered datasets and building the MiniLM and surface
-indexes, the six main wrappers reproduce EAGER-RQ and EAGER-SC on HotpotQA,
-2WikiMultiHopQA, and MuSiQue. Wrapper help is available with:
+The public release keeps the six main 1,000-question wrappers:
 
-```bash
-python experiments_sandbox/20260728_027_hotpotqa_rq_v1_full1000/run.py --help
-python experiments_sandbox/20260728_032_musique_sc_v1_full1000/run.py --help
-```
+| Dataset | RQ | SC |
+| --- | --- | --- |
+| HotpotQA | `experiments_sandbox/20260728_027_hotpotqa_rq_v1_full1000/run.py` | `experiments_sandbox/20260728_028_hotpotqa_sc_v1_full1000/run.py` |
+| 2WikiMultiHopQA | `experiments_sandbox/20260728_029_2wiki_rq_v1_full1000/run.py` | `experiments_sandbox/20260728_030_2wiki_sc_v1_full1000/run.py` |
+| MuSiQue | `experiments_sandbox/20260728_031_musique_rq_v1_full1000/run.py` | `experiments_sandbox/20260728_032_musique_sc_v1_full1000/run.py` |
 
-The component-ablation wrappers use the byte-exact source snapshots under
-`provenance/eager_v1_execution_snapshot/`. The matched MuSiQue-RQ state-anchor
-comparison is documented under
-`results/eager_v1_component_ablation_holm21_20260818/`.
-
-Hosted generation reads credentials from `OPENAI_API_KEY` or an ignored local
-configuration copied from `configs/llm_config.example.json`. No credential is
-stored in this repository. The checked-in defaults use an OpenAI-compatible
-endpoint suitable for new runs; provenance records retain the endpoint
-metadata of the recorded experiments.
+Download the registered datasets and build the MiniLM and surface indexes before
+running the wrappers. Hosted generation reads `OPENAI_API_KEY` and an
+OpenAI-compatible endpoint from local configuration; credentials are never
+stored in the repository.
 
 ## Results
 
-The compact result tables under `results/` map to the paper's main results,
-component interventions, structural analysis, and million-unit scaling study.
-Each result directory contains its own manifest or protocol note where
-applicable. The export inventory in `EXPORT_MANIFEST.json` records the byte
-size and SHA-256 digest of every tracked release file.
+The compact tables used by the paper are in:
+
+- [`results/p9_conacc_alias_f1_v1/`](results/p9_conacc_alias_f1_v1/)
+- [`results/eager_v1_main1000_20260728/`](results/eager_v1_main1000_20260728/)
+- [`results/million_matched_rq_20260819/`](results/million_matched_rq_20260819/)
+
+The main quality metrics are ConAcc and alias-aware token F1. Component,
+structure, and million-unit scaling analyses are included as compact CSV/JSON
+products; raw hosted-model traces, model weights, and benchmark downloads are
+not included.
+
+![Million-scale cost and quality](assets/scaling_cost.png)
+
+## Project structure
+
+- `src/eager/` — retrieval kernel, controllers, state update, evaluation, and runtime
+- `configs/` — model and retrieval configuration examples
+- `prompts/` — controller, reader, and evaluation prompts
+- `results/` — compact paper tables and audits
+- `tests/` — offline unit and contract tests
+- `analysis/verify.py` — release inventory and result verifier
 
 ## Citation
 
-Please cite the WSDM 2027 Findings paper once the final bibliographic record
-is available. The title and acceptance information above identify the work
-unambiguously in the meantime.
-
-## Release boundary
-
-This public repository contains source code, prompts, compact tables, split
-IDs, provenance metadata, and offline fixtures. Raw hosted-model traces,
-model weights, benchmark downloads, private run checkpoints, review material,
-and machine-local paths are excluded.
+Please cite the WSDM 2027 Findings paper once the final bibliographic record is
+available. The repository will be updated with the final citation metadata when
+it is released.
