@@ -5,7 +5,7 @@
     "fully_identical_to_historical_v1": false,
     "fully_identical_within_current_pair": true,
     "gateway_changed": true,
-    "historical_v1_base_url": "https://yunwu.ai/v1"
+    "historical_v1_base_url": "[redacted historical endpoint]"
   },
   "created_at": "2026-08-04T18:25:18.872450+00:00",
   "dataset": "musique",

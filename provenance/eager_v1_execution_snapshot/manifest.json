@@ -3,7 +3,7 @@
   "snapshot_id": "eager_v1_execution_snapshot_20260728_30",
   "checkpoint_export_manifest": {
     "path": "checkpoint_export_manifest.json",
-    "sha256": "71ee36fa8e6729574c59284f6d38372a4956b18e076fb9a7eea1ca8e2e01a5ab"
+    "sha256": "a48215096add7ad4ad05a3487c234c58a3d0460f14df98457116957b593333d6"
   },
   "reported_run_count": {
     "component_ablation": 20,
@@ -12,7 +12,7 @@
   "root_overlays": [
     {
       "path": "configs/wsdm/base.json",
-      "sha256": "20728f1fc9ce552820d3c288b040474e6553d675d0db0ca82bb659f3378b538b",
+      "sha256": "b16acc46547c9b53fedcf18924df4999bf602abd9eebede3dab21368f7bb9187",
       "snapshot_path": "root_overlay/configs/wsdm/base.json"
     },
     {

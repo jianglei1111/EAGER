@@ -7,7 +7,7 @@ runs (2026-07-29 through 2026-07-30).
 The main runs were executed from a dirty checkout whose shared retrieval code
 was subsequently committed and then hardened. The three files under
 `root_overlay/` are the exact preflight-bound versions and replace the newer
-working-tree versions during anonymous export. No prediction is recomputed or
+working-tree versions in the published snapshot. No prediction is recomputed or
 changed by this export operation.
 
 `checkpoint_export_manifest.json` is the complete SHA-256 inventory exported
@@ -27,7 +27,7 @@ the component ablations. Both byte-exact sets are therefore retained:
 
 This wrapper-only transition did not change the shared retrieval kernel,
 controllers, prompts, prepared question IDs, indexes, or effective retrieval
-configuration. The anonymous package uses the executed main wrappers at its
+configuration. The public package uses the executed main wrappers at its
 root and publishes the ablation-bound set under `provenance/`. Run
 `scripts/select_eager_v1_protocol_snapshot.py --mode ablation --materialize`
 before reproducing the dated component-ablation entries.

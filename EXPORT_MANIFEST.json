@@ -9,10 +9,10 @@
       "source_path": ".gitattributes"
     },
     {
-      "bytes": 10454,
+      "bytes": 10465,
       "path": "provenance/state_anchor_intervention/paired_control_preflight.json",
       "result_bound_overlay": false,
-      "sha256": "0fb3df9eef70f3cd785ae54a4ab76523f051c5596f75573b564b9a1e842d56d1",
+      "sha256": "6ef2b7ee22b307acae2064ac361916789d69bd2a982bde428db9c10b4286bccd",
       "source_path": "artifacts/test_runs/wsdm/eager_v1_20260805_musique_rq_openlux_control_main1000_v1/canonical_preflight.json"
     },
     {
@@ -40,7 +40,7 @@
       "bytes": 3269,
       "path": "configs/wsdm/base.json",
       "result_bound_overlay": true,
-      "sha256": "20728f1fc9ce552820d3c288b040474e6553d675d0db0ca82bb659f3378b538b",
+      "sha256": "b16acc46547c9b53fedcf18924df4999bf602abd9eebede3dab21368f7bb9187",
       "source_path": "configs/wsdm/base.json"
     },
     {
@@ -1490,21 +1490,21 @@
       "path": "pyproject.toml",
       "result_bound_overlay": false,
       "sha256": "de83e72b37c8e70f5396968d97f4cee68dbb78a10d9573bf88c34f2968b1231c",
-      "source_path": "wsdm/ANONYMOUS_EAGER_PYPROJECT.toml"
+      "source_path": "pyproject.toml"
     },
     {
       "bytes": 347,
       "path": ".gitignore",
       "result_bound_overlay": false,
       "sha256": "7a69c42ac1fdcd3ec18eb26ea2b830c2106897af9431618ad589607f0d6ce3c6",
-      "source_path": "wsdm/ANONYMOUS_GITIGNORE"
+      "source_path": ".gitignore"
     },
     {
-      "bytes": 6144,
+      "bytes": 5223,
       "path": "README.md",
       "result_bound_overlay": false,
-      "sha256": "acfee88a8c264eb6d6ffa98a5c31798db8a68676713b4f2ebfe9078127b62367",
-      "source_path": "wsdm/ANONYMOUS_README.md"
+      "sha256": "e802e410aa3f7a2424a29fefc19546c75c155449b251b44592230d1e247bfcef",
+      "source_path": "README.md"
     },
     {
       "bytes": 11278,
@@ -1528,10 +1528,10 @@
       "source_path": "wsdm/config/experiment_protocol.json"
     },
     {
-      "bytes": 7623,
+      "bytes": 735,
       "path": "wsdm/config/release_manifest.json",
       "result_bound_overlay": false,
-      "sha256": "fbb537b282796f59c6ddc75f6b79555a55c22f23929184f85d321aaa6b3ffd54",
+      "sha256": "9207ffd39ebda24699b88aa6e125f1530ad25e4cb1c91d18e561a3153478d433",
       "source_path": "wsdm/config/release_manifest.json"
     },
     {
@@ -1563,17 +1563,17 @@
       "source_path": "wsdm/fixtures/development/inference.json"
     },
     {
-      "bytes": 764,
+      "bytes": 722,
       "path": "src/eager_baselines/__init__.py",
       "result_bound_overlay": false,
-      "sha256": "b296ac021696585d7ed4e0cd7967b313bb48efeeb5645604e102a4c17f529761",
+      "sha256": "8635f689b2f1b293772c1b43bba97480bc12fc84c29e94c331734fbc07d10c75",
       "source_path": "wsdm/reproduction/eager_only_compat/src/eager_baselines/__init__.py"
     },
     {
-      "bytes": 2049,
+      "bytes": 2085,
       "path": "provenance/eager_v1_execution_snapshot/README.md",
       "result_bound_overlay": false,
-      "sha256": "02011236d4e27870a408216f11647d839094b02739903adb1dd366c1664ea72f",
+      "sha256": "11e0bf1356793b81646eaeed3314ebab8fce0e466d57923a42e114cd50607613",
       "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/README.md"
     },
     {
@@ -1619,17 +1619,17 @@
       "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/ablation_base_wrappers/experiments_sandbox/20260728_032_musique_sc_v1_full1000/run.py"
     },
     {
-      "bytes": 34977,
+      "bytes": 36001,
       "path": "provenance/eager_v1_execution_snapshot/checkpoint_export_manifest.json",
       "result_bound_overlay": false,
-      "sha256": "71ee36fa8e6729574c59284f6d38372a4956b18e076fb9a7eea1ca8e2e01a5ab",
+      "sha256": "a48215096add7ad4ad05a3487c234c58a3d0460f14df98457116957b593333d6",
       "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/checkpoint_export_manifest.json"
     },
     {
-      "bytes": 225,
+      "bytes": 231,
       "path": "configs/llm_config.v1.example.json",
       "result_bound_overlay": false,
-      "sha256": "8de8e708ec66d00d179aa5259aebf4ae3b4e883187c15b495355e514747d8abf",
+      "sha256": "74b68b6df03183c9be36225fb24f7e2339c59b07f0bd2f6921b030467124db5a",
       "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/llm_config.v1.example.json"
     },
     {
@@ -1675,17 +1675,17 @@
       "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/main_wrappers_executed/experiments_sandbox/20260728_032_musique_sc_v1_full1000/run.py"
     },
     {
-      "bytes": 6357,
+      "bytes": 6429,
       "path": "provenance/eager_v1_execution_snapshot/manifest.json",
       "result_bound_overlay": false,
-      "sha256": "0140f7c5e78d9a23dbe27c5c6a9c5c859c77824b837324ffcb32a34f858cf0d6",
+      "sha256": "d0d2a465d741ac76b1f137a6c771d588d969eca877d621482157d790a31755ff",
       "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/manifest.json"
     },
     {
       "bytes": 3269,
       "path": "wsdm/reproduction/eager_v1_execution_snapshot/root_overlay/configs/wsdm/base.json",
       "result_bound_overlay": false,
-      "sha256": "20728f1fc9ce552820d3c288b040474e6553d675d0db0ca82bb659f3378b538b",
+      "sha256": "b16acc46547c9b53fedcf18924df4999bf602abd9eebede3dab21368f7bb9187",
       "source_path": "wsdm/reproduction/eager_v1_execution_snapshot/root_overlay/configs/wsdm/base.json"
     },
     {

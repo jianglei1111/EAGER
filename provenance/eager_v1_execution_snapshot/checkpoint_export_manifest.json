@@ -39,7 +39,7 @@
     {
       "bytes": 3269,
       "path": "configs/wsdm/base.json",
-      "sha256": "20728f1fc9ce552820d3c288b040474e6553d675d0db0ca82bb659f3378b538b"
+      "sha256": "b16acc46547c9b53fedcf18924df4999bf602abd9eebede3dab21368f7bb9187"
     },
     {
       "bytes": 122,
@@ -918,7 +918,7 @@
     },
     {
       "bytes": 4432,
-      "path": "wsdm/scripts/export_anonymous_artifact.py",
+      "path": "wsdm/scripts/export_public_artifact.py",
       "sha256": "884f18795535bb68c56f3f5b6ae9ebe3c5af9e84f6ef26591aaab38597768a27"
     },
     {

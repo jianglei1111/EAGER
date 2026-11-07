@@ -1,6 +1,6 @@
 {
   "provider": "openai_compatible",
-  "base_url": "https://yunwu.ai/v1",
+  "base_url": "https://api.openai.com/v1",
   "api_key": "YOUR_API_KEY",
   "model": "gpt-4o-mini",
   "temperature": 0.0,

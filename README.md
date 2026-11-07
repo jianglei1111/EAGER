@@ -1,30 +1,39 @@
-# EAGER Anonymous Artifact
+# EAGER: Anchor-Driven Evidence Construction for Multi-Hop RAG
 
-This package contains the EAGER implementation used for the paper's RQ and SC
-experiments. It is intentionally EAGER-only: third-party repositories,
-baseline adapters, manuscript source, historical prototypes, and private run
-checkpoints are not redistributed. Compact comparison tables remain available
-under `results/` so the reported analyses can be inspected directly.
+EAGER has been accepted as a **Findings paper at WSDM 2027** (Paper ID
+1877). The conference will be held in Hong Kong on February 15--19, 2027;
+Findings papers are presented as posters. The camera-ready deadline is
+December 1, 2026, and the author-registration deadline is December 17, 2026
+(AoE).
 
-## Contents
+This repository is the public implementation and reproducibility package for
+the paper, *EAGER: Anchor-Driven Evidence Construction for Multi-Hop RAG*.
+It contains the EAGER retrieval kernel, controller prompts, frozen experiment
+wrappers, compact result tables, provenance checks, and offline tests. It does
+not contain model weights, benchmark downloads, hosted-model response caches,
+private checkpoints, or API credentials.
+
+## Repository layout
 
 | Path | Purpose |
 | --- | --- |
-| `src/eager/` | Evidence activation, hierarchical selection, state transition, controllers, data, evaluation, and runtime code |
-| `prompts/` | RQ, SC, intermediate-answer, reader, and optional evaluator prompts |
-| `configs/` | Result-bound EAGER configuration and model registry |
-| `experiments_sandbox/` | Six main wrappers, 20 historical one-switch wrappers, and one matched MuSiQue-RQ state-anchor intervention wrapper |
-| `provenance/` | Byte hashes and the executed main/ablation wrapper snapshots |
-| `results/` | Current ConAcc/F1 tables plus compact run-bound diagnostics |
-| `tests/` | EAGER unit and contract tests with small offline fixtures |
-| `analysis/verify.py` | Offline inventory and result-table verifier |
+| `src/eager/` | Evidence activation, hierarchical selection, state transitions, controllers, data, evaluation, and runtime code |
+| `prompts/` | Retrieval-question, subquestion-chain, intermediate-answer, reader, and evaluator prompts |
+| `configs/` | Reproducible model and retrieval settings; local credentials stay outside version control |
+| `experiments_sandbox/` | The six main wrappers, component ablations, and the matched MuSiQue-RQ state-anchor intervention |
+| `results/` | Compact ConAcc/F1 tables, provenance-bound diagnostics, and million-unit scaling results |
+| `provenance/` | Hashes and executed-source snapshots that bind reported results to code |
+| `splits/` | Development and formal question-ID lists |
+| `tests/` | Offline unit and contract tests with small fixtures |
+| `analysis/verify.py` | Offline inventory, split, provenance, and result-table verifier |
 
-`src/eager_baselines/__init__.py` is only a small compatibility boundary. The
-result-bound EAGER CLI imported optional baseline entry points at module load
-time; the compatibility module makes those omitted commands fail explicitly
-without distributing baseline implementations.
+The current paper reports six fixed controller--benchmark configurations with
+no question-level routing at test time. The main quality metrics are ConAcc
+and alias-aware token F1. Some provenance-bound CSV files retain GPTAcc fields
+from earlier audit runs; those fields are kept to preserve the executed
+artifact history and are not the headline metrics for the accepted paper.
 
-## Install
+## Installation
 
 Python 3.10--3.12 is supported.
 
@@ -36,34 +45,32 @@ python -m spacy download en_core_web_sm
 ```
 
 Model revisions and platform-specific dependency locks are recorded under
-`requirements/`. Model weights and official benchmark files are downloaded
-from their original providers and are not included in the archive.
+`requirements/`. Model weights and official benchmark files must be obtained
+from their original providers.
 
-## Offline Checks
+## Verification and tests
 
-The release verifier needs no model, dataset, API key, or network access:
+The release verifier is fully offline:
 
 ```bash
 python analysis/verify.py
 ```
 
-It checks the complete export inventory, the six result-bound main wrappers,
-the 20 historical ablation wrappers, the matched MuSiQue-RQ state-anchor
-intervention, formal split ID counts, and all directly readable result tables.
+It checks the export inventory, six main wrappers, component interventions,
+formal split counts, current result tables, and terminal-state audits.
 
-The small fixture suite exercises indexing, retrieval, controllers, state
-retention, evaluation, and configuration resolution:
+Run the fixture-backed test suite with:
 
 ```bash
 python -m pytest -q
 ```
 
-Tests that require external benchmark files or model snapshots skip when those
-dependencies are unavailable.
+Tests that require external benchmark files or local model snapshots skip when
+those dependencies are unavailable.
 
-## EAGER Smoke Run
+## Smoke run
 
-The fixture workflow does not use a hosted model:
+The fixture workflow does not call a hosted model:
 
 ```bash
 python -m eager.cli data index \
@@ -79,68 +86,45 @@ python -m eager.cli retrieve \
   --mode retrieval-question
 ```
 
-## Full EAGER Runs
+## Full runs
 
-The package exports the exact EAGER source bytes bound by the reported run
-preflights. After downloading the registered datasets and building the MiniLM
-and surface indexes, the six main wrappers reproduce EAGER-RQ and EAGER-SC on
-the three benchmarks. For example:
+After downloading the registered datasets and building the MiniLM and surface
+indexes, the six main wrappers reproduce EAGER-RQ and EAGER-SC on HotpotQA,
+2WikiMultiHopQA, and MuSiQue. Wrapper help is available with:
 
 ```bash
 python experiments_sandbox/20260728_027_hotpotqa_rq_v1_full1000/run.py --help
 python experiments_sandbox/20260728_032_musique_sc_v1_full1000/run.py --help
 ```
 
-Five wrapper files were standardized between the main runs and the component
-ablations without changing the retrieval kernel, prompts, model registry,
-question IDs, indexes, or effective settings. Both byte-exact wrapper sets are
-under `provenance/eager_v1_execution_snapshot/`. Select the ablation-bound set
-before executing wrappers 033--052:
+The component-ablation wrappers use the byte-exact source snapshots under
+`provenance/eager_v1_execution_snapshot/`. The matched MuSiQue-RQ state-anchor
+comparison is documented under
+`results/eager_v1_component_ablation_holm21_20260818/`.
 
-```bash
-python scripts/select_eager_v1_protocol_snapshot.py \
-  --mode ablation --materialize
-```
+Hosted generation reads credentials from `OPENAI_API_KEY` or an ignored local
+configuration copied from `configs/llm_config.example.json`. No credential is
+stored in this repository. The checked-in defaults use an OpenAI-compatible
+endpoint suitable for new runs; provenance records retain the endpoint
+metadata of the recorded experiments.
 
-Use `--mode main` to restore the main-run wrappers.
+## Results
 
-The 21st component intervention is a matched MuSiQue-RQ state-anchor toggle.
-Its compact comparison is in
-`results/eager_v1_component_ablation_holm21_20260818/`; the wrapper and its
-isolated source snapshot are under
-`experiments_sandbox/20260817_068_musique_rq_state_anchor_on_v1_openlux_matched1000/`
-and `provenance/state_anchor_intervention/`. The package intentionally omits
-the 1,000-question raw predictions and retrieval traces (which are large and
-contain hosted-model outputs).
+The compact result tables under `results/` map to the paper's main results,
+component interventions, structural analysis, and million-unit scaling study.
+Each result directory contains its own manifest or protocol note where
+applicable. The export inventory in `EXPORT_MANIFEST.json` records the byte
+size and SHA-256 digest of every tracked release file.
 
-API-backed generation reads credentials from `OPENAI_API_KEY` or an ignored
-`configs/llm_config.local.json` created from
-`configs/llm_config.example.json`. The reported manifests preserve the
-temperature, requested model alias, prompt hashes, and endpoint metadata. New
-runs through another compatible endpoint receive a new manifest.
+## Citation
 
-## Result Tables
+Please cite the WSDM 2027 Findings paper once the final bibliographic record
+is available. The title and acceptance information above identify the work
+unambiguously in the meantime.
 
-Start with `results/p9_conacc_alias_f1_v1/README.md`. It maps the current paper
-tables to compact CSV files for complete-system results, the six matched
-EAGER-versus-Standalone comparisons, 21 component interventions, dependency
-structure, the Hard-200 comparison, and bounded-scaling inputs. ConAcc uses the
-primary canonical answer; token F1 takes the maximum over the canonical answer
-and benchmark-provided aliases. These are compact analysis products rather
-than hosted-model response caches or multi-gigabyte retrieval checkpoints.
+## Release boundary
 
-Table 1 is represented as two explicitly separate result scopes: published
-external ConAcc references, and locally reproduced or matched ConAcc/F1 rows.
-The latter includes the six Persistent Hybrid controls and excludes the
-zero-shot and single-pass Dense rows removed from the current manuscript.
-
-The complete 1,000-question scale comparison in Table 4 is under
-`results/million_matched_rq_20260819/`. It reports low- and million-scale
-Hard-200 EAGER-RQ and Standalone-RQ metrics, paired direct and scale-interaction
-tests, and an audit of the shared corpora, questions, prompts, and budgets.
-
-## Release Boundary
-
-The archive has no Git history, credentials, machine-local absolute paths,
-model weights, raw hosted traces, third-party code, or manuscript source. Its
-`EXPORT_MANIFEST.json` records the byte size and SHA-256 digest of every file.
+This public repository contains source code, prompts, compact tables, split
+IDs, provenance metadata, and offline fixtures. Raw hosted-model traces,
+model weights, benchmark downloads, private run checkpoints, review material,
+and machine-local paths are excluded.
