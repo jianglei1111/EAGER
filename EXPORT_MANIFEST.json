@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "package": "EAGER public release",
-  "file_count": 192,
+  "file_count": 193,
   "files": [
     {
       "path": ".gitattributes",
@@ -12,6 +12,11 @@
       "path": ".gitignore",
       "bytes": 347,
       "sha256": "7a69c42ac1fdcd3ec18eb26ea2b830c2106897af9431618ad589607f0d6ce3c6"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1083,
+      "sha256": "1d8dd4dbfaab7e0e2e386045cea5e7bf189540b6552e732241178fef6d8f0ae2"
     },
     {
       "path": "analysis/verify.py",
@@ -150,8 +155,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3621,
-      "sha256": "acdeb16cf72c712f92ac85d7dc24da001b25fb484e071d214ba666229984309c"
+      "bytes": 4145,
+      "sha256": "69b8de0cc08e91fc92c1f9f316876b9ae0dfd6e5cac2339356170980cd47e50f"
     },
     {
       "path": "requirements/ci-linux-cpu.txt",
