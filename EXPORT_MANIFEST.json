@@ -155,8 +155,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4145,
-      "sha256": "69b8de0cc08e91fc92c1f9f316876b9ae0dfd6e5cac2339356170980cd47e50f"
+      "bytes": 4151,
+      "sha256": "15a786c3a5921c115b4bb8728c7dfc3c75d055a0aa38f59dadad29d1d03a8d90"
     },
     {
       "path": "requirements/ci-linux-cpu.txt",

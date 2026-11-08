@@ -15,9 +15,9 @@ was accepted as a **Findings paper at WSDM 2027** (Paper ID 1877). The
 conference will be held in Hong Kong on February 15--19, 2027, with poster
 presentations for Findings papers.
 
-**Authors:** Lei Jiang (first author) and HongZhe Liu (corresponding author)
-**Affiliation:** School of Robotics, Beijing Union University; Beijing Key Laboratory of Information Service Engineering
-**Contact:** `20241083510901@buu.edu.cn`; `liuhongzhe@buu.edu.cn`
+- **Authors:** Lei Jiang (first author) and HongZhe Liu (corresponding author)
+- **Affiliation:** School of Robotics, Beijing Union University; Beijing Key Laboratory of Information Service Engineering
+- **Contact:** `20241083510901@buu.edu.cn`; `liuhongzhe@buu.edu.cn`
 
 The EAGER code is released under the [MIT License](LICENSE). Third-party
 components and datasets retain their own licenses; see the relevant subdirectories.
